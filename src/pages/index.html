@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,273 +13,1249 @@
     <link href="../css/output.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <div class="tw-px-12">
-        <div class="tw-flex tw-items-center tw-py-6">
-          <a class="tw-me-24 tw-shrink-0" href="#"
-            ><img src="../../assets/images/logo.svg" alt=""
-          /></a>
-          <div class="tw-flex tw-w-full tw-items-center">
-            <ul class="tw-flex tw-items-center tw-space-x-2">
-              <li>
-                <a
-                  class="tw-rounded-3xl tw-bg-primary-dark tw-px-4 tw-py-2 tw-font-clash-display tw-text-sm tw-uppercase tw-leading-4 tw-text-white tw-duration-100 tw-ease-linear"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <button
-                  id="dropdownHoverButton"
-                  data-dropdown-toggle="dropdownHover"
-                  data-dropdown-trigger="hover"
-                  class="group tw-inline-flex tw-items-center tw-rounded-3xl tw-px-4 tw-py-2 tw-font-clash-display tw-text-sm tw-uppercase tw-leading-4 tw-duration-100 tw-ease-linear hover:tw-bg-primary-dark hover:tw-text-white hover:tw-transition-all"
-                  type="button"
-                >
-                  Services
-                  <svg
-                    class="tw-ml-1 group-hover:tw-text-white"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+    <header>
+      <nav aria-label="Main navigation">
+        <div class="px-12">
+          <div class="flex items-center py-6">
+            <a class="me-24 shrink-0" href="#" aria-label="Home">
+              <img src="../../assets/images/logo.svg" alt="Company Logo" />
+            </a>
+            <div class="flex w-full items-center">
+              <ul class="flex items-center space-x-2" role="menubar">
+                <li role="none">
+                  <a
+                    class="rounded-3xl bg-primary-dark px-4 py-2 font-clash-display text-sm uppercase leading-4 text-white duration-100 ease-linear"
+                    href="#"
+                    role="menuitem"
+                    aria-current="page"
+                    >Home</a
                   >
-                    <path
-                      d="M4.49902 6.75L8.99902 11.25L13.499 6.75"
-                      stroke="currentColor"
-                      stroke-width="1.125"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
+                </li>
+                <li role="none">
+                  <button
+                    id="servicesButton"
+                    data-dropdown-toggle="services"
+                    data-dropdown-trigger="hover"
+                    class="group inline-flex items-center rounded-3xl px-4 py-2 font-clash-display text-sm uppercase leading-4 duration-100 ease-linear hover:bg-primary-dark hover:text-white hover:transition-all"
+                    type="button"
+                    role="menuitem"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services
+                    <svg
+                      class="ml-1 group-hover:text-white"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M4.49902 6.75L8.99902 11.25L13.499 6.75"
+                        stroke="currentColor"
+                        stroke-width="1.125"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
 
-                <!-- Dropdown menu -->
-                <div
-                  id="dropdownHover"
-                  class="tw-divide-gray-100 dark:tw-bg-gray-700 tw-z-10 tw-hidden tw-w-44 tw-divide-y tw-rounded-lg tw-bg-white tw-shadow"
-                >
                   <ul
-                    class="tw-text-gray-700 dark:tw-text-gray-200 tw-py-2 tw-text-sm"
-                    aria-labelledby="dropdownHoverButton"
+                    id="services"
+                    class="divide-gray-100 dark:bg-gray-700 z-10 hidden w-44 divide-y overflow-hidden rounded-lg bg-white shadow"
+                    role="menu"
+                    aria-labelledby="servicesButton"
                   >
-                    <li>
+                    <li role="none" class="!border-t-0 hover:bg-light">
                       <a
                         href="#"
-                        class="tw-hover:bg-gray-100 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white tw-block tw-px-4 tw-py-2"
-                        >Dashboard</a
+                        class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                        role="menuitem"
+                        >Our Services</a
                       >
                     </li>
-                    <li>
+                    <li role="none" class="!border-t-0 hover:bg-light">
                       <a
                         href="#"
-                        class="tw-hover:bg-gray-100 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white tw-block tw-px-4 tw-py-2"
-                        >Settings</a
+                        class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                        role="menuitem"
+                        >Request a Service</a
                       >
                     </li>
-                    <li>
+                    <li role="none" class="!border-t-0 hover:bg-light">
                       <a
                         href="#"
-                        class="tw-hover:bg-gray-100 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white tw-block tw-px-4 tw-py-2"
-                        >Earnings</a
+                        class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                        role="menuitem"
+                        >Performance</a
                       >
                     </li>
-                    <li>
+                    <li role="none" class="!border-t-0 hover:bg-light">
                       <a
                         href="#"
-                        class="tw-hover:bg-gray-100 dark:tw-hover:bg-gray-600 dark:tw-hover:text-white tw-block tw-px-4 tw-py-2"
-                        >Sign out</a
+                        class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                        role="menuitem"
+                        >Request a Service</a
                       >
                     </li>
                   </ul>
+                </li>
+                <li role="none">
+                  <a
+                    class="rounded-3xl px-4 py-2 font-clash-display text-sm uppercase leading-4 duration-100 ease-linear hover:bg-primary-dark hover:text-white hover:transition-all"
+                    href="#"
+                    role="menuitem"
+                    >About</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    class="rounded-3xl px-4 py-2 font-clash-display text-sm uppercase leading-4 duration-100 ease-linear hover:bg-primary-dark hover:text-white hover:transition-all"
+                    href="#"
+                    role="menuitem"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <div class="ms-auto flex items-center">
+                <div class="relative mx-7 w-[23.1875rem] max-w-full">
+                  <label for="search" class="sr-only">Search</label>
+                  <div
+                    class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4"
+                  >
+                    <img
+                      src="../../assets/images/search.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <input
+                    id="search"
+                    name="search"
+                    class="block w-full rounded-3xl border-0 bg-white py-4 pl-11 pr-4 text-sm ring-1 ring-inset ring-light placeholder:text-sm placeholder:text-disabled focus-within:outline-primary-light focus:ring-inset focus:ring-light"
+                    placeholder="SEARCH"
+                    type="search"
+                    aria-label="Search the website"
+                  />
                 </div>
-              </li>
-              <li>
-                <a
-                  class="tw-rounded-3xl tw-px-4 tw-py-2 tw-font-clash-display tw-text-sm tw-uppercase tw-leading-4 tw-duration-100 tw-ease-linear hover:tw-bg-primary-dark hover:tw-text-white hover:tw-transition-all"
-                  href="#"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  class="tw-rounded-3xl tw-px-4 tw-py-2 tw-font-clash-display tw-text-sm tw-uppercase tw-leading-4 tw-duration-100 tw-ease-linear hover:tw-bg-primary-dark hover:tw-text-white hover:tw-transition-all"
-                  href="#"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-            <div class="tw-ms-auto tw-flex tw-items-center">
-              <div class="tw-relative tw-mx-7 tw-w-[23.1875rem] tw-max-w-full">
-                <div
-                  class="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-left-0 tw-flex tw-items-center tw-pl-4"
-                >
-                  <img src="../../assets/images/search.svg" alt="" />
+                <div class="pr-1">
+                  <p
+                    class="font-clash-display uppercase leading-5 text-primary-dark"
+                  >
+                    Call us today
+                  </p>
+                  <p
+                    class="font-clash-display font-medium leading-5 text-primary-dark"
+                  >
+                    1888-44-A-UNIT (442-8648)
+                  </p>
                 </div>
-                <input
-                  id="search"
-                  name="search"
-                  class="tw-block tw-w-full tw-rounded-3xl tw-border-0 tw-bg-white tw-py-4 tw-pl-11 tw-pr-4 tw-text-sm tw-ring-1 tw-ring-inset tw-ring-light placeholder:tw-text-sm placeholder:tw-text-disabled focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-light focus-within:tw-outline-primary-light"
-                  placeholder="SEARCH"
-                  type="search"
+                <button
+                  class="mx-4 rounded-3xl bg-secondary px-6 py-4 font-clash-display font-semibold uppercase leading-5 text-white hover:bg-opacity-95"
+                  aria-label="Get started with our services"
+                >
+                  GET STARTED
+                </button>
+                <button
+                  id="notificationButton"
+                  data-dropdown-toggle="notification"
+                  data-dropdown-trigger="hover"
+                  class="relative cursor-pointer rounded-full px-3 py-3 text-primary-dark hover:bg-primary-dark hover:text-white"
+                  type="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="Notifications"
+                >
+                  <svg
+                    width="27"
+                    height="28"
+                    viewBox="0 0 27 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M26.4799 18.6539C25.9914 15.948 24.3405 13.9749 21.5765 12.7879C21.2307 12.6401 20.8805 12.533 20.5079 12.4173C20.3919 12.3809 20.2737 12.3466 20.1555 12.308V11.044C20.1555 9.89136 20.1555 8.73873 20.1555 7.5861C20.1555 7.2733 20.0506 7.01621 19.8297 6.79982C17.8844 4.87162 15.9436 2.94343 14.005 1.01095C13.7685 0.77528 13.4986 0.666016 13.1595 0.666016C11.7942 0.666016 10.4267 0.666016 9.06139 0.666016H8.39213C6.86846 0.666016 5.34701 0.666016 3.82334 0.668158C1.86464 0.674585 0.381122 2.07788 0.378891 3.93752C0.372199 9.97277 0.37443 15.5367 0.383353 20.9464C0.383353 21.3127 0.448048 21.6898 0.572976 22.0411C1.03923 23.3737 2.31081 24.2029 3.89249 24.205C6.73907 24.2093 9.00116 24.2093 11.0134 24.2007C11.1495 24.2007 11.203 24.2307 11.2878 24.3485C12.5215 26.1011 14.2325 27.2366 16.3697 27.7229C16.6463 27.785 16.9363 27.8322 17.1906 27.8729C17.3178 27.8921 17.445 27.9136 17.59 27.9371H18.8459L18.9441 27.9136C18.9575 27.9093 18.9709 27.905 18.9798 27.9029C20.6663 27.7636 22.1476 27.2108 23.3857 26.2617C25.9914 24.265 27.0332 21.7048 26.4822 18.6539H26.4799ZM10.652 16.8093C10.6029 16.9014 10.5962 16.9036 10.4936 16.9036C8.98554 16.8971 7.47748 16.8993 5.96719 16.8993H5.64149C5.5121 16.8993 5.36709 16.8993 5.21985 16.925C4.86069 16.9828 4.60191 17.2571 4.57514 17.6084C4.54614 17.9791 4.76922 18.294 5.13062 18.3926C5.25778 18.4268 5.40278 18.444 5.57233 18.444C6.73684 18.4461 7.89912 18.4461 9.06362 18.444H10.0764C9.77973 19.8708 9.88235 21.2506 10.3865 22.6539H8.5416C7.01793 22.6539 5.49202 22.6539 3.95942 22.6539C3.09162 22.6539 2.51828 22.3475 2.20373 21.7176C2.07881 21.4691 2.00742 21.1542 2.00742 20.8521C1.99403 14.9004 1.99626 9.00653 2.00073 4.02322C2.00073 3.12982 2.48705 2.49352 3.33478 2.27499C3.50209 2.23214 3.69395 2.21071 3.90588 2.21071C5.48533 2.20857 7.06701 2.20643 8.64868 2.20643H12.4657C12.4657 2.20643 12.4858 2.20643 12.4969 2.20643V4.50313C12.4969 4.78807 12.4969 5.07516 12.4969 5.3601C12.5036 7.04192 13.6993 8.18169 15.4729 8.19455C16.1131 8.19883 16.7534 8.19883 17.3914 8.19669H18.5046V12.1088C18.4176 12.1131 18.3306 12.1174 18.2369 12.1216C17.9001 12.1366 17.552 12.1538 17.2107 12.1923C15.6759 12.3659 14.2615 12.9358 13.0078 13.8892C12.8561 14.0048 12.7334 14.0434 12.546 14.0391C10.2371 14.0327 7.92812 14.0348 5.61918 14.037C5.43402 14.037 5.28678 14.052 5.15516 14.0841C4.78261 14.1741 4.55506 14.474 4.57291 14.849C4.59075 15.211 4.85399 15.496 5.22878 15.5581C5.37601 15.5817 5.52548 15.586 5.65041 15.586C7.55779 15.586 9.46518 15.586 11.3726 15.586L11.1963 15.8752C11.0134 16.1751 10.8215 16.4858 10.6475 16.8029L10.652 16.8093ZM13.4361 15.6288C14.7099 14.3841 16.4188 13.692 18.2458 13.6813H18.2949C20.0774 13.6813 21.755 14.3455 23.0221 15.5517C24.2848 16.7536 24.983 18.3454 24.9875 20.0337C24.9964 23.5237 21.987 26.3796 18.2815 26.401C18.2637 26.401 18.2458 26.401 18.2302 26.401C14.5761 26.401 11.5845 23.5644 11.5533 20.0551C11.5376 18.4033 12.2069 16.8307 13.4383 15.6288H13.4361ZM14.1232 3.73185C14.1232 3.61616 14.1232 3.50046 14.1254 3.38263L17.407 6.64985H15.9101C15.716 6.64985 15.522 6.65199 15.3279 6.64771C14.6631 6.63057 14.1634 6.19351 14.1366 5.60648C14.1098 4.9916 14.1143 4.37886 14.121 3.73185H14.1232Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M5.42069 12.6809C5.69732 12.6809 5.97171 12.683 6.24834 12.683C6.40673 12.683 6.56289 12.683 6.72128 12.683H11.125H11.1942C11.2477 12.683 11.3012 12.683 11.3525 12.6809C11.7697 12.653 12.0687 12.3724 12.0642 12.0103C12.0597 11.6439 11.7452 11.3633 11.3347 11.359C10.6297 11.3526 9.9248 11.3547 9.21761 11.3547H7.62032C6.93098 11.3504 6.21934 11.3483 5.51885 11.3633C5.30023 11.3676 5.05706 11.449 4.88082 11.5732C4.66666 11.7275 4.61312 11.9975 4.74251 12.2803C4.85852 12.5352 5.09945 12.6787 5.42069 12.6809Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M18.2943 23.3178C17.5648 23.337 16.9625 22.8443 16.871 22.1458L16.8666 22.1158C16.851 21.9894 16.8331 21.8609 16.7818 21.7366C16.6636 21.4474 16.3178 21.2824 15.9943 21.3596C15.624 21.4474 15.4165 21.7409 15.4522 22.1266C15.5682 23.3092 16.2129 24.1083 17.3685 24.5047C17.4934 24.5475 17.5091 24.5775 17.5068 24.6782C17.5001 24.8839 17.5135 25.0617 17.5492 25.2224C17.6094 25.5009 17.8861 25.7066 18.2029 25.7087H18.2118C18.5308 25.7087 18.8096 25.4988 18.8743 25.2074C18.9123 25.0424 18.9234 24.9074 18.91 24.7853C18.8922 24.6246 18.9212 24.5689 19.1331 24.5004C20.1615 24.1704 20.8063 23.4677 21.0026 22.4672C21.1877 21.5202 20.8754 20.6697 20.0991 20.0077C19.5949 19.5771 18.9859 19.3564 18.2363 19.3285C17.6251 19.3071 17.1164 18.9665 16.9424 18.4587C16.7506 17.9017 16.8733 17.4239 17.3083 17.0383C17.7054 16.6848 18.2006 16.5948 18.7383 16.7769C19.2826 16.9611 19.5882 17.3489 19.6484 17.9317C19.6975 18.418 19.9808 18.6901 20.4114 18.6601C20.8241 18.6322 21.065 18.3323 21.045 17.8802C20.9937 16.7619 20.2039 15.7956 19.0796 15.4764C18.9368 15.4357 18.91 15.4036 18.91 15.2772C18.91 15.1036 18.8587 14.9172 18.7717 14.778C18.62 14.5338 18.3546 14.4416 18.0199 14.5188C17.692 14.5937 17.4934 14.8723 17.5113 15.23C17.5202 15.4122 17.4689 15.4571 17.2547 15.5386C16.1393 15.9649 15.5191 16.779 15.4589 17.891C15.4054 18.9022 15.885 19.7356 16.8465 20.2969C17.3239 20.5754 17.8593 20.6311 18.3769 20.6868L18.4282 20.6933C19.1532 20.7704 19.6775 21.3531 19.6462 22.0473C19.6172 22.7414 19.0216 23.2985 18.2899 23.3199L18.2943 23.3178Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span
+                    class="absolute right-[0.125rem] top-2 inline-block rounded-full bg-secondary px-[0.386875rem] py-[0.125rem] text-xxs text-white"
+                    aria-label="1 notification"
+                    >1</span
+                  >
+                </button>
+
+                <ul
+                  id="notification"
+                  class="divide-gray-100 dark:bg-gray-700 z-10 hidden w-44 divide-y overflow-hidden rounded-lg bg-white shadow"
+                  role="menu"
+                  aria-labelledby="notificationButton"
+                >
+                  <li role="none" class="!border-t-0 hover:bg-light">
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                      role="menuitem"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li role="none" class="!border-t-0 hover:bg-light">
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                      role="menuitem"
+                      >Settings</a
+                    >
+                  </li>
+                  <li role="none" class="!border-t-0 hover:bg-light">
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                      role="menuitem"
+                      >Earnings</a
+                    >
+                  </li>
+                  <li role="none" class="!border-t-0 hover:bg-light">
+                    <a
+                      href="#"
+                      class="hover:bg-gray-100 dark:hover:bg-gray-600 block px-4 py-2 dark:hover:text-white"
+                      role="menuitem"
+                      >Sign out</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="p-0" aria-label="Restroom Rental Services">
+        <div class="px-12">
+          <div class="grid grid-cols-2 gap-4">
+            <a
+              href="https://webarysites.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group relative transition-all duration-100 ease-linear hover:drop-shadow-elevated"
+              aria-labelledby="events-title"
+            >
+              <img
+                class="rounded-4xl"
+                src="../../assets/images/events_1.jpg"
+                alt="Luxury trailer restrooms for events"
+              />
+              <div class="absolute bottom-0 w-full p-12 text-white">
+                <div class="flex items-end justify-between gap-12">
+                  <div>
+                    <p
+                      class="mb-2 font-clash-display font-medium tracking-wider"
+                    >
+                      RESTROOM RENTALS
+                    </p>
+                    <h2
+                      id="events-title"
+                      class="mb-3 text-6xl -tracking-[0.0625rem] text-white"
+                    >
+                      EVENTS
+                    </h2>
+                    <p class="text-lg">
+                      Elevate your event with luxury trailer restrooms and
+                      portable <br class="hidden md:block" />
+                      units, ensuring comfort and style.
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-2xl bg-white p-6 text-primary-dark transition-all duration-200 ease-linear group-hover:bg-secondary group-hover:text-white"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24 2L2 24"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M24 18.5V2H7.5"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://webarysites.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group relative transition-all duration-100 ease-linear hover:drop-shadow-elevated"
+              aria-labelledby="construction-title"
+            >
+              <img
+                class="rounded-4xl"
+                src="../../assets/images/construction_1.jpg"
+                alt="Portable restrooms for construction sites"
+              />
+              <div class="absolute bottom-0 w-full p-12 text-white">
+                <div class="flex items-end justify-between gap-12">
+                  <div>
+                    <p
+                      class="mb-2 font-clash-display font-medium tracking-wider"
+                    >
+                      RESTROOM RENTALS
+                    </p>
+                    <h2
+                      id="construction-title"
+                      class="mb-3 text-6xl -tracking-[0.0625rem] text-white"
+                    >
+                      CONSTRUCTION
+                    </h2>
+                    <p class="text-lg">
+                      Enhance site efficiency with premium portable restrooms,
+                      <br class="hidden md:block" />
+                      designed for durability and convenience.
+                    </p>
+                  </div>
+                  <div
+                    class="rounded-2xl bg-white p-6 text-primary-dark transition-all duration-200 ease-linear group-hover:bg-secondary group-hover:text-white"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24 2L2 24"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M24 18.5V2H7.5"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="p-0" aria-label="Restroom Rentals Tagline">
+        <div class="relative flex overflow-x-hidden" aria-hidden="true">
+          <div class="animate-marquee whitespace-nowrap pb-3 pt-16">
+            <span
+              class="mx-28 font-clash-display text-9xl font-medium uppercase text-medium"
+            >
+              Restroom Rentals
+              <img
+                class="mx-8 inline-block"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              for Every Occasion
+              <span
+                class="mx-8 inline-block h-6 w-6 rounded-full bg-medium align-middle"
+                aria-hidden="true"
+              ></span>
+              Your Way right awAY
+            </span>
+          </div>
+
+          <div
+            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 pt-16"
+          >
+            <span
+              class="mx-28 font-clash-display text-9xl font-medium uppercase text-medium"
+            >
+              Restroom Rentals
+              <img
+                class="mx-8 inline-block"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              for Every Occasion
+              <span
+                class="mx-8 inline-block h-6 w-6 rounded-full bg-medium align-middle"
+                aria-hidden="true"
+              ></span>
+              Your Way right awAY
+            </span>
+          </div>
+        </div>
+        <div class="sr-only">
+          <p>Restroom Rentals for Every Occasion - Your Way right away</p>
+        </div>
+      </section>
+      <section aria-label="Why rent a unit">
+        <div class="mx-auto px-12 xl:container">
+          <div class="text-center">
+            <span
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+            >
+              why rent a unit
+            </span>
+            <h2 class="mb-16">Everything included, nothing left behind</h2>
+          </div>
+          <div class="grid grid-cols-12 gap-8">
+            <div class="col-span-7">
+              <div class="flex flex-col gap-8">
+                <article
+                  class="rounded-4xl bg-[#F3F8FD] bg-[url('../../assets/images/construction-site.png')] bg-cover bg-no-repeat"
+                >
+                  <div class="grid grid-cols-8">
+                    <div
+                      class="col-span-3 px-12 py-16 text-primary-dark 2xl:my-6"
+                    >
+                      <div
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                      >
+                        <img
+                          src="../../assets/images/shield-tick.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h3 class="mb-3">Reliable Service</h3>
+                      <p>
+                        Enjoy premium customer support from selection to rental
+                        return.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+                <div class="grid grid-cols-2 gap-8">
+                  <article class="rounded-4xl bg-[#F3F8FD]">
+                    <div class="px-12 py-16 text-primary-dark">
+                      <div
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                      >
+                        <img
+                          src="../../assets/images/menu.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h3 class="mb-3">Flexible Terms</h3>
+                      <p>
+                        A day or a decade, we offer rentals for short-, long-
+                        and ultralong-terms
+                      </p>
+                    </div>
+                  </article>
+                  <article class="rounded-4xl bg-[#F3F8FD]">
+                    <div class="px-12 py-16 text-primary-dark">
+                      <div
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                      >
+                        <img
+                          src="../../assets/images/delivery-truck.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h3 class="mb-3">Free Rapid Delivery</h3>
+                      <p class="mb-3">
+                        Get same or next-day delivery, ensuring your restrooms
+                        are ready when needed.
+                      </p>
+                      <p class="text-sm"><small>* Restrictions apply</small></p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-5">
+              <article
+                class="h-full rounded-4xl bg-[#F3F8FD] bg-[url('../../assets/images/portable-toilet.png')] bg-cover bg-bottom bg-no-repeat"
+              >
+                <div class="px-12 py-16 text-primary-dark">
+                  <div
+                    class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                  >
+                    <img
+                      src="../../assets/images/star.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 class="mb-3">Maintenance & Cleaning</h3>
+                  <p>
+                    Enjoy scheduled and on-demand cleanings for spotless,
+                    hygienic restrooms. We ensure your units are always in top
+                    condition with prompt and thorough maintenance.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="About Us">
+        <div class="mx-auto px-12 xl:container">
+          <div class="grid grid-cols-9 gap-28">
+            <div class="col-span-4 self-center">
+              <span
+                class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+              >
+                about us
+              </span>
+              <h2 class="mb-4">Better than the rest at restrooms</h2>
+              <p class="mb-12">
+                Rent a Unit is the leading provider of portable and trailer
+                toilet rentals across the Tri-State area. All our rental units
+                are self-owned, delivered by our own fleet, maintained by our
+                own professionals, and continually serviced to meet your
+                evolving needs. Whether you’re looking for the best portable
+                toilets, searching for portable camping toilets, or outfitting
+                an event site with portable or restroom trailers, we are your
+                solution of choice.
+              </p>
+              <a
+                href="#"
+                role="button"
+                class="bg-primary inline-flex items-center gap-6 rounded-4xl py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white"
+              >
+                get started
+                <span class="inline-block rounded-full bg-white p-5">
+                  <img
+                    class="w-4"
+                    src="../../assets/images/external-link.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </span>
+              </a>
+            </div>
+            <div class="col-span-5">
+              <div class="pl-14">
+                <img
+                  src="../../assets/images/event-facilities.png"
+                  alt="Event facilities with portable restrooms"
                 />
               </div>
-              <div class="tw-pr-1">
-                <p class="tw-font-clash-display tw-uppercase tw-leading-5 tw-text-primary-dark">
-                  Call us today
-                </p>
-                <p class="tw-font-clash-display tw-font-medium tw-leading-5 tw-text-primary-dark">
-                  1888-44-A-UNIT (442-8648)
-                </p>
-              </div>
-              <button
-                class="tw-mx-4 tw-rounded-3xl tw-bg-secondary tw-px-6 tw-py-4 tw-font-clash-display tw-font-semibold tw-uppercase tw-leading-5 tw-text-white hover:tw-bg-opacity-95"
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-label="Client Testimonials"
+        class="bg-[#F3F8FD] bg-[url('../../assets/images/client-review-bg.png')] bg-cover bg-no-repeat"
+      >
+        <div class="mx-auto px-12 xl:container">
+          <div class="text-center">
+            <span
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+            >
+              testimonials
+            </span>
+            <h2 class="mb-16" id="testimonial-heading">
+              Hear it from our clients
+            </h2>
+          </div>
+
+          <div
+            id="controls-carousel"
+            class="relative w-full"
+            data-carousel="static"
+            aria-labelledby="testimonial-heading"
+          >
+            <!-- Carousel wrapper -->
+            <div class="relative h-[34.375rem] overflow-hidden rounded-lg">
+              <!-- Item 1 -->
+              <article
+                class="relative hidden duration-700 ease-in-out"
+                data-carousel-item="active"
               >
-                GET STARTED
-              </button>
-              <div
-                class="tw-relative tw-cursor-pointer tw-rounded-full tw-px-3 tw-py-3 tw-text-primary-dark hover:tw-bg-primary-dark hover:tw-text-white"
+                <div class="absolute mx-2 px-32">
+                  <div class="grid grid-cols-11 gap-14 rounded-4xl bg-white">
+                    <div class="col-span-5 self-center py-12 pl-16">
+                      <div class="mb-6 w-[5.375rem] rounded-full">
+                        <img
+                          src="../../assets/images/client-profile-pic1.png"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="mb-2">Brady Mills</h3>
+                      <div class="mb-6 flex items-center gap-3">
+                        <span class="rounded-lg bg-medium px-3 py-1"
+                          >Construction</span
+                        >
+                        <time datetime="2024-01-09">Jan 9, 2024</time>
+                      </div>
+                      <p>
+                        I’m a foreman, so I know that keeping my guys at the job
+                        site makes a bottom line difference. I’ve calculated
+                        that Rent a Unit’s portable bathrooms help our company
+                        save approximately $19,040 each year, money we wouldn’t
+                        have saved with any other company, considering how many
+                        toilets we need.
+                      </p>
+                    </div>
+                    <div class="col-span-6">
+                      <img
+                        src="../../assets/images/industrial-construction.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- Item 2 -->
+              <article
+                class="relative hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <div class="absolute mx-2 px-32">
+                  <div class="grid grid-cols-11 gap-14 rounded-4xl bg-white">
+                    <div class="col-span-5 self-center py-12 pl-16">
+                      <div class="mb-6 w-[5.375rem] rounded-full">
+                        <img
+                          src="../../assets/images/client-profile-pic1.png"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="mb-2">Brady Mills</h3>
+                      <div class="mb-6 flex items-center gap-3">
+                        <span class="rounded-lg bg-medium px-3 py-1"
+                          >Construction</span
+                        >
+                        <time datetime="2024-01-09">Jan 9, 2024</time>
+                      </div>
+                      <p>
+                        I’m a foreman, so I know that keeping my guys at the job
+                        site makes a bottom line difference. I’ve calculated
+                        that Rent a Unit’s portable bathrooms help our company
+                        save approximately $19,040 each year, money we wouldn’t
+                        have saved with any other company, considering how many
+                        toilets we need.
+                      </p>
+                    </div>
+                    <div class="col-span-6">
+                      <img
+                        src="../../assets/images/industrial-construction.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <!-- Item 3 -->
+              <article
+                class="relative hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <div class="absolute mx-2 px-32">
+                  <div class="grid grid-cols-11 gap-14 rounded-4xl bg-white">
+                    <div class="col-span-5 self-center py-12 pl-16">
+                      <div class="mb-6 w-[5.375rem] rounded-full">
+                        <img
+                          src="../../assets/images/client-profile-pic1.png"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="mb-2">Brady Mills</h3>
+                      <div class="mb-6 flex items-center gap-3">
+                        <span class="rounded-lg bg-medium px-3 py-1"
+                          >Construction</span
+                        >
+                        <time datetime="2024-01-09">Jan 9, 2024</time>
+                      </div>
+                      <p>
+                        I’m a foreman, so I know that keeping my guys at the job
+                        site makes a bottom line difference. I’ve calculated
+                        that Rent a Unit’s portable bathrooms help our company
+                        save approximately $19,040 each year, money we wouldn’t
+                        have saved with any other company, considering how many
+                        toilets we need.
+                      </p>
+                    </div>
+                    <div class="col-span-6">
+                      <img
+                        src="../../assets/images/industrial-construction.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- Slider controls -->
+            <button
+              type="button"
+              class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="ring-primary-dark group-hover:bg-primary inline-flex h-[4.375rem] w-[4.375rem] items-center justify-center rounded-full ring-1 group-hover:text-white"
               >
                 <svg
-                  width="27"
-                  height="28"
-                  viewBox="0 0 27 28"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <path
-                    d="M26.4799 18.6539C25.9914 15.948 24.3405 13.9749 21.5765 12.7879C21.2307 12.6401 20.8805 12.533 20.5079 12.4173C20.3919 12.3809 20.2737 12.3466 20.1555 12.308V11.044C20.1555 9.89136 20.1555 8.73873 20.1555 7.5861C20.1555 7.2733 20.0506 7.01621 19.8297 6.79982C17.8844 4.87162 15.9436 2.94343 14.005 1.01095C13.7685 0.77528 13.4986 0.666016 13.1595 0.666016C11.7942 0.666016 10.4267 0.666016 9.06139 0.666016H8.39213C6.86846 0.666016 5.34701 0.666016 3.82334 0.668158C1.86464 0.674585 0.381122 2.07788 0.378891 3.93752C0.372199 9.97277 0.37443 15.5367 0.383353 20.9464C0.383353 21.3127 0.448048 21.6898 0.572976 22.0411C1.03923 23.3737 2.31081 24.2029 3.89249 24.205C6.73907 24.2093 9.00116 24.2093 11.0134 24.2007C11.1495 24.2007 11.203 24.2307 11.2878 24.3485C12.5215 26.1011 14.2325 27.2366 16.3697 27.7229C16.6463 27.785 16.9363 27.8322 17.1906 27.8729C17.3178 27.8921 17.445 27.9136 17.59 27.9371H18.8459L18.9441 27.9136C18.9575 27.9093 18.9709 27.905 18.9798 27.9029C20.6663 27.7636 22.1476 27.2108 23.3857 26.2617C25.9914 24.265 27.0332 21.7048 26.4822 18.6539H26.4799ZM10.652 16.8093C10.6029 16.9014 10.5962 16.9036 10.4936 16.9036C8.98554 16.8971 7.47748 16.8993 5.96719 16.8993H5.64149C5.5121 16.8993 5.36709 16.8993 5.21985 16.925C4.86069 16.9828 4.60191 17.2571 4.57514 17.6084C4.54614 17.9791 4.76922 18.294 5.13062 18.3926C5.25778 18.4268 5.40278 18.444 5.57233 18.444C6.73684 18.4461 7.89912 18.4461 9.06362 18.444H10.0764C9.77973 19.8708 9.88235 21.2506 10.3865 22.6539H8.5416C7.01793 22.6539 5.49202 22.6539 3.95942 22.6539C3.09162 22.6539 2.51828 22.3475 2.20373 21.7176C2.07881 21.4691 2.00742 21.1542 2.00742 20.8521C1.99403 14.9004 1.99626 9.00653 2.00073 4.02322C2.00073 3.12982 2.48705 2.49352 3.33478 2.27499C3.50209 2.23214 3.69395 2.21071 3.90588 2.21071C5.48533 2.20857 7.06701 2.20643 8.64868 2.20643H12.4657C12.4657 2.20643 12.4858 2.20643 12.4969 2.20643V4.50313C12.4969 4.78807 12.4969 5.07516 12.4969 5.3601C12.5036 7.04192 13.6993 8.18169 15.4729 8.19455C16.1131 8.19883 16.7534 8.19883 17.3914 8.19669H18.5046V12.1088C18.4176 12.1131 18.3306 12.1174 18.2369 12.1216C17.9001 12.1366 17.552 12.1538 17.2107 12.1923C15.6759 12.3659 14.2615 12.9358 13.0078 13.8892C12.8561 14.0048 12.7334 14.0434 12.546 14.0391C10.2371 14.0327 7.92812 14.0348 5.61918 14.037C5.43402 14.037 5.28678 14.052 5.15516 14.0841C4.78261 14.1741 4.55506 14.474 4.57291 14.849C4.59075 15.211 4.85399 15.496 5.22878 15.5581C5.37601 15.5817 5.52548 15.586 5.65041 15.586C7.55779 15.586 9.46518 15.586 11.3726 15.586L11.1963 15.8752C11.0134 16.1751 10.8215 16.4858 10.6475 16.8029L10.652 16.8093ZM13.4361 15.6288C14.7099 14.3841 16.4188 13.692 18.2458 13.6813H18.2949C20.0774 13.6813 21.755 14.3455 23.0221 15.5517C24.2848 16.7536 24.983 18.3454 24.9875 20.0337C24.9964 23.5237 21.987 26.3796 18.2815 26.401C18.2637 26.401 18.2458 26.401 18.2302 26.401C14.5761 26.401 11.5845 23.5644 11.5533 20.0551C11.5376 18.4033 12.2069 16.8307 13.4383 15.6288H13.4361ZM14.1232 3.73185C14.1232 3.61616 14.1232 3.50046 14.1254 3.38263L17.407 6.64985H15.9101C15.716 6.64985 15.522 6.65199 15.3279 6.64771C14.6631 6.63057 14.1634 6.19351 14.1366 5.60648C14.1098 4.9916 14.1143 4.37886 14.121 3.73185H14.1232Z"
-                    fill="currentColor"
+                    d="M4.68667 16.6867L27.3137 16.6863"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                   <path
-                    d="M5.42069 12.6809C5.69732 12.6809 5.97171 12.683 6.24834 12.683C6.40673 12.683 6.56289 12.683 6.72128 12.683H11.125H11.1942C11.2477 12.683 11.3012 12.683 11.3525 12.6809C11.7697 12.653 12.0687 12.3724 12.0642 12.0103C12.0597 11.6439 11.7452 11.3633 11.3347 11.359C10.6297 11.3526 9.9248 11.3547 9.21761 11.3547H7.62032C6.93098 11.3504 6.21934 11.3483 5.51885 11.3633C5.30023 11.3676 5.05706 11.449 4.88082 11.5732C4.66666 11.7275 4.61312 11.9975 4.74251 12.2803C4.85852 12.5352 5.09945 12.6787 5.42069 12.6809Z"
-                    fill="currentColor"
-                  />
-                  <path
-                    d="M18.2943 23.3178C17.5648 23.337 16.9625 22.8443 16.871 22.1458L16.8666 22.1158C16.851 21.9894 16.8331 21.8609 16.7818 21.7366C16.6636 21.4474 16.3178 21.2824 15.9943 21.3596C15.624 21.4474 15.4165 21.7409 15.4522 22.1266C15.5682 23.3092 16.2129 24.1083 17.3685 24.5047C17.4934 24.5475 17.5091 24.5775 17.5068 24.6782C17.5001 24.8839 17.5135 25.0617 17.5492 25.2224C17.6094 25.5009 17.8861 25.7066 18.2029 25.7087H18.2118C18.5308 25.7087 18.8096 25.4988 18.8743 25.2074C18.9123 25.0424 18.9234 24.9074 18.91 24.7853C18.8922 24.6246 18.9212 24.5689 19.1331 24.5004C20.1615 24.1704 20.8063 23.4677 21.0026 22.4672C21.1877 21.5202 20.8754 20.6697 20.0991 20.0077C19.5949 19.5771 18.9859 19.3564 18.2363 19.3285C17.6251 19.3071 17.1164 18.9665 16.9424 18.4587C16.7506 17.9017 16.8733 17.4239 17.3083 17.0383C17.7054 16.6848 18.2006 16.5948 18.7383 16.7769C19.2826 16.9611 19.5882 17.3489 19.6484 17.9317C19.6975 18.418 19.9808 18.6901 20.4114 18.6601C20.8241 18.6322 21.065 18.3323 21.045 17.8802C20.9937 16.7619 20.2039 15.7956 19.0796 15.4764C18.9368 15.4357 18.91 15.4036 18.91 15.2772C18.91 15.1036 18.8587 14.9172 18.7717 14.778C18.62 14.5338 18.3546 14.4416 18.0199 14.5188C17.692 14.5937 17.4934 14.8723 17.5113 15.23C17.5202 15.4122 17.4689 15.4571 17.2547 15.5386C16.1393 15.9649 15.5191 16.779 15.4589 17.891C15.4054 18.9022 15.885 19.7356 16.8465 20.2969C17.3239 20.5754 17.8593 20.6311 18.3769 20.6868L18.4282 20.6933C19.1532 20.7704 19.6775 21.3531 19.6462 22.0473C19.6172 22.7414 19.0216 23.2985 18.2899 23.3199L18.2943 23.3178Z"
-                    fill="currentColor"
+                    d="M12.9854 24.9854L4.68628 16.6863L12.9857 8.38686"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
                 </svg>
-                <span
-                  class="tw-absolute tw-right-[0.125rem] tw-top-2 tw-inline-block tw-rounded-full tw-bg-secondary tw-px-[0.386875rem] tw-py-[0.125rem] tw-text-xxs tw-text-white"
-                  >1</span
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="ring-primary-dark group-hover:bg-primary inline-flex h-[4.375rem] w-[4.375rem] items-center justify-center rounded-full ring-1 group-hover:text-white"
+              >
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
+                  <path
+                    d="M27.3133 16.6867L4.68629 16.6863"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.0146 24.9854L27.3137 16.6863L19.0143 8.38686"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="p-0" aria-label="Restroom Rentals Tagline">
+        <div class="relative flex overflow-x-hidden" aria-hidden="true">
+          <div class="animate-marquee whitespace-nowrap pb-3 pt-4">
+            <span
+              class="mx-28 font-clash-display text-9xl font-medium uppercase text-medium"
+            >
+              Restroom Rentals
+              <img
+                class="mx-8 inline-block"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              for Every Occasion
+              <span
+                class="mx-8 inline-block h-6 w-6 rounded-full bg-medium align-middle"
+                aria-hidden="true"
+              ></span>
+              Your Way right awAY
+            </span>
+          </div>
+
+          <div
+            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 pt-4"
+          >
+            <span
+              class="mx-28 font-clash-display text-9xl font-medium uppercase text-medium"
+            >
+              Restroom Rentals
+              <img
+                class="mx-8 inline-block"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              for Every Occasion
+              <span
+                class="mx-8 inline-block h-6 w-6 rounded-full bg-medium align-middle"
+                aria-hidden="true"
+              ></span>
+              Your Way right awAY
+            </span>
+          </div>
+        </div>
+        <div class="sr-only">
+          <p>Restroom Rentals for Every Occasion - Your Way right away</p>
+        </div>
+      </section>
+      <section aria-label="Contact Us">
+        <div class="mx-auto px-12 xl:container">
+          <div class="mb-16 text-center">
+            <span
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+            >
+              contact us
+            </span>
+            <h2 class="mb-4">
+              Have questions or need more
+              <br class="hidden 2xl:block" />information?
+            </h2>
+            <p>
+              Fill out the form below, and our team will get back to you
+              promptly. If you need a quote,
+              <a href="#" class="cursor-pointer text-secondary underline"
+                >click here</a
+              >.
+            </p>
+          </div>
+          <div class="grid grid-cols-12 gap-8">
+            <div class="col-span-4 self-stretch">
+              <div class="h-full rounded-4xl border-2 border-medium p-16">
+                <dl>
+                  <div class="pb-8">
+                    <dt class="mb-4 flex items-center gap-3">
+                      <img
+                        src="../../assets/images/email.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <h4 class="uppercase leading-9 text-primary-dark">
+                        Email
+                      </h4>
+                    </dt>
+                    <dd>
+                      <a
+                        href="mailto:sales@rentaunitny.com"
+                        class="inline-block text-primary-dark"
+                        >sales@rentaunitny.com</a
+                      >
+                    </dd>
+                  </div>
+                  <div class="border-light border-y border-b py-8">
+                    <dt class="mb-4 flex items-center gap-3">
+                      <img
+                        src="../../assets/images/phone.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <h4 class="uppercase leading-9 text-primary-dark">
+                        phone
+                      </h4>
+                    </dt>
+                    <dd class="text-primary-dark">
+                      <a href="tel:+18884428648" class="inline-block"
+                        >1-888-44-A-UNIT (442-8648)</a
+                      >
+                      <span class="mx-4 border-r border-primary"> </span>
+                      <a href="tel:+17186431313" class="inline-block"
+                        >718-643-1313</a
+                      >
+                    </dd>
+                  </div>
+                  <div class="pt-8">
+                    <dt class="mb-4 flex items-center gap-3">
+                      <img
+                        src="../../assets/images/fax.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <h4 class="uppercase leading-9 text-primary-dark">Fax</h4>
+                    </dt>
+                    <dd>
+                      <a
+                        href="tel:+17186431317"
+                        class="inline-block text-primary-dark"
+                        >718-643-1317</a
+                      >
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="col-span-8 self-stretch">
+              <div class="h-full rounded-4xl bg-light p-16">
+                <form>
+                  <div class="grid grid-cols-2 gap-8">
+                    <div>
+                      <label
+                        for="name"
+                        class="mb-2 block uppercase text-primary-dark"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="ring-white w-full rounded-4xl bg-white px-6 py-5 ring-1 ring-inset focus-within:outline-primary-light focus:ring-inset"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="phone"
+                        class="mb-2 block uppercase text-primary-dark"
+                        >Phone</label
+                      >
+                      <div class="relative">
+                        <div class="absolute left-6 top-1/2 -translate-y-1/2">
+                          <button
+                            type="button"
+                            class="flex cursor-default items-center"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            aria-labelledby="country-code-label"
+                          >
+                            <span class="shrink-0"
+                              ><img
+                                src="../../assets/images/usa-flag.svg"
+                                alt="USA flag"
+                            /></span>
+                            <span class="pointer-events-none ml-1 shrink-0">
+                              <img
+                                src="../../assets/images/arrow-down.svg"
+                                alt=""
+                                aria-hidden="true"
+                              />
+                            </span>
+                            <span class="ml-2" id="country-code-label">+7</span>
+                          </button>
+                        </div>
+                        <ul
+                          class="absolute left-0 z-10 mt-20 max-h-60 w-full overflow-auto rounded-3xl bg-white px-3 py-2 shadow-md"
+                          tabindex="-1"
+                          role="listbox"
+                          aria-labelledby="listbox-label"
+                          aria-activedescendant="listbox-option-3"
+                        >
+                          <li
+                            class="relative cursor-default select-none p-2"
+                            id="listbox-option-0"
+                            role="option"
+                          >
+                            <div class="flex items-center">
+                              <img
+                                src="../../assets/images/usa-flag.svg"
+                                alt=""
+                              />
+                              <span class="inline-block pl-2">USA</span>
+                            </div>
+                          </li>
+                          <li
+                            class="relative cursor-default select-none p-2"
+                            id="listbox-option-0"
+                            role="option"
+                          >
+                            <div class="flex items-center">
+                              <img
+                                src="../../assets/images/usa-flag.svg"
+                                alt=""
+                              />
+                              <span class="inline-block pl-2">Australia</span>
+                            </div>
+                          </li>
+                          <li
+                            class="relative cursor-default select-none p-2"
+                            id="listbox-option-0"
+                            role="option"
+                          >
+                            <div class="flex items-center">
+                              <img
+                                src="../../assets/images/usa-flag.svg"
+                                alt=""
+                              />
+                              <span class="inline-block pl-2">Canada</span>
+                            </div>
+                          </li>
+                        </ul>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          class="ring-white w-full rounded-4xl bg-white px-6 py-5 pl-24 ring-1 ring-inset focus-within:outline-primary-light focus:ring-inset"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        for="email"
+                        class="mb-2 block uppercase text-primary-dark"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="ring-white w-full rounded-4xl bg-white px-6 py-5 ring-1 ring-inset focus-within:outline-primary-light focus:ring-inset"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="message"
+                        class="mb-2 block uppercase text-primary-dark"
+                        >Your message</label
+                      >
+                      <input
+                        type="text"
+                        id="message"
+                        class="ring-white w-full rounded-4xl bg-white px-6 py-5 ring-1 ring-inset focus-within:outline-primary-light focus:ring-inset"
+                        placeholder="Enter your message"
+                        required
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <button
+                        type="submit"
+                        class="bg-primary flex items-center gap-6 rounded-4xl py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white"
+                      >
+                        Send
+                        <span class="inline-block rounded-full bg-white p-5">
+                          <img
+                            class="w-4"
+                            src="../../assets/images/external-link.svg"
+                            alt=""
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <section>
-      <div class="tw-px-12">
-        <div class="tw-grid tw-grid-cols-2 tw-gap-4">
-          <div class="hover:tw-drop-shadow-elevated tw-relative">
-            <img
-              class="tw-rounded-4xl"
-              src="../../assets/images/events.jpg"
-              alt=""
-            />
-            <div
-              class="tw-absolute tw-bottom-0 tw-w-full tw-p-12 tw-text-white"
-            >
-              <div class="tw-flex tw-items-end tw-justify-between tw-gap-12">
-                <div>
-                  <p
-                    class="tw-mb-2 tw-font-clash-display tw-font-medium tw-tracking-wider"
-                  >
-                    RESTROOM RENTALS
-                  </p>
-                  <h1 class="tw-mb-3 tw-text-white">EVENTS</h1>
-                  <p class="tw-text-lg">
-                    Elevate your event with luxury trailer restrooms and
-                    portable <br class="tw-hidden md:tw-block" />
-                    units, ensuring comfort and style.
-                  </p>
-                </div>
-                <button
-                  class="tw-rounded-2xl tw-bg-white tw-p-6 tw-text-primary-dark tw-transition-all tw-duration-100 tw-ease-linear hover:tw-bg-secondary hover:tw-text-white"
-                >
-                  <svg
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24 2L2 24"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M24 18.5V2H7.5"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
+      </section>
+      <footer
+        aria-label="Site footer"
+        class="bg-primary bg-[url('../../assets/images/footer-bg.png')] bg-cover bg-no-repeat pb-0 text-white"
+      >
+        <div class="mx-auto px-12 xl:container">
+          <div class="flex justify-between border-b border-white pb-14">
+            <div class="w-[31.0625rem]">
+              <a href="/" aria-label="Home">
+                <img
+                  src="../../assets/images/footer-logo.svg"
+                  alt="Rent a Unit Logo"
+                />
+              </a>
+              <p class="mt-5">
+                Complete restroom solutions delivered, maintained, and serviced
+                by our dedicated team. Our units, our trucks, our crews, our
+                promise.
+              </p>
             </div>
+            <nav class="flex gap-20" aria-label="Footer Navigation">
+              <div class="pr-3">
+                <h6
+                  class="mb-4 text-base uppercase leading-5 tracking-wider text-white"
+                >
+                  Services
+                </h6>
+                <ul class="space-y-1">
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block py-2 text-sm font-medium hover:underline"
+                      >Var. Pomis.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block py-2 text-sm font-medium hover:underline"
+                      >Pade. Aligt.</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block py-2 text-sm font-medium hover:underline"
+                      >Infraska. Rokade.</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6
+                  class="mb-4 text-base uppercase leading-5 tracking-wider text-white"
+                >
+                  Info
+                </h6>
+                <ul class="space-y-1">
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block py-2 text-sm font-medium hover:underline"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block py-2 text-sm font-medium hover:underline"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <div class="tw-relative">
-            <img src="../../assets/images/construction.jpg" alt="" />
-            <div
-              class="tw-absolute tw-bottom-0 tw-w-full tw-p-12 tw-text-white"
-            >
-              <div class="tw-flex tw-items-end tw-justify-between tw-gap-12">
-                <div>
-                  <p
-                    class="tw-mb-2 tw-font-clash-display tw-font-medium tw-tracking-wider"
-                  >
-                    RESTROOM RENTALS
-                  </p>
-                  <h1 class="tw-mb-3 tw-text-white">CONSTRUCTION</h1>
-                  <p class="tw-text-lg">
-                    Enhance site efficiency with premium portable restrooms,
-                    <br class="tw-hidden md:tw-block" />
-                    designed for durability and convenience.
-                  </p>
-                </div>
-                <button
-                  class="tw-rounded-2xl tw-bg-white tw-p-6 tw-text-primary-dark tw-transition-all tw-duration-100 tw-ease-linear hover:tw-bg-secondary hover:tw-text-white"
-                >
-                  <svg
-                    width="26"
-                    height="26"
-                    viewBox="0 0 26 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24 2L2 24"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M24 18.5V2H7.5"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
+          <div class="py-12 text-sm font-medium">
+            <p>
+              © <time datetime="2024">2024</time>
+              <a href="#" class="hover:underline">Rent a Unit</a>. All rights
+              reserved.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </main>
+    <script src="../js/flowbite.min.js"></script>
+    <script>
+      // Custom Select JavaScript
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const selectButton = document.querySelector(
+          '[aria-haspopup="listbox"]',
+        );
+        const selectOptions = document.querySelectorAll('[role="option"]');
+        const selectList = document.querySelector('[role="listbox"]');
+        const selectedValueSpan = selectButton.querySelector("span");
+
+        // Toggle dropdown
+        selectButton.addEventListener("click", function () {
+          const expanded =
+            this.getAttribute("aria-expanded") === "true" || false;
+          this.setAttribute("aria-expanded", !expanded);
+          selectList.classList.toggle("hidden");
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (event) {
+          if (
+            !selectButton.contains(event.target) &&
+            !selectList.contains(event.target)
+          ) {
+            selectButton.setAttribute("aria-expanded", "false");
+            selectList.classList.add("hidden");
+          }
+        });
+
+        // Handle option selection
+        selectOptions.forEach((option) => {
+          option.addEventListener("click", function () {
+            const selectedValue = this.querySelector("span").textContent;
+            selectedValueSpan.textContent = selectedValue;
+
+            // Update aria-selected and styles
+            selectOptions.forEach((opt) => {
+              opt.setAttribute("aria-selected", "false");
+              opt.classList.remove("bg-indigo-600", "text-secondary");
+              opt.classList.add("text-gray-900");
+              opt.querySelector("span:last-child").classList.add("hidden");
+            });
+
+            this.setAttribute("aria-selected", "true");
+            this.classList.remove("text-gray-900");
+            this.classList.add("bg-indigo-600", "text-secondary");
+            this.querySelector("span:last-child").classList.remove("hidden");
+
+            // Close dropdown
+            selectButton.setAttribute("aria-expanded", "false");
+            selectList.classList.add("hidden");
+          });
+        });
+
+        // Keyboard navigation
+        selectList.addEventListener("keydown", function (event) {
+          const focusedOption = document.activeElement;
+          const options = Array.from(selectOptions);
+          const currentIndex = options.indexOf(focusedOption);
+
+          switch (event.key) {
+            case "ArrowUp":
+              event.preventDefault();
+              if (currentIndex > 0) {
+                options[currentIndex - 1].focus();
+              }
+              break;
+            case "ArrowDown":
+              event.preventDefault();
+              if (currentIndex < options.length - 1) {
+                options[currentIndex + 1].focus();
+              }
+              break;
+            case "Enter":
+            case " ":
+              event.preventDefault();
+              focusedOption.click();
+              break;
+            case "Escape":
+              event.preventDefault();
+              selectButton.setAttribute("aria-expanded", "false");
+              selectList.classList.add("hidden");
+              selectButton.focus();
+              break;
+          }
+        });
+      });
+    </script>
   </body>
 </html>
