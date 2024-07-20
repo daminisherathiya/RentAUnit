@@ -16,16 +16,16 @@
     @apply mx-auto max-w-[1920px];
   }
   h1 {
-    @apply font-clash-display text-5xl 2xl:text-6xl font-medium text-primary-dark;
+    @apply font-clash-display text-5xl font-medium text-primary-dark 2xl:text-6xl;
   }
   h2 {
-    @apply font-clash-display text-5xl font-medium text-primary-dark;
+    @apply font-clash-display text-4xl font-medium text-primary-dark 2xl:text-5xl;
   }
   h3 {
-    @apply font-clash-display text-3xl font-medium text-primary-dark;
+    @apply font-clash-display text-2xl font-medium text-primary-dark 2xl:text-3xl;
   }
   h4 {
-    @apply font-clash-display text-2xl font-medium text-primary-dark;
+    @apply font-clash-display text-xl font-medium text-primary-dark 2xl:text-2xl;
   }
   h6 {
     @apply text-lg text-primary-dark;
@@ -140,5 +140,10 @@
       format("truetype");
     font-weight: 700;
     font-style: normal;
+  }
+}
+@layer utilities {
+  .c-filter-white {
+    @apply brightness-105 contrast-100 hue-rotate-90 invert saturate-50 sepia-0;
   }
 }
