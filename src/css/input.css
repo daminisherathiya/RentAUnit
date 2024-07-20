@@ -8,7 +8,7 @@
   }
   section,
   footer {
-    @apply py-[6.25rem];
+    @apply py-[4.6875rem] 2xl:py-[6.25rem];
   }
   section,
   header,
@@ -16,7 +16,7 @@
     @apply mx-auto max-w-[1920px];
   }
   h1 {
-    @apply font-clash-display text-6xl font-medium text-primary-dark;
+    @apply font-clash-display text-5xl 2xl:text-6xl font-medium text-primary-dark;
   }
   h2 {
     @apply font-clash-display text-5xl font-medium text-primary-dark;
