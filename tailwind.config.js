@@ -26,15 +26,18 @@ module.exports = {
         dark: "#0A1039",
         light: "#3C4C5A",
       },
-      light: "#D0E3EF", //Todo
+      divider: "#D0E3EF",
       disabled: "#9EB2BE",
       secondary: "#D80043",
-      medium: "#E4F0F8", //Todo
+      paper: "#E4F0F8",
     },
     backgroundColor: {
       white: "#FFFFFF",
-      light: "#F2F7FA",
-      medium: "#E4F0F8",
+      paper: {
+        DEFAULT: "#F2F7FA",
+        light: "#F3F8FD",
+        dark: "#E4F0F8",
+      },
       secondary: "#D80043",
       primary: {
         DEFAULT: "#00094A",
