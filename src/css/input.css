@@ -35,14 +35,15 @@
   /* Clash Display - Regular (400) */
   @font-face {
     font-family: "Clash Display";
-    src: url("/assets/fonts/clashDisplay/ClashDisplay-Regular.eot");
+    src: url("../../assets/fonts/clashDisplay/ClashDisplay-Regular.eot");
     src:
-      url("/assets/fonts/clashDisplay/ClashDisplay-Regular.eot?#iefix")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Regular.eot?#iefix")
         format("embedded-opentype"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Regular.woff2")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Regular.woff2")
         format("woff2"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Regular.woff") format("woff"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Regular.ttf")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Regular.woff")
+        format("woff"),
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Regular.ttf")
         format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -52,14 +53,15 @@
   /* Clash Display - Medium (500) */
   @font-face {
     font-family: "Clash Display";
-    src: url("/assets/fonts/clashDisplay/ClashDisplay-Medium.eot");
+    src: url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.eot");
     src:
-      url("/assets/fonts/clashDisplay/ClashDisplay-Medium.eot?#iefix")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.eot?#iefix")
         format("embedded-opentype"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Medium.woff2")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.woff2")
         format("woff2"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Medium.woff") format("woff"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Medium.ttf")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.woff")
+        format("woff"),
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.ttf")
         format("truetype");
     font-weight: 500;
     font-style: normal;
@@ -69,15 +71,15 @@
   /* Clash Display - Semibold (600) */
   @font-face {
     font-family: "Clash Display";
-    src: url("/assets/fonts/clashDisplay/ClashDisplay-Semibold.eot");
+    src: url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.eot");
     src:
-      url("/assets/fonts/clashDisplay/ClashDisplay-Semibold.eot?#iefix")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.eot?#iefix")
         format("embedded-opentype"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Semibold.woff2")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.woff2")
         format("woff2"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Semibold.woff")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.woff")
         format("woff"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Semibold.ttf")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.ttf")
         format("truetype");
     font-weight: 600;
     font-style: normal;
@@ -87,13 +89,16 @@
   /* Clash Display - Bold (700) */
   @font-face {
     font-family: "Clash Display";
-    src: url("/assets/fonts/clashDisplay/ClashDisplay-Bold.eot");
+    src: url("../../assets/fonts/clashDisplay/ClashDisplay-Bold.eot");
     src:
-      url("/assets/fonts/clashDisplay/ClashDisplay-Bold.eot?#iefix")
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Bold.eot?#iefix")
         format("embedded-opentype"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Bold.woff2") format("woff2"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Bold.woff") format("woff"),
-      url("/assets/fonts/clashDisplay/ClashDisplay-Bold.ttf") format("truetype");
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Bold.woff2")
+        format("woff2"),
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Bold.woff")
+        format("woff"),
+      url("../../assets/fonts/clashDisplay/ClashDisplay-Bold.ttf")
+        format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -104,7 +109,7 @@
   /* Regular (400) */
   @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/montserrat/Montserrat-Regular.ttf")
+    src: url("../../assets/fonts/montserrat/Montserrat-Regular.ttf")
       format("truetype");
     font-weight: normal; /* or 400 */
     font-style: normal;
@@ -113,7 +118,7 @@
   /* Medium (500) */
   @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/montserrat/Montserrat-Medium.ttf")
+    src: url("../../assets/fonts/montserrat/Montserrat-Medium.ttf")
       format("truetype");
     font-weight: 500;
     font-style: normal;
@@ -122,7 +127,7 @@
   /* Semi Bold (600) */
   @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/montserrat/Montserrat-SemiBold.ttf")
+    src: url("../../assets/fonts/montserrat/Montserrat-SemiBold.ttf")
       format("truetype");
     font-weight: 600;
     font-style: normal;
@@ -131,7 +136,7 @@
   /* Bold (700) */
   @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/montserrat/Montserrat-Bold.ttf")
+    src: url("../../assets/fonts/montserrat/Montserrat-Bold.ttf")
       format("truetype");
     font-weight: 700;
     font-style: normal;
