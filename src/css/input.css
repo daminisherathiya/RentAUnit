@@ -8,7 +8,7 @@
   }
   section,
   footer {
-    @apply py-[4.6875rem] 2xl:py-[6.25rem];
+    @apply py-8 sm:py-[4.6875rem] 2xl:py-[6.25rem];
   }
   section,
   header,
@@ -19,13 +19,13 @@
     @apply font-clash-display text-5xl font-medium text-primary-dark 2xl:text-6xl;
   }
   h2 {
-    @apply font-clash-display text-4xl font-medium text-primary-dark 2xl:text-5xl;
+    @apply font-clash-display text-3xl sm:text-4xl font-medium text-primary-dark 2xl:text-5xl;
   }
   h3 {
     @apply font-clash-display text-2xl font-medium text-primary-dark 2xl:text-3xl;
   }
   h4 {
-    @apply font-clash-display text-xl font-medium text-primary-dark 2xl:text-2xl;
+    @apply font-clash-display sm:text-xl font-medium text-primary-dark 2xl:text-2xl;
   }
   h6 {
     @apply text-lg text-primary-dark;
@@ -144,6 +144,9 @@
 }
 @layer utilities {
   .c-filter-white {
-    @apply brightness-105 contrast-100 hue-rotate-90 invert saturate-50 sepia-0;
+    @apply brightness-[104%] contrast-[106%] hue-rotate-[122deg] invert-[96%] saturate-[17%] sepia-[4%];
+  }
+  .c-filter-secondary {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(97%) saturate(6896%) hue-rotate(334deg) brightness(99%) contrast(108%);
   }
 }

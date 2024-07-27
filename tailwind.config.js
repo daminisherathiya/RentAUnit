@@ -8,12 +8,13 @@ module.exports = {
     },
     fontSize: {
       xxs: ["0.625rem", { lineHeight: "0.75rem" }], // 10px/12px
+      xs: ["0.75rem", { lineHeight: "1rem" }], // 12px/16px
       sm: ["0.875rem", { lineHeight: "1.25rem" }], // 14px/20px
       base: ["1rem", { lineHeight: "1.5rem" }], // 16px/24px
       lg: ["1.125rem", { lineHeight: "1.75rem" }], // 18px/28px
       xl: ["1.25rem", { lineHeight: "1.75rem" }], // 20px/28px
       "2xl": ["1.5rem", { lineHeight: "2rem" }], // 24px/32px
-      "3xl": ["2rem", { lineHeight: "3rem" }], // 32px/48px
+      "3xl": ["2rem", { lineHeight: "2.375rem" }], // 32px/38px
       "4xl": ["2.4375rem", { lineHeight: "3rem" }], // 39px/48px
       "5xl": ["3.25rem", { lineHeight: "3.875rem" }], // 52px/62px
       "6xl": ["3.75rem", { lineHeight: "4.5rem" }], // 60px/72px
@@ -55,6 +56,9 @@ module.exports = {
       elevated: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     },
     extend: {
+      screens: {
+        xs: "393px",
+      },
       container: {
         screens: {
           "2xl": "1696px",
