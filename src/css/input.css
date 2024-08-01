@@ -19,13 +19,13 @@
     @apply font-clash-display text-5xl font-medium text-primary-dark 2xl:text-6xl;
   }
   h2 {
-    @apply font-clash-display text-3xl sm:text-4xl font-medium text-primary-dark 2xl:text-5xl;
+    @apply font-clash-display text-3xl font-medium text-primary-dark sm:text-4xl 2xl:text-5xl;
   }
   h3 {
     @apply font-clash-display text-2xl font-medium text-primary-dark 2xl:text-3xl;
   }
   h4 {
-    @apply font-clash-display sm:text-xl font-medium text-primary-dark 2xl:text-2xl;
+    @apply font-clash-display font-medium text-primary-dark sm:text-xl 2xl:text-2xl;
   }
   h6 {
     @apply text-lg text-primary-dark;
@@ -147,6 +147,13 @@
     @apply brightness-[104%] contrast-[106%] hue-rotate-[122deg] invert-[96%] saturate-[17%] sepia-[4%];
   }
   .c-filter-secondary {
-    filter: brightness(0) saturate(100%) invert(8%) sepia(97%) saturate(6896%) hue-rotate(334deg) brightness(99%) contrast(108%);
+    filter: brightness(0) saturate(100%) invert(8%) sepia(97%) saturate(6896%)
+      hue-rotate(334deg) brightness(99%) contrast(108%);
+  }
+  .swiper-pagination-bullet {
+    @apply h-4 w-4 bg-white;
+  }
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    @apply bottom-10;
   }
 }

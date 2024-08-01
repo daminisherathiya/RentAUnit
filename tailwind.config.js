@@ -45,6 +45,10 @@ module.exports = {
         dark: "#0A1039",
       },
     },
+    backgroundImage: {
+      "red-gradient":
+        "linear-gradient(90deg, rgba(216, 0, 67, 0.1) 0%, rgba(216, 0, 67, 0) 100%);",
+    },
     ringColor: {
       white: "#FFFFFF",
       light: "#D0E3EF",
@@ -83,5 +87,10 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    {
+      pattern: /swiper-.*/,
+    },
+  ],
   plugins: [],
 };
