@@ -8,7 +8,7 @@
   }
   section,
   footer {
-    @apply py-8 sm:py-[4.6875rem] 2xl:py-[6.25rem];
+    @apply py-8 sm:py-[4.6875rem] md:py-16 2xl:py-[6.25rem];
   }
   section,
   header,
@@ -19,13 +19,13 @@
     @apply font-clash-display text-5xl font-medium text-primary-dark 2xl:text-6xl;
   }
   h2 {
-    @apply font-clash-display text-3xl font-medium text-primary-dark sm:text-4xl 2xl:text-5xl;
+    @apply font-clash-display text-3xl font-medium text-primary-dark sm:text-5xl;
   }
   h3 {
-    @apply font-clash-display text-2xl font-medium text-primary-dark 2xl:text-3xl;
+    @apply font-clash-display text-3xl font-medium text-primary-dark 2xl:text-3xl;
   }
   h4 {
-    @apply font-clash-display font-medium text-primary-dark sm:text-xl 2xl:text-2xl;
+    @apply font-clash-display font-medium text-primary-dark text-xl sm:text-2xl;
   }
   h6 {
     @apply text-lg text-primary-dark;

@@ -11,66 +11,54 @@
     <title>Rent a Unit - Portable & Trailer Restrooms</title>
     <link rel="icon" type="image/png" href="../../assets/images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link href="../css/output.css" rel="stylesheet" />
   </head>
   <body>
     <header class="sticky top-0 z-20 bg-white">
       <nav>
-        <div class="px-6 sm:px-12">
+        <div class="px-6 sm:px-[3.125rem] lg:px-12">
           <div
-            class="relative flex flex-wrap items-center justify-between py-4 lg:flex-nowrap lg:py-6"
+            class="relative flex flex-wrap items-center justify-between py-4 sm:py-6 lg:flex-nowrap"
           >
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              class="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 inline-flex items-center justify-center rounded-lg p-2 text-sm focus:outline-none focus:ring-2 lg:hidden"
+              class="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 inline-flex items-center justify-center rounded-lg text-sm focus:outline-none focus:ring-2 lg:hidden"
               aria-controls="navbar-default"
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <svg
-                class="h-5 w-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-            <a class="shrink-0 md:me-10 2xl:me-24" href="#">
               <img
-                class="w-32 2xl:w-[10.5625rem]"
+                class="h-8 w-8"
+                src="../../assets/images/header-menu.svg"
+                alt=""
+              />
+            </button>
+            <a class="shrink-0 lg:me-10 2xl:me-24" href="#">
+              <img
+                class="w-32 sm:w-[10.5625rem]"
                 src="../../assets/images/logo.svg"
                 alt="Rent a Unit company logo"
               />
             </a>
             <div
-              class="flex items-center gap-2 lg:order-4 lg:gap-4 xl:shrink-0"
+              class="flex items-center gap-2 sm:gap-6 lg:order-4 lg:gap-4 xl:shrink-0"
             >
               <a
                 class="hover:c-filter-secondary inline-block xl:hidden"
                 href="tel:+18884428648"
-                ><img
-                  class="w-6 lg:w-8"
-                  src="../../assets/images/call.svg"
-                  alt=""
+                ><img class="w-6" src="../../assets/images/call.svg" alt=""
               /></a>
               <button
                 id="notificationButton"
                 data-dropdown-toggle="notification"
                 data-dropdown-trigger="hover"
-                class="group relative cursor-pointer rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary 2xl:p-3"
+                class="group relative cursor-pointer rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary sm:p-3"
                 type="button"
               >
                 <img
-                  class="group-hover:c-filter-secondary w-5 lg:w-6"
+                  class="group-hover:c-filter-secondary w-5 sm:w-6"
                   src="../../assets/images/invoice.svg"
                   alt=""
                 />
@@ -261,8 +249,8 @@
     </header>
     <main>
       <section class="p-0 pt-4 sm:pt-0">
-        <div class="px-6 sm:px-12">
-          <div class="grid gap-3 md:grid-cols-2 md:gap-4">
+        <div class="px-6 sm:px-[3.75rem] xl:px-12">
+          <div class="grid gap-3 md:gap-4 lg:grid-cols-2">
             <a
               href="https://webarysites.com/"
               target="_blank"
@@ -271,8 +259,12 @@
             >
               <picture>
                 <source
-                  media="(min-width: 640px)"
+                  media="(min-width: 1024px)"
                   srcset="../../assets/images/events-web.jpg"
+                />
+                <source
+                  media="(min-width: 640px)"
+                  srcset="../../assets/images/events-tablet.jpg"
                 />
                 <img
                   src="../../assets/images/events-mobile.jpg"
@@ -280,18 +272,18 @@
                 />
               </picture>
               <div
-                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-10 2xl:p-12"
+                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-12"
               >
                 <div class="flex h-full items-end justify-between md:gap-12">
                   <div>
                     <p
-                      class="font-clash-display font-medium tracking-wider sm:mb-2"
+                      class="mb-1 font-clash-display font-medium tracking-wider lg:mb-2"
                     >
                       RESTROOM RENTALS
                     </p>
                     <h2
                       id="events-title"
-                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-5xl 2xl:text-6xl"
+                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-6xl"
                     >
                       EVENTS
                     </h2>
@@ -303,7 +295,7 @@
                   </div>
                   <div class="h-full shrink-0 sm:h-auto">
                     <div
-                      class="rounded-lg bg-white p-4 transition-all duration-200 ease-linear group-hover:bg-secondary sm:rounded-2xl 2xl:p-6"
+                      class="rounded-lg bg-white p-4 transition-all duration-200 ease-linear group-hover:bg-secondary sm:rounded-2xl sm:p-6"
                     >
                       <img
                         class="group-hover:c-filter-white w-4 sm:w-auto"
@@ -323,8 +315,12 @@
             >
               <picture>
                 <source
-                  media="(min-width: 640px)"
+                  media="(min-width: 1024px)"
                   srcset="../../assets/images/construction-web.jpg"
+                />
+                <source
+                  media="(min-width: 640px)"
+                  srcset="../../assets/images/construction-tablet.jpg"
                 />
                 <img
                   class="rounded-4xl"
@@ -333,18 +329,18 @@
                 />
               </picture>
               <div
-                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-10 2xl:p-12"
+                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-12"
               >
                 <div class="flex h-full items-end justify-between md:gap-12">
                   <div>
                     <p
-                      class="font-clash-display font-medium tracking-wider sm:mb-2"
+                      class="mb-1 font-clash-display font-medium tracking-wider lg:mb-2"
                     >
                       RESTROOM RENTALS
                     </p>
                     <h2
                       id="construction-title"
-                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-5xl 2xl:text-6xl"
+                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-6xl"
                     >
                       CONSTRUCTION
                     </h2>
@@ -356,7 +352,7 @@
                   </div>
                   <div class="h-full shrink-0 sm:h-auto">
                     <div
-                      class="rounded-lg bg-white p-4 transition-all duration-200 ease-linear group-hover:bg-secondary sm:rounded-2xl 2xl:p-6"
+                      class="rounded-lg bg-white p-4 transition-all duration-200 ease-linear group-hover:bg-secondary sm:rounded-2xl sm:p-6"
                     >
                       <img
                         class="group-hover:c-filter-white w-4 sm:w-auto"
@@ -374,14 +370,14 @@
       <section class="p-0">
         <div class="relative flex overflow-x-hidden">
           <div
-            class="animate-marquee whitespace-nowrap pt-8 md:pb-3 md:pt-10 2xl:pt-16"
+            class="animate-marquee whitespace-nowrap pt-8 sm:pt-12 lg:pb-3 2xl:pt-16"
           >
             <span
-              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Restroom Rentals
               <img
-                class="mx-4 inline-block w-8 sm:mx-8 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
@@ -394,14 +390,14 @@
           </div>
 
           <div
-            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 pt-8 md:pt-10 2xl:pt-16"
+            class="absolute top-0 animate-marquee2 whitespace-nowrap pt-8 sm:pt-12 lg:pb-3 2xl:pt-16"
           >
             <span
-              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Restroom Rentals
               <img
-                class="mx-4 inline-block w-8 sm:mx-8 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
@@ -418,61 +414,65 @@
         </div>
       </section>
       <section>
-        <div class="mx-auto px-6 xl:container sm:px-12">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
           <div class="text-center">
             <span
-              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
             >
               why rent a unit
             </span>
-            <h2 class="mb-6 sm:mb-16">
+            <h2 class="mb-6 sm:mb-12 lg:mb-16">
               Everything included, nothing left behind
             </h2>
           </div>
           <div class="grid gap-6 sm:grid-cols-12 sm:gap-8">
-            <div class="sm:col-span-7">
+            <div class="sm:col-span-12 lg:col-span-7">
               <div class="flex flex-col gap-6 sm:gap-8">
                 <article class="overflow-hidden rounded-4xl bg-paper-light">
-                  <div class="grid sm:grid-cols-8">
+                  <div class="grid gap-8 sm:grid-cols-11 lg:grid-cols-8">
                     <div
-                      class="p-6 text-primary-dark sm:col-span-3 sm:px-10 sm:py-14 2xl:my-6 2xl:px-12 2xl:py-16"
+                      class="self-center p-6 text-primary-dark sm:col-span-5 sm:p-12 lg:col-span-3 2xl:my-6 2xl:px-12 2xl:py-16"
                     >
                       <div
-                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2 lg:mb-7"
                       >
                         <img
                           src="../../assets/images/shield-tick.svg"
                           alt="Shield icon representing reliable service"
                         />
                       </div>
-                      <h3 class="mb-3">Reliable Service</h3>
+                      <h3 class="mb-3 text-nowrap lg:mb-4">Reliable Service</h3>
                       <p>
                         Enjoy premium customer support from selection to rental
                         return.
                       </p>
                     </div>
-                    <div class="sm:col-span-5">
-                      <img
-                        src="../../assets/images/construction-site.jpg"
-                        alt=""
-                      />
+                    <div class="sm:col-span-6 lg:col-span-5">
+                      <picture>
+                        <source
+                          media="(min-width: 1024px)"
+                          srcset="../../assets/images/construction-site.jpg"
+                        />
+                        <img
+                          src="../../assets/images/construction-site-tablet.jpg"
+                          alt="Portable restroom unit at a construction site"
+                        />
+                      </picture>
                     </div>
                   </div>
                 </article>
                 <div class="grid gap-6 sm:grid-cols-2 sm:gap-8">
                   <article class="rounded-4xl bg-paper-light">
-                    <div
-                      class="p-6 text-primary-dark sm:px-10 sm:py-14 2xl:px-12 2xl:py-16"
-                    >
+                    <div class="p-6 text-primary-dark sm:p-12 2xl:py-16">
                       <div
-                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                        class="mb-7 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
                       >
                         <img
                           src="../../assets/images/menu.svg"
                           alt="Document icon representing flexible rental terms"
                         />
                       </div>
-                      <h3 class="mb-3">Flexible Terms</h3>
+                      <h3 class="mb-4">Flexible Terms</h3>
                       <p class="pb-12 md:pb-0">
                         A day or a decade, we offer rentals for short-, long-
                         and ultralong-terms
@@ -480,18 +480,16 @@
                     </div>
                   </article>
                   <article class="rounded-4xl bg-paper-light">
-                    <div
-                      class="p-6 text-primary-dark sm:px-10 sm:py-14 2xl:px-12 2xl:py-16"
-                    >
+                    <div class="p-6 text-primary-dark sm:p-12 2xl:py-16">
                       <div
-                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                        class="mb-7 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
                       >
                         <img
                           src="../../assets/images/delivery-truck.svg"
                           alt="Delivery truck icon representing free rapid delivery"
                         />
                       </div>
-                      <h3 class="mb-3">Free Rapid Delivery</h3>
+                      <h3 class="mb-4">Free Rapid Delivery</h3>
                       <p class="mb-3">
                         Get same or next-day delivery, ensuring your restrooms
                         are ready when needed.
@@ -504,13 +502,11 @@
                 </div>
               </div>
             </div>
-            <div class="sm:col-span-5">
+            <div class="col-span-12 lg:col-span-5">
               <article
                 class="flex h-full flex-col justify-between overflow-hidden rounded-4xl bg-paper-light"
               >
-                <div
-                  class="p-6 text-primary-dark sm:px-10 sm:py-14 2xl:px-12 2xl:py-16"
-                >
+                <div class="p-6 text-primary-dark sm:p-12 2xl:py-16">
                   <div
                     class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
                   >
@@ -519,7 +515,7 @@
                       alt="Cleaning tools icon representing maintenance and cleaning"
                     />
                   </div>
-                  <h3 class="mb-3">Maintenance & Cleaning</h3>
+                  <h3 class="mb-4">Maintenance & Cleaning</h3>
                   <p>
                     Enjoy scheduled and on-demand cleanings for spotless,
                     hygienic restrooms. We ensure your units are always in top
@@ -527,7 +523,16 @@
                   </p>
                 </div>
                 <div>
-                  <img src="../../assets/images/portable-toilet.jpg" alt="" />
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="../../assets/images/portable-toilet-web.jpg"
+                    />
+                    <img
+                      src="../../assets/images/portable-toilet-tablet.jpg"
+                      alt="Portable restroom unit at a construction site"
+                    />
+                  </picture>
                 </div>
               </article>
             </div>
@@ -535,11 +540,11 @@
         </div>
       </section>
       <section>
-        <div class="mx-auto px-6 xl:container sm:px-12">
-          <div class="grid gap-28 sm:grid-cols-9">
-            <div class="self-center sm:col-span-4">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
+          <div class="grid gap-12 lg:grid-cols-9 lg:gap-28">
+            <div class="self-center lg:col-span-4">
               <span
-                class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+                class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
               >
                 about us
               </span>
@@ -549,7 +554,7 @@
                 src="../../assets/images/event-facilities.png"
                 alt="Event facilities with portable restrooms"
               />
-              <p class="mb-6 sm:mb-12">
+              <p class="mb-6 sm:mb-8 lg:mb-12">
                 Rent a Unit is the leading provider of portable and trailer
                 toilet rentals across the Tri-State area. All our rental units
                 are self-owned, delivered by our own fleet, maintained by our
@@ -575,8 +580,8 @@
                 </span>
               </a>
             </div>
-            <div class="hidden sm:col-span-5 sm:block">
-              <div class="sm:pl-14">
+            <div class="hidden sm:block lg:col-span-5">
+              <div class="lg:pl-14">
                 <img
                   src="../../assets/images/event-facilities.png"
                   alt="Event facilities with portable restrooms"
@@ -589,251 +594,28 @@
       <section
         class="bg-paper-light bg-[url('../../assets/images/client-review-bg.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div class="mx-auto px-3 xl:container sm:px-12">
+        <div class="mx-auto px-3 xl:container sm:px-[3.75rem] xl:px-12">
           <div class="text-center">
             <span
-              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
             >
               testimonials
             </span>
-            <h2 class="mb-6 px-6 sm:mb-16 sm:px-0" id="testimonial-heading">
+            <h2
+              class="mb-6 px-6 sm:mb-12 sm:px-0 lg:mb-16"
+              id="testimonial-heading"
+            >
               Hear it from our clients
             </h2>
           </div>
-
           <div
-            id="controls-carousel"
-            class="relative w-full text-center md:text-start"
-            data-carousel="static"
+            class="swiper client-review-swiper grid grid-cols-12 gap-x-6 gap-y-12 lg:gap-8"
           >
-            <!-- Carousel wrapper -->
             <div
-              class="relative h-[34.375rem] overflow-hidden rounded-lg md:h-[27.5825rem] 2xl:h-[34.375rem]"
-            >
-              <!-- Item 1 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="absolute px-3 md:mx-2 md:px-32">
-                  <div
-                    class="grid overflow-hidden rounded-4xl bg-white md:grid-cols-11 md:gap-14"
-                  >
-                    <div
-                      class="self-center p-6 pb-4 md:col-span-5 md:py-8 md:pl-12 2xl:py-12 2xl:pl-16"
-                    >
-                      <div
-                        class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]"
-                      >
-                        <img
-                          src="../../assets/images/client-profile-pic1.png"
-                          alt="Photo of Brady Mills, Construction Foreman"
-                        />
-                      </div>
-                      <h3 class="mb-2 text-start">Brady Mills</h3>
-                      <div class="mb-4 flex items-center gap-3 md:mb-6">
-                        <span
-                          class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
-                          >Construction</span
-                        >
-                        <time datetime="2024-01-09" class="text-sm md:text-base"
-                          >Jan 9, 2024</time
-                        >
-                      </div>
-                      <p class="text-start text-sm md:text-base">
-                        I’m a foreman, so I know that keeping my guys at the job
-                        site makes a bottom line difference. I’ve calculated
-                        that Rent a Unit’s portable bathrooms help our company
-                        save approximately $19,040 each year, money we wouldn’t
-                        have saved with any other company, considering how many
-                        toilets we need.
-                      </p>
-                    </div>
-                    <div class="md:col-span-6">
-                      <picture>
-                        <source
-                          media="(min-width: 640px)"
-                          srcset="
-                            ../../assets/images/industrial-construction.jpg
-                          "
-                        />
-                        <img
-                          src="../../assets/images/industrial-construction-mobile.jpg"
-                          alt="Construction site with cranes and building structures"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item 2 -->
-              <div
-                class="hidden duration-700 ease-in-out"
-                data-carousel-item="active"
-              >
-                <div class="absolute px-3 md:mx-2 md:px-32">
-                  <div
-                    class="grid overflow-hidden rounded-4xl bg-white md:grid-cols-11 md:gap-14"
-                  >
-                    <div
-                      class="self-center p-6 pb-4 md:col-span-5 md:py-8 md:pl-12 2xl:py-12 2xl:pl-16"
-                    >
-                      <div
-                        class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]"
-                      >
-                        <img
-                          src="../../assets/images/client-profile-pic1.png"
-                          alt="Photo of Brady Mills, Construction Foreman"
-                        />
-                      </div>
-                      <h3 class="mb-2 text-start">Brady Mills</h3>
-                      <div class="mb-4 flex items-center gap-3 md:mb-6">
-                        <span
-                          class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
-                          >Construction</span
-                        >
-                        <time datetime="2024-01-09" class="text-sm md:text-base"
-                          >Jan 9, 2024</time
-                        >
-                      </div>
-                      <p class="text-start text-sm md:text-base">
-                        I’m a foreman, so I know that keeping my guys at the job
-                        site makes a bottom line difference. I’ve calculated
-                        that Rent a Unit’s portable bathrooms help our company
-                        save approximately $19,040 each year, money we wouldn’t
-                        have saved with any other company, considering how many
-                        toilets we need.
-                      </p>
-                    </div>
-                    <div class="md:col-span-6">
-                      <picture>
-                        <source
-                          media="(min-width: 640px)"
-                          srcset="
-                            ../../assets/images/industrial-construction.jpg
-                          "
-                        />
-                        <img
-                          src="../../assets/images/industrial-construction-mobile.jpg"
-                          alt="Construction site with cranes and building structures"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item 3 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="absolute px-3 md:mx-2 md:px-32">
-                  <div
-                    class="grid overflow-hidden rounded-4xl bg-white md:grid-cols-11 md:gap-14"
-                  >
-                    <div
-                      class="self-center p-6 pb-4 md:col-span-5 md:py-8 md:pl-12 2xl:py-12 2xl:pl-16"
-                    >
-                      <div
-                        class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]"
-                      >
-                        <img
-                          src="../../assets/images/client-profile-pic1.png"
-                          alt="Photo of Brady Mills, Construction Foreman"
-                        />
-                      </div>
-                      <h3 class="mb-2 text-start">Brady Mills</h3>
-                      <div class="mb-4 flex items-center gap-3 md:mb-6">
-                        <span
-                          class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
-                          >Construction</span
-                        >
-                        <time datetime="2024-01-09" class="text-sm md:text-base"
-                          >Jan 9, 2024</time
-                        >
-                      </div>
-                      <p class="text-start text-sm md:text-base">
-                        I’m a foreman, so I know that keeping my guys at the job
-                        site makes a bottom line difference. I’ve calculated
-                        that Rent a Unit’s portable bathrooms help our company
-                        save approximately $19,040 each year, money we wouldn’t
-                        have saved with any other company, considering how many
-                        toilets we need.
-                      </p>
-                    </div>
-                    <div class="md:col-span-6">
-                      <picture>
-                        <source
-                          media="(min-width: 640px)"
-                          srcset="
-                            ../../assets/images/industrial-construction.jpg
-                          "
-                        />
-                        <img
-                          src="../../assets/images/industrial-construction-mobile.jpg"
-                          alt="Construction site with cranes and building structures"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item 4 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="absolute px-3 md:mx-2 md:px-32">
-                  <div
-                    class="grid overflow-hidden rounded-4xl bg-white md:grid-cols-11 md:gap-14"
-                  >
-                    <div
-                      class="self-center p-6 pb-4 md:col-span-5 md:py-8 md:pl-12 2xl:py-12 2xl:pl-16"
-                    >
-                      <div
-                        class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]"
-                      >
-                        <img
-                          src="../../assets/images/client-profile-pic1.png"
-                          alt="Photo of Brady Mills, Construction Foreman"
-                        />
-                      </div>
-                      <h3 class="mb-2 text-start">Brady Mills</h3>
-                      <div class="mb-4 flex items-center gap-3 md:mb-6">
-                        <span
-                          class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
-                          >Construction</span
-                        >
-                        <time datetime="2024-01-09" class="text-sm md:text-base"
-                          >Jan 9, 2024</time
-                        >
-                      </div>
-                      <p class="text-start text-sm md:text-base">
-                        I’m a foreman, so I know that keeping my guys at the job
-                        site makes a bottom line difference. I’ve calculated
-                        that Rent a Unit’s portable bathrooms help our company
-                        save approximately $19,040 each year, money we wouldn’t
-                        have saved with any other company, considering how many
-                        toilets we need.
-                      </p>
-                    </div>
-                    <div class="md:col-span-6">
-                      <picture>
-                        <source
-                          media="(min-width: 640px)"
-                          srcset="
-                            ../../assets/images/industrial-construction.jpg
-                          "
-                        />
-                        <img
-                          src="../../assets/images/industrial-construction-mobile.jpg"
-                          alt="Construction site with cranes and building structures"
-                        />
-                      </picture>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slider controls -->
-            <button
-              type="button"
-              class="group start-0 top-0 z-30 h-full cursor-pointer items-center justify-center bg-paper-light pr-3 pt-6 focus:outline-none md:absolute md:flex md:pr-4 md:pt-0"
-              data-carousel-prev
+              class="swiper-button-prev group static left-0 top-0 order-2 col-span-6 row-start-2 m-0 h-full w-auto after:hidden lg:absolute lg:order-1 lg:col-span-1 lg:row-start-1 lg:bg-paper-light lg:pl-1 lg:pr-14"
             >
               <span
-                class="group inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
+                class="ml-auto inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
               >
                 <img
                   class="group-hover:c-filter-white w-7 2xl:w-8"
@@ -842,14 +624,172 @@
                 />
                 <span class="sr-only">Previous</span>
               </span>
-            </button>
-            <button
-              type="button"
-              class="group end-0 top-0 z-30 h-full cursor-pointer items-center justify-center bg-paper-light pl-3 pt-6 focus:outline-none md:absolute md:flex md:pl-4 md:pt-0"
-              data-carousel-next
+            </div>
+            <div
+              class="swiper-wrapper col-span-12 row-start-1 lg:order-2 lg:col-span-10 lg:row-start-2 lg:px-32"
+            >
+              <div class="swiper-slide">
+                <div
+                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-14"
+                >
+                  <div
+                    class="self-center p-6 pb-4 sm:p-12 sm:pb-8 md:col-span-5 lg:py-8 lg:pb-0 lg:pl-12 lg:pr-0 2xl:py-12 2xl:pl-16"
+                  >
+                    <div class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]">
+                      <img
+                        src="../../assets/images/client-profile-pic1.png"
+                        alt="Photo of Brady Mills, Construction Foreman"
+                      />
+                    </div>
+                    <h3 class="mb-3 text-start">Brady Mills</h3>
+                    <div class="mb-4 flex items-center gap-3 lg:mb-6">
+                      <span
+                        class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
+                        >Construction</span
+                      >
+                      <time datetime="2024-01-09" class="text-sm md:text-base"
+                        >Jan 9, 2024</time
+                      >
+                    </div>
+                    <p class="text-start text-sm md:text-base">
+                      I’m a foreman, so I know that keeping my guys at the job
+                      site makes a bottom line difference. I’ve calculated that
+                      Rent a Unit’s portable bathrooms help our company save
+                      approximately $19,040 each year, money we wouldn’t have
+                      saved with any other company, considering how many toilets
+                      we need.
+                    </p>
+                  </div>
+                  <div class="md:col-span-6">
+                    <picture>
+                      <source
+                        media="(min-width: 1024px)"
+                        srcset="../../assets/images/industrial-construction.jpg"
+                      />
+                      <source
+                        media="(min-width: 640px)"
+                        srcset="
+                          ../../assets/images/industrial-construction-tablet.jpg
+                        "
+                      />
+                      <img
+                        src="../../assets/images/industrial-construction-mobile.jpg"
+                        alt="Construction site with cranes and building structures"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-14"
+                >
+                  <div
+                    class="self-center p-6 pb-4 sm:p-12 sm:pb-8 md:col-span-5 lg:py-8 lg:pb-0 lg:pl-12 lg:pr-0 2xl:py-12 2xl:pl-16"
+                  >
+                    <div class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]">
+                      <img
+                        src="../../assets/images/client-profile-pic1.png"
+                        alt="Photo of Brady Mills, Construction Foreman"
+                      />
+                    </div>
+                    <h3 class="mb-3 text-start">Brady Mills</h3>
+                    <div class="mb-4 flex items-center gap-3 lg:mb-6">
+                      <span
+                        class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
+                        >Construction</span
+                      >
+                      <time datetime="2024-01-09" class="text-sm md:text-base"
+                        >Jan 9, 2024</time
+                      >
+                    </div>
+                    <p class="text-start text-sm md:text-base">
+                      I’m a foreman, so I know that keeping my guys at the job
+                      site makes a bottom line difference. I’ve calculated that
+                      Rent a Unit’s portable bathrooms help our company save
+                      approximately $19,040 each year, money we wouldn’t have
+                      saved with any other company, considering how many toilets
+                      we need.
+                    </p>
+                  </div>
+                  <div class="md:col-span-6">
+                    <picture>
+                      <source
+                        media="(min-width: 1024px)"
+                        srcset="../../assets/images/industrial-construction.jpg"
+                      />
+                      <source
+                        media="(min-width: 640px)"
+                        srcset="
+                          ../../assets/images/industrial-construction-tablet.jpg
+                        "
+                      />
+                      <img
+                        src="../../assets/images/industrial-construction-mobile.jpg"
+                        alt="Construction site with cranes and building structures"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-14"
+                >
+                  <div
+                    class="self-center p-6 pb-4 sm:p-12 sm:pb-8 md:col-span-5 lg:py-8 lg:pb-0 lg:pl-12 lg:pr-0 2xl:py-12 2xl:pl-16"
+                  >
+                    <div class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]">
+                      <img
+                        src="../../assets/images/client-profile-pic1.png"
+                        alt="Photo of Brady Mills, Construction Foreman"
+                      />
+                    </div>
+                    <h3 class="mb-3 text-start">Brady Mills</h3>
+                    <div class="mb-4 flex items-center gap-3 lg:mb-6">
+                      <span
+                        class="rounded-lg bg-paper-dark px-3 py-1 text-sm md:text-base"
+                        >Construction</span
+                      >
+                      <time datetime="2024-01-09" class="text-sm md:text-base"
+                        >Jan 9, 2024</time
+                      >
+                    </div>
+                    <p class="text-start text-sm md:text-base">
+                      I’m a foreman, so I know that keeping my guys at the job
+                      site makes a bottom line difference. I’ve calculated that
+                      Rent a Unit’s portable bathrooms help our company save
+                      approximately $19,040 each year, money we wouldn’t have
+                      saved with any other company, considering how many toilets
+                      we need.
+                    </p>
+                  </div>
+                  <div class="md:col-span-6">
+                    <picture>
+                      <source
+                        media="(min-width: 1024px)"
+                        srcset="../../assets/images/industrial-construction.jpg"
+                      />
+                      <source
+                        media="(min-width: 640px)"
+                        srcset="
+                          ../../assets/images/industrial-construction-tablet.jpg
+                        "
+                      />
+                      <img
+                        src="../../assets/images/industrial-construction-mobile.jpg"
+                        alt="Construction site with cranes and building structures"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-next group static right-0 top-0 col-span-6 m-0 h-full w-auto after:hidden lg:absolute lg:col-span-1 lg:bg-paper-light lg:pl-14 lg:pr-1"
             >
               <span
-                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
+                class="mr-auto inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
               >
                 <img
                   class="group-hover:c-filter-white w-7 2xl:w-8"
@@ -858,19 +798,19 @@
                 />
                 <span class="sr-only">Next</span>
               </span>
-            </button>
+            </div>
           </div>
         </div>
       </section>
       <section class="p-0">
         <div class="relative flex overflow-x-hidden">
-          <div class="animate-marquee whitespace-nowrap sm:pb-3 sm:pt-4">
+          <div class="animate-marquee whitespace-nowrap lg:pb-3 lg:pt-4">
             <span
-              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Restroom Rentals
               <img
-                class="mx-4 inline-block w-8 sm:mx-8 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
@@ -883,14 +823,14 @@
           </div>
 
           <div
-            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 pt-4"
+            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 lg:pt-4"
           >
             <span
-              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Restroom Rentals
               <img
-                class="mx-4 inline-block w-8 sm:mx-8 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
@@ -907,10 +847,10 @@
         </div>
       </section>
       <section>
-        <div class="mx-auto xl:container sm:px-12">
-          <div class="mb-6 px-6 text-center sm:mb-16 sm:px-0">
+        <div class="mx-auto xl:container sm:px-[3.75rem] xl:px-12">
+          <div class="mb-6 px-6 text-center sm:mb-12 sm:px-0 lg:mb-16">
             <span
-              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
             >
               contact us
             </span>
@@ -926,10 +866,10 @@
               >.
             </p>
           </div>
-          <div class="grid gap-6 sm:grid-cols-12 sm:gap-8">
-            <div class="self-stretch sm:col-span-4">
+          <div class="grid gap-6 sm:gap-8 lg:grid-cols-12">
+            <div class="self-stretch lg:col-span-4">
               <div
-                class="h-full border-paper text-center sm:rounded-4xl sm:border-2 sm:p-12 sm:text-start 2xl:px-16 2xl:pt-16"
+                class="h-full border-paper text-center sm:rounded-4xl sm:border-2 sm:p-12 sm:text-start 2xl:p-16"
               >
                 <div class="py-4 sm:pb-8 sm:pt-0">
                   <div
@@ -941,7 +881,7 @@
                       alt="Email icon"
                     />
                     <h4
-                      class="uppercase leading-6 text-primary-dark sm:leading-9"
+                      class="uppercase leading-6 text-primary-dark sm:leading-7"
                     >
                       Email
                     </h4>
@@ -962,7 +902,7 @@
                       alt="Phone icon"
                     />
                     <h4
-                      class="uppercase leading-6 text-primary-dark sm:leading-9"
+                      class="uppercase leading-6 text-primary-dark sm:leading-7"
                     >
                       phone
                     </h4>
@@ -973,9 +913,7 @@
                       class="mb-2 block md:mb-0 md:inline-block"
                       >1-888-44-A-UNIT (442-8648)</a
                     >
-                    <span
-                      class="mx-4 hidden border-r border-primary sm:inline-block"
-                    >
+                    <span class="mx-4 hidden border-r border-primary sm:inline">
                     </span>
                     <a href="tel:+17186431313" class="inline-block"
                       >718-643-1313</a
@@ -992,7 +930,7 @@
                       alt="Fax icon"
                     />
                     <h4
-                      class="uppercase leading-6 text-primary-dark sm:leading-9"
+                      class="uppercase leading-6 text-primary-dark sm:leading-7"
                     >
                       Fax
                     </h4>
@@ -1007,7 +945,7 @@
                 </div>
               </div>
             </div>
-            <div class="self-stretch sm:col-span-8">
+            <div class="self-stretch lg:col-span-8">
               <div class="h-full rounded-4xl bg-paper p-6 sm:p-12 2xl:p-16">
                 <form>
                   <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
@@ -1165,9 +1103,11 @@
     <footer
       class="bg-primary bg-[url('../../assets/images/footer-bg.png')] bg-cover bg-center bg-no-repeat pb-0 text-white"
     >
-      <div class="mx-auto px-6 xl:container sm:px-12">
-        <div class="justify-between pb-6 sm:flex sm:pb-14">
-          <div class="sm:w-[31.0625rem]">
+      <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
+        <div
+          class="pb-6 sm:grid sm:grid-cols-6 sm:pb-14 lg:flex lg:justify-between"
+        >
+          <div class="sm:col-span-3 lg:w-[31.0625rem]">
             <a href="/">
               <img
                 src="../../assets/images/footer-logo.svg"
@@ -1179,11 +1119,11 @@
               our dedicated team. Our units, our trucks, our crews, our promise.
             </p>
           </div>
-          <nav class="mt-8 flex gap-20 sm:mt-0 sm:gap-20">
+          <nav
+            class="ml-auto mt-8 flex gap-20 self-center sm:col-span-3 sm:mt-0 sm:gap-12 lg:ml-0 lg:gap-20"
+          >
             <div class="pr-3">
-              <h6
-                class="mb-4 text-base uppercase leading-5 tracking-wider text-white"
-              >
+              <h6 class="mb-4 text-base uppercase leading-5 text-white">
                 Services
               </h6>
               <ul class="space-y-1">
@@ -1211,9 +1151,7 @@
               </ul>
             </div>
             <div>
-              <h6
-                class="mb-4 text-base uppercase leading-5 tracking-wider text-white"
-              >
+              <h6 class="mb-4 text-base uppercase leading-5 text-white">
                 Info
               </h6>
               <ul class="space-y-1">
@@ -1248,6 +1186,25 @@
       </div>
     </footer>
     <script src="../js/flowbite.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/index.js"></script>
+    <script>
+      const clientReviewSwiper = new Swiper(".client-review-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 25,
+        // centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 1.2,
+            spaceBetween: 32,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
