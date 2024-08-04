@@ -30,7 +30,7 @@
             >
               <span class="sr-only">Open main menu</span>
               <img
-                class="h-8 w-8"
+                class="h-6 w-6 sm:h-8 sm:w-8"
                 src="../../assets/images/header-menu.svg"
                 alt=""
               />
@@ -43,12 +43,15 @@
               />
             </a>
             <div
-              class="flex items-center gap-2 sm:gap-6 lg:order-4 lg:gap-4 xl:shrink-0"
+              class="flex items-center gap-3 lg:order-4 lg:gap-6 xl:shrink-0"
             >
               <a
                 class="hover:c-filter-secondary inline-block xl:hidden"
                 href="tel:+18884428648"
-                ><img class="w-6" src="../../assets/images/call.svg" alt=""
+                ><img
+                  class="w-5 sm:w-6"
+                  src="../../assets/images/call.svg"
+                  alt=""
               /></a>
               <button
                 id="notificationButton"
@@ -272,7 +275,7 @@
                 />
               </picture>
               <div
-                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-12"
+                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-6 lg:p-8 2xl:p-12"
               >
                 <div class="flex h-full items-end justify-between md:gap-12">
                   <div>
@@ -283,7 +286,7 @@
                     </p>
                     <h2
                       id="events-title"
-                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-6xl"
+                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-4xl md:text-5xl 2xl:text-6xl"
                     >
                       EVENTS
                     </h2>
@@ -329,7 +332,7 @@
                 />
               </picture>
               <div
-                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-12"
+                class="absolute bottom-0 h-full w-full p-4 text-white sm:p-6 lg:p-8 2xl:p-12"
               >
                 <div class="flex h-full items-end justify-between md:gap-12">
                   <div>
@@ -340,7 +343,7 @@
                     </p>
                     <h2
                       id="construction-title"
-                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-6xl"
+                      class="text-3xl -tracking-[0.0625rem] text-white sm:mb-3 sm:text-4xl md:text-5xl 2xl:text-6xl"
                     >
                       CONSTRUCTION
                     </h2>
@@ -425,35 +428,40 @@
               Everything included, nothing left behind
             </h2>
           </div>
-          <div class="grid gap-6 sm:grid-cols-12 sm:gap-8">
-            <div class="sm:col-span-12 lg:col-span-7">
+          <div class="grid gap-y-6 sm:gap-8 xl:grid-cols-12">
+            <div class="xl:col-span-7">
               <div class="flex flex-col gap-6 sm:gap-8">
                 <article class="overflow-hidden rounded-4xl bg-paper-light">
-                  <div class="grid gap-8 sm:grid-cols-11 lg:grid-cols-8">
+                  <div
+                    class="md:grid md:grid-cols-11 md:gap-8 lg:grid-cols-8 lg:gap-0 2xl:gap-8"
+                  >
                     <div
-                      class="self-center p-6 text-primary-dark sm:col-span-5 sm:p-12 lg:col-span-3 2xl:my-6 2xl:px-12 2xl:py-16"
+                      class="self-center p-6 text-primary-dark sm:p-8 md:col-span-5 md:p-12 lg:col-span-4 2xl:col-span-3 2xl:my-6 2xl:px-12 2xl:py-16"
                     >
                       <div
-                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2 lg:mb-7"
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2 md:mb-7"
                       >
                         <img
                           src="../../assets/images/shield-tick.svg"
                           alt="Shield icon representing reliable service"
                         />
                       </div>
-                      <h3 class="mb-3 text-nowrap lg:mb-4">Reliable Service</h3>
+                      <h3 class="mb-3 text-nowrap md:mb-4">Reliable Service</h3>
                       <p>
                         Enjoy premium customer support from selection to rental
                         return.
                       </p>
                     </div>
-                    <div class="sm:col-span-6 lg:col-span-5">
+                    <div
+                      class="hidden md:col-span-6 md:block lg:col-span-4 2xl:col-span-5"
+                    >
                       <picture>
                         <source
                           media="(min-width: 1024px)"
                           srcset="../../assets/images/construction-site.jpg"
                         />
                         <img
+                          class="h-full"
                           src="../../assets/images/construction-site-tablet.jpg"
                           alt="Portable restroom unit at a construction site"
                         />
@@ -461,35 +469,35 @@
                     </div>
                   </div>
                 </article>
-                <div class="grid gap-6 sm:grid-cols-2 sm:gap-8">
+                <div class="grid gap-6 sm:gap-8 md:grid-cols-2">
                   <article class="rounded-4xl bg-paper-light">
-                    <div class="p-6 text-primary-dark sm:p-12 2xl:py-16">
+                    <div class="p-6 text-primary-dark sm:p-8 md:p-12 2xl:py-16">
                       <div
-                        class="mb-7 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2 md:mb-7"
                       >
                         <img
                           src="../../assets/images/menu.svg"
                           alt="Document icon representing flexible rental terms"
                         />
                       </div>
-                      <h3 class="mb-4">Flexible Terms</h3>
-                      <p class="pb-12 md:pb-0">
+                      <h3 class="mb-3 md:mb-4">Flexible Terms</h3>
+                      <p class="md:pb-12 lg:pb-0">
                         A day or a decade, we offer rentals for short-, long-
                         and ultralong-terms
                       </p>
                     </div>
                   </article>
                   <article class="rounded-4xl bg-paper-light">
-                    <div class="p-6 text-primary-dark sm:p-12 2xl:py-16">
+                    <div class="p-6 text-primary-dark sm:p-8 md:p-12 2xl:py-16">
                       <div
-                        class="mb-7 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
+                        class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2 md:mb-7"
                       >
                         <img
                           src="../../assets/images/delivery-truck.svg"
                           alt="Delivery truck icon representing free rapid delivery"
                         />
                       </div>
-                      <h3 class="mb-4">Free Rapid Delivery</h3>
+                      <h3 class="mb-3 md:mb-4">Free Rapid Delivery</h3>
                       <p class="mb-3">
                         Get same or next-day delivery, ensuring your restrooms
                         are ready when needed.
@@ -502,11 +510,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-12 lg:col-span-5">
+            <div class="xl:col-span-5">
               <article
-                class="flex h-full flex-col justify-between overflow-hidden rounded-4xl bg-paper-light"
+                class="justify-between overflow-hidden rounded-4xl bg-paper-light lg:grid lg:grid-cols-11 lg:gap-8 xl:gap-0 xl:flex xl:h-full xl:flex-col"
               >
-                <div class="p-6 text-primary-dark sm:p-12 2xl:py-16">
+                <div
+                  class="p-6 text-primary-dark sm:p-8 md:p-12 lg:col-span-6 2xl:py-16"
+                >
                   <div
                     class="mb-6 flex h-[3.75rem] w-[3.75rem] items-center justify-center rounded-xl bg-secondary p-2"
                   >
@@ -515,20 +525,21 @@
                       alt="Cleaning tools icon representing maintenance and cleaning"
                     />
                   </div>
-                  <h3 class="mb-4">Maintenance & Cleaning</h3>
+                  <h3 class="mb-3 md:mb-4">Maintenance & Cleaning</h3>
                   <p>
                     Enjoy scheduled and on-demand cleanings for spotless,
                     hygienic restrooms. We ensure your units are always in top
                     condition with prompt and thorough maintenance.
                   </p>
                 </div>
-                <div>
+                <div class="hidden md:block lg:col-span-5">
                   <picture>
                     <source
                       media="(min-width: 1024px)"
                       srcset="../../assets/images/portable-toilet-web.jpg"
                     />
                     <img
+                      class="h-full"
                       src="../../assets/images/portable-toilet-tablet.jpg"
                       alt="Portable restroom unit at a construction site"
                     />
@@ -541,8 +552,8 @@
       </section>
       <section>
         <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
-          <div class="grid gap-12 lg:grid-cols-9 lg:gap-28">
-            <div class="self-center lg:col-span-4">
+          <div class="grid gap-12 lg:grid-cols-9 xl:gap-28">
+            <div class="self-center lg:col-span-5 xl:col-span-4">
               <span
                 class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
               >
@@ -580,7 +591,9 @@
                 </span>
               </a>
             </div>
-            <div class="hidden sm:block lg:col-span-5">
+            <div
+              class="hidden self-center sm:block lg:col-span-4 xl:col-span-5"
+            >
               <div class="lg:pl-14">
                 <img
                   src="../../assets/images/event-facilities.png"
@@ -594,7 +607,7 @@
       <section
         class="bg-paper-light bg-[url('../../assets/images/client-review-bg.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div class="mx-auto px-3 xl:container sm:px-[3.75rem] xl:px-12">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
           <div class="text-center">
             <span
               class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
@@ -609,10 +622,10 @@
             </h2>
           </div>
           <div
-            class="swiper client-review-swiper grid grid-cols-12 gap-x-6 gap-y-12 lg:gap-8"
+            class="swiper client-review-swiper grid grid-cols-12 gap-6 sm:gap-x-6 sm:gap-y-12 xl:gap-8 2xl:gap-0"
           >
             <div
-              class="swiper-button-prev group static left-0 top-0 order-2 col-span-6 row-start-2 m-0 h-full w-auto after:hidden lg:absolute lg:order-1 lg:col-span-1 lg:row-start-1 lg:bg-paper-light lg:pl-1 lg:pr-14"
+              class="swiper-button-prev group static left-0 top-0 order-2 col-span-6 row-start-2 m-0 h-full w-auto after:hidden xl:absolute xl:order-1 xl:col-span-1 xl:row-start-1 xl:bg-paper-light xl:pl-1 xl:pr-7 2xl:pr-14"
             >
               <span
                 class="ml-auto inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
@@ -626,14 +639,14 @@
               </span>
             </div>
             <div
-              class="swiper-wrapper col-span-12 row-start-1 lg:order-2 lg:col-span-10 lg:row-start-2 lg:px-32"
+              class="swiper-wrapper col-span-12 row-start-1 xl:order-2 xl:col-span-10 xl:row-start-2 xl:px-24 2xl:px-32"
             >
               <div class="swiper-slide">
                 <div
-                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-14"
+                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-7 xl:gap-14"
                 >
                   <div
-                    class="self-center p-6 pb-4 sm:p-12 sm:pb-8 md:col-span-5 lg:py-8 lg:pb-0 lg:pl-12 lg:pr-0 2xl:py-12 2xl:pl-16"
+                    class="self-center p-6 pb-4 sm:p-8 md:p-12 md:pb-8 lg:col-span-6 lg:py-8 lg:pl-12 lg:pr-0 xl:col-span-5 2xl:py-12 2xl:pl-16"
                   >
                     <div class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]">
                       <img
@@ -660,7 +673,7 @@
                       we need.
                     </p>
                   </div>
-                  <div class="md:col-span-6">
+                  <div class="lg:col-span-5 xl:col-span-6">
                     <picture>
                       <source
                         media="(min-width: 1024px)"
@@ -673,6 +686,7 @@
                         "
                       />
                       <img
+                        class="h-full"
                         src="../../assets/images/industrial-construction-mobile.jpg"
                         alt="Construction site with cranes and building structures"
                       />
@@ -682,10 +696,10 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-14"
+                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-7 xl:gap-14"
                 >
                   <div
-                    class="self-center p-6 pb-4 sm:p-12 sm:pb-8 md:col-span-5 lg:py-8 lg:pb-0 lg:pl-12 lg:pr-0 2xl:py-12 2xl:pl-16"
+                    class="self-center p-6 pb-4 sm:p-8 md:p-12 md:pb-8 lg:col-span-6 lg:py-8 lg:pl-12 lg:pr-0 xl:col-span-5 2xl:py-12 2xl:pl-16"
                   >
                     <div class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]">
                       <img
@@ -712,7 +726,7 @@
                       we need.
                     </p>
                   </div>
-                  <div class="md:col-span-6">
+                  <div class="lg:col-span-5 xl:col-span-6">
                     <picture>
                       <source
                         media="(min-width: 1024px)"
@@ -725,6 +739,7 @@
                         "
                       />
                       <img
+                        class="h-full"
                         src="../../assets/images/industrial-construction-mobile.jpg"
                         alt="Construction site with cranes and building structures"
                       />
@@ -734,10 +749,10 @@
               </div>
               <div class="swiper-slide">
                 <div
-                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-14"
+                  class="grid overflow-hidden rounded-4xl bg-white lg:grid-cols-11 lg:gap-7 xl:gap-14"
                 >
                   <div
-                    class="self-center p-6 pb-4 sm:p-12 sm:pb-8 md:col-span-5 lg:py-8 lg:pb-0 lg:pl-12 lg:pr-0 2xl:py-12 2xl:pl-16"
+                    class="self-center p-6 pb-4 sm:p-8 md:p-12 md:pb-8 lg:col-span-6 lg:py-8 lg:pl-12 lg:pr-0 xl:col-span-5 2xl:py-12 2xl:pl-16"
                   >
                     <div class="mb-4 w-12 rounded-full md:mb-6 md:w-[5.375rem]">
                       <img
@@ -764,7 +779,7 @@
                       we need.
                     </p>
                   </div>
-                  <div class="md:col-span-6">
+                  <div class="lg:col-span-5 xl:col-span-6">
                     <picture>
                       <source
                         media="(min-width: 1024px)"
@@ -777,6 +792,7 @@
                         "
                       />
                       <img
+                        class="h-full"
                         src="../../assets/images/industrial-construction-mobile.jpg"
                         alt="Construction site with cranes and building structures"
                       />
@@ -786,7 +802,7 @@
               </div>
             </div>
             <div
-              class="swiper-button-next group static right-0 top-0 col-span-6 m-0 h-full w-auto after:hidden lg:absolute lg:col-span-1 lg:bg-paper-light lg:pl-14 lg:pr-1"
+              class="swiper-button-next group static right-0 top-0 col-span-6 m-0 h-full w-auto after:hidden xl:absolute xl:col-span-1 xl:bg-paper-light xl:pl-7 xl:pr-1 2xl:pl-14"
             >
               <span
                 class="mr-auto inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
@@ -823,7 +839,7 @@
           </div>
 
           <div
-            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 lg:pt-4"
+            class="absolute top-0 animate-marquee2 whitespace-nowrap lg:pb-3 lg:pt-4"
           >
             <span
               class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
@@ -869,7 +885,7 @@
           <div class="grid gap-6 sm:gap-8 lg:grid-cols-12">
             <div class="self-stretch lg:col-span-4">
               <div
-                class="h-full border-paper text-center sm:rounded-4xl sm:border-2 sm:p-12 sm:text-start 2xl:p-16"
+                class="h-full border-paper text-center sm:rounded-4xl sm:border-2 sm:p-8 sm:text-start md:p-12 lg:p-8 xl:p-12 2xl:p-16"
               >
                 <div class="py-4 sm:pb-8 sm:pt-0">
                   <div
@@ -946,7 +962,9 @@
               </div>
             </div>
             <div class="self-stretch lg:col-span-8">
-              <div class="h-full rounded-4xl bg-paper p-6 sm:p-12 2xl:p-16">
+              <div
+                class="h-full rounded-4xl bg-paper p-6 sm:p-8 md:p-12 lg:p-8 xl:p-12 2xl:p-16"
+              >
                 <form>
                   <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
                     <div>
@@ -1105,7 +1123,7 @@
     >
       <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
         <div
-          class="pb-6 sm:grid sm:grid-cols-6 sm:pb-14 lg:flex lg:justify-between"
+          class="pb-6 sm:grid sm:pb-12 md:grid-cols-6 lg:flex lg:justify-between lg:pb-14"
         >
           <div class="sm:col-span-3 lg:w-[31.0625rem]">
             <a href="/">
@@ -1120,7 +1138,7 @@
             </p>
           </div>
           <nav
-            class="ml-auto mt-8 flex gap-20 self-center sm:col-span-3 sm:mt-0 sm:gap-12 lg:ml-0 lg:gap-20"
+            class="mt-8 flex gap-20 self-center sm:col-span-3 sm:gap-12 md:ml-auto md:mt-0 lg:ml-0 lg:gap-20"
           >
             <div class="pr-3">
               <h6 class="mb-4 text-base uppercase leading-5 text-white">
@@ -1199,7 +1217,15 @@
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          1024: {
+          1280: {
+            slidesPerView: 1.184,
+            spaceBetween: 32,
+          },
+          1536: {
+            slidesPerView: 1.22,
+            spaceBetween: 32,
+          },
+          1660: {
             slidesPerView: 1.2,
             spaceBetween: 32,
           },

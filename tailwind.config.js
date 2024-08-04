@@ -61,7 +61,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        xs: "393px",
+        sm: "576px",
       },
       container: {
         screens: {
