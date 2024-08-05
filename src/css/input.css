@@ -25,11 +25,12 @@
     @apply font-clash-display text-2xl font-medium text-primary-dark md:text-3xl;
   }
   h4 {
-    @apply font-clash-display font-medium text-primary-dark text-base sm:text-xl md:text-2xl;
+    @apply font-clash-display text-base font-medium text-primary-dark sm:text-xl md:text-2xl;
   }
   h6 {
     @apply text-lg text-primary-dark;
   }
+
   /* Clash Display Font Face Declarations */
 
   /* Clash Display - Regular (400) */
@@ -155,5 +156,10 @@
   }
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     @apply bottom-10;
+  }
+  @media (min-width: 1536px) and (max-width: 1678px) {
+    header .c-search {
+      @apply w-48;
+    }
   }
 }
