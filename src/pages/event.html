@@ -17,49 +17,42 @@
   <body>
     <header class="sticky top-0 z-20 bg-white">
       <nav>
-        <div class="px-6 sm:px-12">
+        <div class="px-6 sm:px-[3.125rem] lg:px-12">
           <div
-            class="relative flex flex-wrap items-center justify-between py-4 lg:flex-nowrap lg:py-6"
+            class="relative flex flex-wrap items-center justify-between py-4 sm:py-6 lg:flex-nowrap"
           >
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              class="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 inline-flex items-center justify-center rounded-lg p-2 text-sm focus:outline-none focus:ring-2 lg:hidden"
+              class="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 inline-flex items-center justify-center rounded-lg text-sm focus:outline-none focus:ring-2 lg:hidden"
               aria-controls="navbar-default"
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <svg
-                class="h-5 w-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-            <a class="shrink-0 md:me-10 2xl:me-24" href="#">
               <img
-                class="w-32 2xl:w-[10.5625rem]"
+                class="h-6 w-6 sm:h-8 sm:w-8"
+                src="../../assets/images/header-menu.svg"
+                alt=""
+              />
+            </button>
+            <a
+              class="ms-8 shrink-0 md:ml-12 lg:ml-0 lg:mr-8 2xl:mr-24"
+              href="#"
+            >
+              <img
+                class="w-32 sm:w-[10.5625rem]"
                 src="../../assets/images/logo.svg"
                 alt="Rent a Unit company logo"
               />
             </a>
             <div
-              class="flex items-center gap-2 lg:order-4 lg:gap-4 xl:shrink-0"
+              class="flex items-center gap-3 md:gap-6 lg:order-4 lg:gap-3 xl:shrink-0 xl:gap-6"
             >
               <a
-                class="hover:c-filter-secondary inline-block xl:hidden"
+                class="hover:c-filter-secondary inline-block shrink-0 xl:hidden"
                 href="tel:+18884428648"
                 ><img
-                  class="w-6 lg:w-8"
+                  class="w-5 sm:w-6"
                   src="../../assets/images/call.svg"
                   alt=""
               /></a>
@@ -67,11 +60,11 @@
                 id="notificationButton"
                 data-dropdown-toggle="notification"
                 data-dropdown-trigger="hover"
-                class="group relative cursor-pointer rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary 2xl:p-3"
+                class="group relative shrink-0 cursor-pointer rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary sm:p-3"
                 type="button"
               >
                 <img
-                  class="group-hover:c-filter-secondary w-5 lg:w-6"
+                  class="group-hover:c-filter-secondary w-5 sm:w-6"
                   src="../../assets/images/invoice.svg"
                   alt=""
                 />
@@ -216,7 +209,7 @@
                 </ul>
                 <div class="ms-auto flex items-center">
                   <div
-                    class="relative hidden w-48 max-w-full lg:mr-1 lg:block xl:mx-7 2xl:w-[23.1875rem]"
+                    class="c-search relative hidden w-36 max-w-full lg:mr-1 lg:block xl:mx-7 xl:w-48 2xl:w-[23.1875rem]"
                   >
                     <label for="search" class="sr-only">Search</label>
                     <div
@@ -249,7 +242,7 @@
                     >
                   </div>
                   <button
-                    class="mt-1 block w-full shrink-0 rounded-lg bg-secondary px-4 py-2 font-clash-display text-sm font-semibold uppercase !leading-5 text-white hover:bg-opacity-95 lg:mx-4 lg:mt-0 lg:inline-block lg:w-auto lg:rounded-4xl xl:ml-4 xl:mr-6 2xl:px-6 2xl:py-4 2xl:text-base"
+                    class="mt-1 block w-full shrink-0 rounded-lg bg-secondary px-4 py-2 font-clash-display text-sm font-semibold uppercase !leading-5 text-white hover:bg-opacity-95 lg:mx-3 lg:mt-0 lg:inline-block lg:w-auto lg:rounded-4xl xl:ml-4 xl:mr-6 2xl:px-6 2xl:py-4 2xl:text-base"
                   >
                     GET STARTED
                   </button>
@@ -312,14 +305,14 @@
                 </div>
                 <a
                   href="#"
-                  class="flex items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white sm:inline-flex 2xl:gap-6 2xl:pl-6"
+                  class="group flex items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark sm:inline-flex 2xl:gap-6 2xl:pl-6"
                 >
                   get a quote
                   <span
-                    class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5"
+                    class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5 transition-all duration-300 group-hover:bg-primary"
                   >
                     <img
-                      class="w-4"
+                      class="group-hover:c-filter-white w-4 transition-all duration-300 group-hover:rotate-[360deg]"
                       src="../../assets/images/external-link.svg"
                       alt="Get a quote button with arrow icon"
                     />
@@ -403,7 +396,7 @@
           <div class="space-y-6 sm:space-y-16">
             <div class="text-center">
               <span
-                class="bg-red-gradient mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+                class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
               >
                 why rent a unit
               </span>
@@ -469,12 +462,12 @@
             </div>
             <div class="text-center">
               <button
-                class="group inline-flex items-center gap-2 rounded-4xl border-[1.4px] border-primary-dark px-7 py-4 font-clash-display font-semibold uppercase leading-7 text-primary-dark transition-all duration-100 ease-linear hover:bg-primary-dark hover:text-white"
+                class="group inline-flex items-center gap-3 rounded-4xl border-[1.4px] border-primary-dark px-7 py-4 font-clash-display font-semibold uppercase leading-7 text-primary-dark transition-all duration-100 ease-linear hover:bg-primary-dark hover:text-white"
               >
                 View All
                 <span class="inline-block"
                   ><img
-                    class="group-hover:c-filter-white w-4"
+                    class="group-hover:c-filter-white w-3"
                     src="../../assets/images/external-link.svg"
                     alt="Get Started button with arrow icon"
                 /></span>
@@ -618,14 +611,14 @@
             <div class="text-center">
               <a
                 href="#"
-                class="flex items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white sm:inline-flex 2xl:gap-6 2xl:pl-6"
+                class="group flex items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark sm:inline-flex 2xl:gap-6 2xl:pl-6"
               >
                 get Started
                 <span
-                  class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5"
+                  class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5 transition-all duration-300 group-hover:bg-primary"
                 >
                   <img
-                    class="w-4"
+                    class="group-hover:c-filter-white w-4 transition-all duration-300 group-hover:rotate-[360deg]"
                     src="../../assets/images/external-link.svg"
                     alt="Get Started button with arrow icon"
                   />
@@ -640,7 +633,7 @@
           <div class="grid grid-cols-12 gap-10">
             <div class="col-span-6 2xl:col-span-5">
               <span
-                class="bg-red-gradient mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+                class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
               >
                 about us
               </span>
@@ -731,14 +724,14 @@
             <div class="text-center">
               <button
                 type="submit"
-                class="flex w-full items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white sm:inline-flex sm:w-auto 2xl:gap-6 2xl:pl-6"
+                class="group flex w-full items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark sm:inline-flex sm:w-auto 2xl:gap-6 2xl:pl-6"
               >
                 Get Started
                 <span
-                  class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5"
+                  class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5 transition-all duration-300 group-hover:bg-primary"
                 >
                   <img
-                    class="w-4"
+                    class="group-hover:c-filter-white w-4 transition-all duration-300 group-hover:rotate-[360deg]"
                     src="../../assets/images/external-link.svg"
                     alt="Get Started button with arrow icon"
                   />
@@ -752,7 +745,7 @@
         <div class="mx-auto px-3 xl:container sm:px-12">
           <div class="text-center">
             <span
-              class="bg-red-gradient mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
             >
               testimonials
             </span>
@@ -766,7 +759,7 @@
               class="swiper-button-prev group left-0 top-0 m-0 h-full w-auto bg-paper-light pl-1 pr-8 after:hidden"
             >
               <span
-                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
+                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark transition-all duration-300 group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
               >
                 <img
                   class="group-hover:c-filter-white w-7 2xl:w-8"
@@ -787,7 +780,7 @@
                       />
                     </div>
                     <div>
-                      <h4 class="tracking-tight mb-2">Sarah MacGregor</h4>
+                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
                       <div class="flex items-center gap-2">
                         <div class="rounded-lg bg-paper px-3 py-1">
                           On Google
@@ -836,7 +829,7 @@
                       />
                     </div>
                     <div>
-                      <h4 class="tracking-tight mb-2">Sarah MacGregor</h4>
+                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
                       <div class="flex items-center gap-2">
                         <div class="rounded-lg bg-paper px-3 py-1">
                           On Google
@@ -885,7 +878,7 @@
                       />
                     </div>
                     <div>
-                      <h4 class="tracking-tight mb-2">Sarah MacGregor</h4>
+                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
                       <div class="flex items-center gap-2">
                         <div class="rounded-lg bg-paper px-3 py-1">
                           On Google
@@ -934,7 +927,7 @@
                       />
                     </div>
                     <div>
-                      <h4 class="tracking-tight mb-2">Sarah MacGregor</h4>
+                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
                       <div class="flex items-center gap-2">
                         <div class="rounded-lg bg-paper px-3 py-1">
                           On Google
@@ -978,7 +971,7 @@
               class="swiper-button-next group right-0 top-0 m-0 h-full w-auto bg-paper-light pl-8 pr-1 after:hidden"
             >
               <span
-                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
+                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark transition-all duration-300 group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
               >
                 <img
                   class="group-hover:c-filter-white w-7 2xl:w-8"
@@ -992,10 +985,10 @@
         </div>
       </section>
       <section>
-        <div class="mx-auto xl:container sm:px-12">
-          <div class="mb-6 px-6 text-center sm:mb-16 sm:px-0">
+        <div class="mx-auto xl:container sm:px-[3.75rem] xl:px-12">
+          <div class="mb-6 px-6 text-center sm:mb-12 sm:px-0 lg:mb-16">
             <span
-              class="bg-red-gradient mb-6 inline-block rounded-xl border-[1.4px] border-secondary px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
+              class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
             >
               contact us
             </span>
@@ -1011,10 +1004,10 @@
               >.
             </p>
           </div>
-          <div class="grid gap-6 sm:grid-cols-12 sm:gap-8">
-            <div class="self-stretch sm:col-span-4">
+          <div class="grid gap-6 sm:gap-8 lg:grid-cols-12">
+            <div class="self-stretch lg:col-span-4">
               <div
-                class="h-full border-paper text-center sm:rounded-4xl sm:border-2 sm:p-12 sm:text-start 2xl:p-16"
+                class="h-full border-paper text-center sm:rounded-4xl sm:border-2 sm:p-8 sm:text-start md:p-12 lg:p-8 xl:p-12 2xl:p-16"
               >
                 <div class="py-4 sm:pb-8 sm:pt-0">
                   <div
@@ -1058,9 +1051,7 @@
                       class="mb-2 block md:mb-0 md:inline-block"
                       >1-888-44-A-UNIT (442-8648)</a
                     >
-                    <span
-                      class="mx-4 hidden border-r border-primary sm:inline"
-                    >
+                    <span class="mx-4 hidden border-r border-primary sm:inline">
                     </span>
                     <a href="tel:+17186431313" class="inline-block"
                       >718-643-1313</a
@@ -1092,8 +1083,10 @@
                 </div>
               </div>
             </div>
-            <div class="self-stretch sm:col-span-8">
-              <div class="h-full rounded-4xl bg-paper p-6 sm:p-12 2xl:p-16">
+            <div class="self-stretch lg:col-span-8">
+              <div
+                class="h-full rounded-4xl bg-paper p-6 sm:p-8 md:p-12 lg:p-8 xl:p-12 2xl:p-16"
+              >
                 <form>
                   <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
                     <div>
@@ -1225,16 +1218,16 @@
                     <div class="mt-4">
                       <button
                         type="submit"
-                        class="flex w-full items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white sm:inline-flex sm:w-auto 2xl:gap-6 2xl:pl-6"
+                        class="group flex w-full items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark sm:inline-flex sm:w-auto 2xl:gap-6 2xl:pl-6"
                       >
                         Send
                         <span
-                          class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5"
+                          class="ms-auto inline-block h-14 w-14 rounded-full bg-white p-5 transition-all duration-300 group-hover:bg-primary"
                         >
                           <img
-                            class="w-4"
+                            class="group-hover:c-filter-white w-4 transition-all duration-300 group-hover:rotate-[360deg]"
                             src="../../assets/images/external-link.svg"
-                            alt="Get Started button with arrow icon"
+                            alt="Send button with arrow icon"
                           />
                         </span>
                       </button>
