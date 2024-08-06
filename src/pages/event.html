@@ -21,22 +21,27 @@
           <div
             class="relative flex flex-wrap items-center justify-between py-4 sm:py-6 lg:flex-nowrap"
           >
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 inline-flex items-center justify-center rounded-lg text-sm focus:outline-none focus:ring-2 lg:hidden"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <img
-                class="h-6 w-6 sm:h-8 sm:w-8"
-                src="../../assets/images/header-menu.svg"
-                alt=""
+            <label for="menu-toggle" class="block cursor-pointer lg:hidden">
+              <input
+                type="checkbox"
+                id="menu-toggle"
+                class="peer hidden"
+                data-collapse-toggle="navbar-default"
+                aria-controls="navbar-default"
               />
-            </button>
+              <span
+                class="mb-1 block h-[0.09375rem] w-5 rounded-4xl bg-primary-dark transition-all duration-300 ease-in-out peer-checked:translate-y-[0.33125rem] peer-checked:rotate-45 md:w-6"
+              ></span>
+              <span
+                class="my-1 block h-[0.09375rem] w-5 rounded-4xl bg-primary-dark transition-all duration-300 ease-in-out peer-checked:opacity-0 md:w-6"
+              ></span>
+              <span
+                class="mt-1 block h-[0.09375rem] w-5 rounded-4xl bg-primary-dark transition-all duration-300 ease-in-out peer-checked:-translate-y-[0.33125rem] peer-checked:-rotate-45 md:w-6"
+              ></span>
+            </label>
+
             <a
-              class="ms-8 shrink-0 md:ml-12 lg:ml-0 lg:mr-8 2xl:mr-24"
+              class="shrink-0 xs:ml-8 md:ml-12 lg:ml-0 lg:mr-8 2xl:mr-24"
               href="#"
             >
               <img
@@ -52,9 +57,9 @@
                 class="hover:c-filter-secondary inline-block shrink-0 xl:hidden"
                 href="tel:+18884428648"
                 ><img
-                  class="w-5 sm:w-6"
+                  class="w-4 xs:w-5 sm:w-6"
                   src="../../assets/images/call.svg"
-                  alt=""
+                  alt="phone number"
               /></a>
               <button
                 id="notificationButton"
@@ -66,7 +71,7 @@
                 <img
                   class="group-hover:c-filter-secondary w-5 sm:w-6"
                   src="../../assets/images/invoice.svg"
-                  alt=""
+                  alt="Icon of a document with a dollar sign, indicating financial terms or pricing information, with a notification badge showing the number one."
                 />
                 <span
                   class="absolute -right-1 -top-1 inline-block rounded-full bg-secondary px-[0.386875rem] py-[0.125rem] text-xxs text-white 2xl:right-[0.125rem]"
@@ -155,7 +160,7 @@
                       <img
                         class="group-hover:c-filter-white ml-1 lg:w-2 2xl:w-3"
                         src="../../assets/images/chevron-down.svg"
-                        alt=""
+                        alt="Arrow down"
                       />
                     </button>
                     <ul
@@ -222,7 +227,7 @@
                       />
                     </div>
                     <input
-                      id="search"
+                      id="search-mobile"
                       name="search"
                       class="block w-full rounded-3xl border-0 bg-white py-3 pl-10 pr-3 text-xs ring-1 ring-inset ring-light placeholder:text-sm placeholder:text-disabled focus-within:outline-primary-light focus:ring-inset focus:ring-light 2xl:py-4 2xl:pl-11 2xl:pr-4 2xl:text-sm"
                       placeholder="SEARCH"
@@ -254,52 +259,70 @@
       </nav>
     </header>
     <main>
-      <section class="p-0 pt-4 sm:pt-0">
-        <div class="px-6 sm:px-12">
-          <div class="grid grid-cols-2 gap-7">
-            <div class="grid grid-cols-9">
-              <div class="col-span-8 pt-8 sm:pt-[4.6875rem] 2xl:pt-[6.25rem]">
-                <h1 class="mb-7 2xl:pr-20">
+      <section class="p-0">
+        <div class="px-6 sm:px-[3.125rem] xl:px-12">
+          <div
+            class="grid-cols-1 gap-7 lg:grid lg:gap-10 xl:grid-cols-2 xl:gap-7"
+          >
+            <div class="xl:grid 2xl:grid-cols-9">
+              <div
+                class="c-event-banner-section pt-4 sm:pt-8 lg:pt-10 xl:pt-14 2xl:col-span-8 2xl:pt-[6.25rem]"
+              >
+                <h1
+                  class="mb-3 text-3xl md:mb-6 md:pr-20 md:text-6xl lg:pr-0 xl:mb-7 2xl:pr-20"
+                >
                   Elevate Your Events with Our Premium Restroom Rentals
                 </h1>
-                <p class="2xl:pr-28">
+                <p class="md:text-lg 2xl:pr-8">
                   From intimate gatherings to grand celebrations, our luxury
                   trailer and portable restrooms come fully equipped with all
                   necessary accessories to enhance your event. We provide
                   top-notch service across NYC area, ensuring your event is
                   seamless, memorable and worry-free.
                 </p>
-                <div class="mb-16 mt-8 grid grid-cols-2 gap-8">
+                <div
+                  class="my-6 grid grid-cols-2 gap-4 md:mb-8 md:mt-8 md:gap-8 xl:mb-16 xl:gap-6 2xl:gap-8"
+                >
                   <div
-                    class="overflow-hidden rounded-4xl border-[1.4px] border-divider hover:border-primary"
+                    class="overflow-hidden rounded-2xl border-[1.4px] border-divider hover:border-primary md:rounded-4xl"
                   >
-                    <div class="flex h-full items-center gap-6">
+                    <div class="flex h-full items-center">
                       <div
-                        class="flex h-full shrink-0 items-center bg-paper-light px-4 py-6"
+                        class="hidden h-full shrink-0 items-center bg-paper-light px-7 py-4 md:flex 2xl:px-9 2xl:py-7"
                       >
                         <img
-                          class="h-32 max-h-full w-32 object-contain"
+                          class="h-[5.75rem] max-h-full object-contain 2xl:h-[7.5rem]"
                           src="../../assets/images/portable-restroom.png"
-                          alt=""
+                          alt="blue and red portable restroom"
                         />
                       </div>
-                      <h4>PORTABLE RESTROOMS</h4>
+                      <h4
+                        class="p-6 text-base leading-5 md:leading-6 xl:text-lg 2xl:text-2xl"
+                      >
+                        PORTABLE <br class="xl:hidden" />
+                        RESTROOMS
+                      </h4>
                     </div>
                   </div>
                   <div
-                    class="overflow-hidden rounded-4xl border-[1.4px] border-divider hover:border-primary"
+                    class="overflow-hidden rounded-2xl border-[1.4px] border-divider hover:border-primary md:rounded-4xl"
                   >
-                    <div class="flex h-full items-center gap-6">
+                    <div class="flex h-full items-center">
                       <div
-                        class="flex h-full shrink-0 items-center bg-paper-light px-4 py-6"
+                        class="hidden h-full shrink-0 items-center bg-paper-light p-4 md:flex 2xl:px-5 2xl:py-6"
                       >
                         <img
-                          class="m-auto h-20 max-h-full object-contain"
+                          class="m-auto h-14 max-h-full object-contain 2xl:h-20"
                           src="../../assets/images/tailer-restroom.png"
-                          alt=""
+                          alt="trailer restroom"
                         />
                       </div>
-                      <h4>TRAILER RESTROOMS</h4>
+                      <h4
+                        class="p-6 text-base leading-5 md:leading-6 xl:text-lg 2xl:text-2xl"
+                      >
+                        TRAILER <br class="xl:hidden" />
+                        RESTROOMS
+                      </h4>
                     </div>
                   </div>
                 </div>
@@ -320,80 +343,103 @@
                 </a>
               </div>
             </div>
-            <div>
-              <div class="swiper restroom-swiper h-full rounded-4xl">
+            <div class="hidden xl:block 2xl:pl-2">
+              <div class="swiper restroom-swiper rounded-4xl">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div
-                      class="h-full w-full rounded-4xl bg-[url('../../assets/images/events-web.jpg')] bg-cover bg-center bg-no-repeat"
-                    ></div>
+                    <div class="rounded-4xl">
+                      <img
+                        src="../../assets/images/events-web.jpg"
+                        alt="Luxury restroom in a wooded campsite"
+                      />
+                    </div>
                   </div>
                   <div class="swiper-slide">
-                    <div
-                      class="h-full w-full rounded-4xl bg-[url('../../assets/images/events-web.jpg')] bg-cover bg-center bg-no-repeat"
-                    ></div>
+                    <div class="rounded-4xl">
+                      <img
+                        src="../../assets/images/events-web.jpg"
+                        alt="Luxury restroom in a wooded campsite"
+                      />
+                    </div>
                   </div>
                   <div class="swiper-slide">
-                    <div
-                      class="h-full w-full rounded-4xl bg-[url('../../assets/images/events-web.jpg')] bg-cover bg-center bg-no-repeat"
-                    ></div>
+                    <div class="rounded-4xl">
+                      <img
+                        src="../../assets/images/events-web.jpg"
+                        alt="Luxury restroom in a wooded campsite"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination !bottom-10"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="p-0">
+      <div class="p-0">
         <div class="relative flex overflow-x-hidden">
           <div
-            class="animate-marquee whitespace-nowrap pt-8 md:pb-3 md:pt-10 2xl:pt-16"
+            class="animate-marquee whitespace-nowrap pt-8 sm:pt-12 lg:pb-3 2xl:pt-16"
           >
             <span
-              class="mr-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] xl:text-6xl 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Get exclusive
               <img
-                class="mx-4 inline-block w-8 rotate-90 sm:mx-12 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
               content
               <span
-                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:mx-16 sm:h-6 sm:w-6"
+                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:h-5 sm:w-5 2xl:h-6 2xl:w-6"
               ></span>
+              Get exclusive
+              <img
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt="Arrow icon"
+              />
+              content
             </span>
           </div>
 
           <div
-            class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3 pt-8 md:pt-10 2xl:pt-16"
+            class="absolute top-0 animate-marquee2 whitespace-nowrap pt-8 sm:pt-12 lg:pb-3 2xl:pt-16"
           >
             <span
-              class="mr-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] xl:text-6xl 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Get exclusive
               <img
-                class="mx-4 inline-block w-8 rotate-90 sm:mx-12 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
               content
               <span
-                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:mx-16 sm:h-6 sm:w-6"
+                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:h-5 sm:w-5 2xl:h-6 2xl:w-6"
               ></span>
+              Get exclusive
+              <img
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt="Arrow icon"
+              />
+              content
             </span>
           </div>
         </div>
         <div class="sr-only">
           <p>Get exclusive content</p>
         </div>
-      </section>
+      </div>
       <section
         class="bg-[url('../../assets/images/multi-triangle-bg.png')] bg-cover bg-center bg-no-repeat"
       >
-        <div class="mx-auto px-3 xl:container sm:px-12">
-          <div class="space-y-6 sm:space-y-16">
+        <div class="mx-auto xl:container lg:px-12">
+          <div class="space-y-6 sm:space-y-12 lg:space-y-16">
             <div class="text-center">
               <span
                 class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
@@ -402,18 +448,22 @@
               </span>
               <h2 class="px-6 sm:px-0">Popular Categories</h2>
             </div>
-            <div class="swiper popular-categories-swiper">
+            <div
+              class="swiper popular-categories-swiper pl-6 md:pl-[3.75rem] lg:pl-0"
+            >
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide h-auto">
                   <div
-                    class="overflow-hidden rounded-4xl bg-paper-light px-6 pt-6"
+                    class="h-full overflow-hidden rounded-4xl bg-paper-light px-6 pt-6"
                   >
                     <img
                       class="rounded-2xl"
                       src="../../assets/images/restroom.jpg"
-                      alt=""
+                      alt="Red and blue portable restroom unit"
                     />
-                    <div class="space-y-6 px-2 pb-6 pt-9">
+                    <div
+                      class="space-y-1 pb-6 pt-4 sm:pt-0 md:space-y-5 md:px-2 md:pt-8 lg:space-y-6"
+                    >
                       <h3>Standard Portable Units</h3>
                       <p class="leading-5">
                         Perfect for any event, offering essentail facilities
@@ -422,16 +472,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide h-auto">
                   <div
-                    class="overflow-hidden rounded-4xl bg-paper-light px-6 pt-6"
+                    class="h-full overflow-hidden rounded-4xl bg-paper-light px-6 pt-6"
                   >
                     <img
                       class="rounded-2xl"
                       src="../../assets/images/restroom.jpg"
-                      alt=""
+                      alt="Blue and white midsize trailer restroom"
                     />
-                    <div class="space-y-6 px-2 pb-6 pt-9">
+                    <div
+                      class="space-y-1 pb-6 pt-4 sm:pt-0 md:space-y-5 md:px-2 md:pt-8 lg:space-y-6"
+                    >
                       <h3>Midsize Trailer Restrooms</h3>
                       <p class="leading-5">
                         Ideal for upscale events, providing premium amenities
@@ -440,16 +492,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide h-auto">
                   <div
-                    class="overflow-hidden rounded-4xl bg-paper-light px-6 pt-6"
+                    class="h-full overflow-hidden rounded-4xl bg-paper-light px-6 pt-6"
                   >
                     <img
                       class="rounded-2xl"
                       src="../../assets/images/restroom.jpg"
-                      alt=""
+                      alt="Red and blue portable restroom unit"
                     />
-                    <div class="space-y-6 px-2 pb-6 pt-9">
+                    <div
+                      class="space-y-1 pb-6 pt-4 sm:pt-0 md:space-y-5 md:px-2 md:pt-8 lg:space-y-6"
+                    >
                       <h3>Standard Event Unit</h3>
                       <p class="leading-5">
                         Perfect for any event, offering essentail facilities
@@ -477,41 +531,47 @@
         </div>
       </section>
       <section class="bg-paper-light">
-        <div class="mx-auto px-3 xl:container sm:px-12">
-          <div class="space-y-6 sm:space-y-16">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
+          <div class="space-y-6 sm:space-y-12 lg:space-y-16">
             <div class="text-center">
               <h2 class="mb-4 px-6 sm:px-0">How It Works</h2>
               <p>
                 We make the process simple and efficeint ensuring your needs are
-                met<br class="hidden 2xl:block" />
+                met<br class="hidden md:block" />
                 promptly and professionally
               </p>
             </div>
-            <div class="grid grid-cols-4">
-              <div class="text-center">
-                <div class="relative mb-12">
-                  <div class="relative z-10 inline-block bg-paper-light px-5">
+            <div
+              class="grid grid-rows-4 gap-8 md:gap-6 lg:gap-8 xl:grid-cols-4 xl:grid-rows-1 xl:gap-0"
+            >
+              <div class="flex gap-6 md:gap-8 xl:block xl:text-center">
+                <div class="relative shrink-0 xl:mb-12">
+                  <div
+                    class="relative z-10 inline-block bg-paper-light xl:px-5"
+                  >
                     <div
-                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-4"
+                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-3 md:p-4"
                     >
                       <img
-                        class="h-12 w-12"
+                        class="h-9 w-9 md:h-12 md:w-12"
                         src="../../assets/images/handshake.svg"
-                        alt="Shield icon representing reliable service"
+                        alt="Handshake icon"
                       />
                     </div>
                   </div>
                   <div
-                    class="-translate-1/2 absolute left-0 top-1/2 w-full border-t-[0.09375rem] border-dashed"
+                    class="-translate-1/2 absolute left-1/2 top-0 h-full border-l-[0.09375rem] border-dashed border-primary-light border-opacity-50 xl:left-0 xl:top-1/2 xl:w-full xl:border-l-0 xl:border-t-[0.09375rem]"
                   ></div>
                   <img
-                    class="absolute right-0 top-1/2 -translate-y-1/2"
+                    class="absolute -bottom-1 left-1/2 -translate-x-1/2 rotate-90 xl:bottom-auto xl:left-auto xl:right-0 xl:top-1/2 xl:-translate-y-1/2 xl:rotate-0"
                     src="../../assets/images/right-angle.svg"
-                    alt=""
+                    alt="Right angle"
                   />
                 </div>
-                <div class="space-y-4 px-7">
-                  <h3>Get in Touch</h3>
+                <div class="space-y-2 md:space-y-4 xl:px-7">
+                  <h3 class="text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl">
+                    Get in Touch
+                  </h3>
                   <p>
                     Contact our team via phone, email, or submit a quote request
                     on our website to discuss your event requirements and
@@ -519,30 +579,34 @@
                   </p>
                 </div>
               </div>
-              <div class="text-center">
-                <div class="relative mb-12">
-                  <div class="relative z-10 inline-block bg-paper-light px-5">
+              <div class="flex gap-6 md:gap-8 xl:block xl:text-center">
+                <div class="relative shrink-0 xl:mb-12">
+                  <div
+                    class="relative z-10 inline-block bg-paper-light xl:px-5"
+                  >
                     <div
-                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-4"
+                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-3 md:p-4"
                     >
                       <img
-                        class="h-12 w-12"
+                        class="h-9 w-9 md:h-12 md:w-12"
                         src="../../assets/images/server.svg"
-                        alt="Shield icon representing reliable service"
+                        alt="Icon of restroom units"
                       />
                     </div>
                   </div>
                   <div
-                    class="-translate-1/2 absolute left-0 top-1/2 w-full border-t-[0.09375rem] border-dashed"
+                    class="-translate-1/2 absolute left-1/2 top-0 h-full border-l-[0.09375rem] border-dashed border-primary-light border-opacity-50 xl:left-0 xl:top-1/2 xl:w-full xl:border-l-0 xl:border-t-[0.09375rem]"
                   ></div>
                   <img
-                    class="absolute right-0 top-1/2 -translate-y-1/2"
+                    class="absolute -bottom-1 left-1/2 -translate-x-1/2 rotate-90 xl:bottom-auto xl:left-auto xl:right-0 xl:top-1/2 xl:-translate-y-1/2 xl:rotate-0"
                     src="../../assets/images/right-angle.svg"
-                    alt=""
+                    alt="Right angle"
                   />
                 </div>
-                <div class="space-y-4 px-7">
-                  <h3>Customize Your Plan</h3>
+                <div class="space-y-2 md:space-y-4 xl:px-7">
+                  <h3 class="text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl">
+                    Customize Your Plan
+                  </h3>
                   <p>
                     Choose the perfect restroom units and accessories tailored
                     to you event. Out team provides recommendations and flexible
@@ -550,30 +614,34 @@
                   </p>
                 </div>
               </div>
-              <div class="text-center">
-                <div class="relative mb-12">
-                  <div class="relative z-10 inline-block bg-paper-light px-5">
+              <div class="flex gap-6 md:gap-8 xl:block xl:text-center">
+                <div class="relative shrink-0 xl:mb-12">
+                  <div
+                    class="relative z-10 inline-block bg-paper-light xl:px-5"
+                  >
                     <div
-                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-4"
+                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-3 md:p-4"
                     >
                       <img
-                        class="h-12 w-12"
+                        class="h-9 w-9 md:h-12 md:w-12"
                         src="../../assets/images/delivery-truck.svg"
-                        alt="Shield icon representing reliable service"
+                        alt="Icon of delivery truck"
                       />
                     </div>
                   </div>
                   <div
-                    class="-translate-1/2 absolute left-0 top-1/2 w-full border-t-[0.09375rem] border-dashed"
+                    class="-translate-1/2 absolute left-1/2 top-0 h-full border-l-[0.09375rem] border-dashed border-primary-light border-opacity-50 xl:left-0 xl:top-1/2 xl:w-full xl:border-l-0 xl:border-t-[0.09375rem]"
                   ></div>
                   <img
-                    class="absolute right-0 top-1/2 -translate-y-1/2"
+                    class="absolute -bottom-1 left-1/2 -translate-x-1/2 rotate-90 xl:bottom-auto xl:left-auto xl:right-0 xl:top-1/2 xl:-translate-y-1/2 xl:rotate-0"
                     src="../../assets/images/right-angle.svg"
-                    alt=""
+                    alt="Right angle"
                   />
                 </div>
-                <div class="space-y-4 px-7">
-                  <h3>Delivery and Set Up</h3>
+                <div class="space-y-2 md:space-y-4 xl:px-7">
+                  <h3 class="text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl">
+                    Delivery and Set Up
+                  </h3>
                   <p>
                     Our professional team will deliver and set up the units at
                     your event location, ensuring everything is ready and
@@ -581,25 +649,34 @@
                   </p>
                 </div>
               </div>
-              <div class="text-center">
-                <div class="relative mb-12">
-                  <div class="relative z-10 inline-block bg-paper-light px-5">
+              <div class="flex gap-6 md:gap-8 xl:block xl:text-center">
+                <div class="relative shrink-0 xl:mb-12">
+                  <div
+                    class="relative z-10 inline-block bg-paper-light xl:px-5"
+                  >
                     <div
-                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-4"
+                      class="inline-flex items-center justify-center rounded-xl bg-secondary p-3 md:p-4"
                     >
                       <img
-                        class="h-12 w-12"
+                        class="h-9 w-9 md:h-12 md:w-12"
                         src="../../assets/images/headphone.svg"
-                        alt="Shield icon representing reliable service"
+                        alt="Icon of headset"
                       />
                     </div>
                   </div>
                   <div
-                    class="-translate-1/2 absolute left-0 top-1/2 w-full border-t-[0.09375rem] border-dashed"
+                    class="-translate-1/2 absolute left-1/2 top-0 h-full border-l-[0.09375rem] border-dashed border-primary-light border-opacity-50 xl:left-0 xl:top-1/2 xl:w-full xl:border-l-0 xl:border-t-[0.09375rem]"
                   ></div>
+                  <img
+                    class="absolute -bottom-1 left-1/2 hidden -translate-x-1/2 rotate-90 xl:right-0 xl:top-1/2 xl:block xl:-translate-y-1/2"
+                    src="../../assets/images/right-angle.svg"
+                    alt="Right angle"
+                  />
                 </div>
-                <div class="space-y-4 px-7">
-                  <h3>Ongoing Support</h3>
+                <div class="space-y-2 md:space-y-4 xl:px-7">
+                  <h3 class="text-2xl md:text-3xl xl:text-2xl 2xl:text-3xl">
+                    Ongoing Support
+                  </h3>
                   <p>
                     Enjoy your event with peace of mind as we provide regular
                     cleaning and maintenance, and are available for on-demand
@@ -608,7 +685,7 @@
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            <div class="pt-2 text-center md:pt-0">
               <a
                 href="#"
                 class="group flex items-center gap-5 rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark sm:inline-flex 2xl:gap-6 2xl:pl-6"
@@ -629,15 +706,15 @@
         </div>
       </section>
       <section>
-        <div class="mx-auto px-3 xl:container sm:px-12">
-          <div class="grid grid-cols-12 gap-10">
-            <div class="col-span-6 2xl:col-span-5">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
+          <div class="grid gap-6 md:gap-12 lg:gap-10 xl:grid-cols-12">
+            <div class="xl:col-span-6 2xl:col-span-5">
               <span
                 class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
               >
                 about us
               </span>
-              <h2 class="mb-4 px-6 sm:px-0">
+              <h2 class="mb-6 md:mb-4 md:pr-16 lg:pr-0">
                 The Comprehensive Solutions We Bring to Your Events
               </h2>
               <p>
@@ -647,78 +724,100 @@
                 foresee the pain and trouble that are bound to ensue; and equal
                 blame belongs to those who fail in their duty through weakness
                 of will, which is the same as saying through shrinking from toil
-                and pain.<br /><br />These cases are perfectly simple and easy
-                to distinguish. In a free hour, when our power of choice is
-                untrammelled and when nothing prevents our being able to do what
-                we like best, every pleasure is to be welcomed and every pain
-                avoided. But in certain circumstances and owing to the claims of
-                duty or the obligations of business it will frequently occur
-                that pleasures have to be repudiated and annoyances accepted.
-                The wise man therefore always holds
+                and pain.<br />
+                <span class="hidden md:inline-block">
+                  <br />
+                  These cases are perfectly simple and easy to distinguish. In a
+                  free hour, when our power of choice is untrammelled and when
+                  nothing prevents our being able to do what we like best, every
+                  pleasure is to be welcomed and every pain avoided. But in
+                  certain circumstances and owing to the claims of duty or the
+                  obligations of business it will frequently occur that
+                  pleasures have to be repudiated and annoyances accepted. The
+                  wise man therefore always holds
+                </span>
               </p>
+              <div
+                class="flex cursor-pointer items-center gap-3 pt-3 md:hidden"
+              >
+                <p class="font-clash-display font-medium text-primary-dark">
+                  View More
+                </p>
+                <img
+                  class="w-2 rotate-90"
+                  src="../../assets/images/right-angle.svg"
+                  alt="View More"
+                />
+              </div>
             </div>
-            <div class="col-span-6 2xl:col-end-13">
-              <img
-                class="rounded-4xl"
-                src="../../assets/images/team-meeting.jpg"
-                alt=""
-              />
+            <div class="xl:col-span-6 2xl:col-end-13">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../../assets/images/team-meeting.jpg"
+                />
+                <img
+                  class="rounded-4xl lg:w-1/2 xl:w-auto"
+                  src="../../assets/images/team-meeting-tablet.jpg"
+                  alt="Group of people in a meeting room collaborating on a project. A woman is standing and placing sticky notes on a wall while others sit at a table with laptops and discuss ideas."
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="mx-auto px-3 xl:container sm:px-12">
-          <div class="space-y-6 sm:space-y-16">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
+          <div class="space-y-6 sm:space-y-12 lg:space-y-16">
             <h2 class="px-6 text-center sm:px-0">Core Values</h2>
-            <div class="grid grid-cols-4 gap-16">
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
-                  <div class="w-full border-t-[0.0875rem] border-divider"></div>
-                </div>
-                <h4 class="tracking-tight">Exceptional Qaulity</h4>
+            <div
+              class="grid gap-y-6 md:grid-cols-2 md:gap-16 md:gap-x-6 xl:grid-cols-4"
+            >
+              <div class="space-y-3">
+                <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
+                <h4 class="text-2xl tracking-tight">Exceptional Qaulity</h4>
                 <p>
                   Contact our team via phone, email, or submit a quote request
                   on our website to discuss your event requirements and receive
                   a personalized quote
                 </p>
               </div>
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
-                  <div class="w-full border-t-[0.0875rem] border-divider"></div>
-                </div>
-                <h4 class="tracking-tight">Dedicated Service</h4>
+              <div class="space-y-3">
+                <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
+                <h4 class="text-2xl tracking-tight">Dedicated Service</h4>
                 <p>
                   Choose the perfect restroom units and accessories tailored to
                   you event. Out team provides recommendations and flexible
                   rental terms
                 </p>
               </div>
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
-                  <div class="w-full border-t-[0.0875rem] border-divider"></div>
-                </div>
-                <h4 class="tracking-tight">Exceptional Qaulity</h4>
+              <div class="hidden space-y-3 md:block">
+                <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
+                <h4 class="text-2xl tracking-tight">Exceptional Qaulity</h4>
                 <p>
                   Our professional team will deliver and set up the units at
                   your event location, ensuring everything is ready and
                   functioning perfectly
                 </p>
               </div>
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
-                  <div class="w-full border-t-[0.0875rem] border-divider"></div>
-                </div>
-                <h4 class="tracking-tight">Exceptional Qaulity</h4>
+              <div class="hidden space-y-3 md:block">
+                <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
+                <h4 class="text-2xl tracking-tight">Exceptional Qaulity</h4>
                 <p>
                   Enjoy your event with peace of mind as we provide regular
                   cleaning and maintenance, and are available` for on-demand
                   service if needed
                 </p>
+              </div>
+              <div class="flex cursor-pointer items-center gap-3 md:hidden">
+                <p class="font-clash-display font-medium text-primary-dark">
+                  View More
+                </p>
+                <img
+                  class="w-2 rotate-90"
+                  src="../../assets/images/right-angle.svg"
+                  alt="View More"
+                />
               </div>
             </div>
             <div class="text-center">
@@ -742,76 +841,96 @@
         </div>
       </section>
       <section class="bg-paper-light">
-        <div class="mx-auto px-3 xl:container sm:px-12">
+        <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
           <div class="text-center">
             <span
               class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
             >
               testimonials
             </span>
-            <h2 class="mb-6 px-6 sm:mb-16 sm:px-0" id="testimonial-heading">
+            <h2
+              class="mb-6 px-6 sm:mb-12 sm:px-0 lg:mb-16"
+              id="testimonial-heading"
+            >
               What Clients Says About Us
             </h2>
           </div>
 
-          <div class="swiper client-review-swiper grid grid-cols-12 gap-8">
+          <div
+            class="swiper client-review-swiper grid grid-cols-12 gap-6 md:gap-8"
+          >
             <div
-              class="swiper-button-prev group left-0 top-0 m-0 h-full w-auto bg-paper-light pl-1 pr-8 after:hidden"
+              class="swiper-button-prev group static left-0 top-0 order-2 col-span-6 row-start-2 m-0 h-full w-auto pb-[0.09rem] after:hidden md:absolute md:order-1 md:col-span-1 md:row-start-1 md:bg-paper-light md:pl-1 md:pr-7 2xl:pr-8"
             >
               <span
-                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark transition-all duration-300 group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
+                class="ml-auto inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark transition-all duration-300 group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
               >
                 <img
                   class="group-hover:c-filter-white w-7 2xl:w-8"
                   src="../../assets/images/left-arrow.svg"
-                  alt=""
+                  alt="Previous"
                 />
                 <span class="sr-only">Previous</span>
               </span>
             </div>
-            <div class="swiper-wrapper col-span-10 px-28">
+            <div
+              class="swiper-wrapper col-span-12 md:col-span-10 md:px-24 2xl:px-[6.5rem]"
+            >
               <div class="swiper-slide">
-                <div class="space-y-12 rounded-4xl bg-white p-12">
-                  <div class="flex items-center gap-6">
+                <div
+                  class="space-y-4 rounded-4xl bg-white p-6 md:space-y-12 md:p-12"
+                >
+                  <div
+                    class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6"
+                  >
                     <div class="w-14">
                       <img
                         src="../../assets/images/sarah-mac-gregor.png"
-                        alt=""
+                        alt="Profile picture of Sarah MacGregor"
                       />
                     </div>
                     <div>
-                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
+                      <h4 class="mb-3 text-2xl tracking-tight md:mb-2">
+                        Sarah MacGregor
+                      </h4>
                       <div class="flex items-center gap-2">
-                        <div class="rounded-lg bg-paper px-3 py-1">
+                        <div
+                          class="rounded-lg bg-paper px-3 py-1 text-sm md:text-base"
+                        >
                           On Google
                         </div>
                         <div class="flex items-center gap-1">
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                         </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
-                  <p class="text-lg">
+                  <p class="text-sm md:text-lg">
                     My first consultation I met Joseph Bryce Hart and so far
                     he’s been very accommodating and helpful through my process
                     I’m literally just starting so results are pending but I
@@ -820,47 +939,60 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="space-y-12 rounded-4xl bg-white p-12">
-                  <div class="flex items-center gap-6">
+                <div
+                  class="space-y-4 rounded-4xl bg-white p-6 md:space-y-12 md:p-12"
+                >
+                  <div
+                    class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6"
+                  >
                     <div class="w-14">
                       <img
                         src="../../assets/images/sarah-mac-gregor.png"
-                        alt=""
+                        alt="Profile picture of Sarah MacGregor"
                       />
                     </div>
                     <div>
-                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
+                      <h4 class="mb-3 text-2xl tracking-tight md:mb-2">
+                        Sarah MacGregor
+                      </h4>
                       <div class="flex items-center gap-2">
-                        <div class="rounded-lg bg-paper px-3 py-1">
+                        <div
+                          class="rounded-lg bg-paper px-3 py-1 text-sm md:text-base"
+                        >
                           On Google
                         </div>
                         <div class="flex items-center gap-1">
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                         </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
-                  <p class="text-lg">
+                  <p class="text-sm md:text-lg">
                     My first consultation I met Joseph Bryce Hart and so far
                     he’s been very accommodating and helpful through my process
                     I’m literally just starting so results are pending but I
@@ -869,47 +1001,60 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="space-y-12 rounded-4xl bg-white p-12">
-                  <div class="flex items-center gap-6">
+                <div
+                  class="space-y-4 rounded-4xl bg-white p-6 md:space-y-12 md:p-12"
+                >
+                  <div
+                    class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6"
+                  >
                     <div class="w-14">
                       <img
                         src="../../assets/images/sarah-mac-gregor.png"
-                        alt=""
+                        alt="Profile picture of Sarah MacGregor"
                       />
                     </div>
                     <div>
-                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
+                      <h4 class="mb-3 text-2xl tracking-tight md:mb-2">
+                        Sarah MacGregor
+                      </h4>
                       <div class="flex items-center gap-2">
-                        <div class="rounded-lg bg-paper px-3 py-1">
+                        <div
+                          class="rounded-lg bg-paper px-3 py-1 text-sm md:text-base"
+                        >
                           On Google
                         </div>
                         <div class="flex items-center gap-1">
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                         </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
-                  <p class="text-lg">
+                  <p class="text-sm md:text-lg">
                     My first consultation I met Joseph Bryce Hart and so far
                     he’s been very accommodating and helpful through my process
                     I’m literally just starting so results are pending but I
@@ -918,47 +1063,60 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="space-y-12 rounded-4xl bg-white p-12">
-                  <div class="flex items-center gap-6">
+                <div
+                  class="space-y-4 rounded-4xl bg-white p-6 md:space-y-12 md:p-12"
+                >
+                  <div
+                    class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6"
+                  >
                     <div class="w-14">
                       <img
                         src="../../assets/images/sarah-mac-gregor.png"
-                        alt=""
+                        alt="Profile picture of Sarah MacGregor"
                       />
                     </div>
                     <div>
-                      <h4 class="mb-2 tracking-tight">Sarah MacGregor</h4>
+                      <h4 class="mb-3 text-2xl tracking-tight md:mb-2">
+                        Sarah MacGregor
+                      </h4>
                       <div class="flex items-center gap-2">
-                        <div class="rounded-lg bg-paper px-3 py-1">
+                        <div
+                          class="rounded-lg bg-paper px-3 py-1 text-sm md:text-base"
+                        >
                           On Google
                         </div>
                         <div class="flex items-center gap-1">
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                           <img
+                            class="w-4 md:w-6"
                             src="../../assets/images/filled-star.svg"
-                            alt=""
+                            alt="Star icon"
                           />
                         </div>
                         <p>5.0</p>
                       </div>
                     </div>
                   </div>
-                  <p class="text-lg">
+                  <p class="text-sm md:text-lg">
                     My first consultation I met Joseph Bryce Hart and so far
                     he’s been very accommodating and helpful through my process
                     I’m literally just starting so results are pending but I
@@ -968,15 +1126,15 @@
               </div>
             </div>
             <div
-              class="swiper-button-next group right-0 top-0 m-0 h-full w-auto bg-paper-light pl-8 pr-1 after:hidden"
+              class="swiper-button-next group static right-0 top-0 col-span-6 m-0 h-full w-auto after:hidden md:absolute md:col-span-1 md:bg-paper-light md:pl-7 md:pr-1 2xl:pl-8"
             >
               <span
-                class="inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark transition-all duration-300 group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
+                class="mr-auto inline-flex items-center justify-center rounded-full px-5 py-5 ring-1 ring-primary-dark transition-all duration-300 group-hover:bg-primary group-hover:text-white 2xl:h-[4.375rem] 2xl:w-[4.375rem]"
               >
                 <img
                   class="group-hover:c-filter-white w-7 2xl:w-8"
                   src="../../assets/images/right-arrow.svg"
-                  alt=""
+                  alt="Next"
                 />
                 <span class="sr-only">Next</span>
               </span>
@@ -1088,7 +1246,7 @@
                 class="h-full rounded-4xl bg-paper p-6 sm:p-8 md:p-12 lg:p-8 xl:p-12 2xl:p-16"
               >
                 <form>
-                  <div class="grid gap-4 sm:grid-cols-2 sm:gap-8">
+                  <div class="grid gap-4 sm:gap-8 md:grid-cols-2">
                     <div>
                       <label
                         for="name"
@@ -1239,53 +1397,71 @@
           </div>
         </div>
       </section>
-      <section class="p-0">
+      <div class="p-0">
         <div class="relative flex overflow-x-hidden">
-          <div class="animate-marquee whitespace-nowrap md:pb-3">
+          <div class="animate-marquee whitespace-nowrap lg:pb-3 lg:pt-4">
             <span
-              class="mr-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] xl:text-6xl 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Get exclusive
               <img
-                class="mx-4 inline-block w-8 rotate-90 sm:mx-12 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
               content
               <span
-                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:mx-16 sm:h-6 sm:w-6"
+                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:h-5 sm:w-5 2xl:h-6 2xl:w-6"
               ></span>
+              Get exclusive
+              <img
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt="Arrow icon"
+              />
+              content
             </span>
           </div>
 
-          <div class="absolute top-0 animate-marquee2 whitespace-nowrap pb-3">
+          <div
+            class="absolute top-0 animate-marquee2 whitespace-nowrap lg:pb-3 lg:pt-4"
+          >
             <span
-              class="mr-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[5.625rem] sm:leading-[6.375rem] 2xl:text-9xl 2xl:leading-[11.25rem]"
+              class="mx-28 inline-block font-clash-display text-5xl font-medium uppercase leading-[5.875rem] text-paper sm:text-[4rem] sm:leading-[8.75rem] xl:text-6xl 2xl:text-9xl 2xl:leading-[11.25rem]"
             >
               Get exclusive
               <img
-                class="mx-4 inline-block w-8 rotate-90 sm:mx-12 sm:w-14 2xl:w-20"
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
                 src="../../assets/images/external-link-lightblue.svg"
                 alt="Arrow icon"
               />
               content
               <span
-                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:mx-16 sm:h-6 sm:w-6"
+                class="mx-4 inline-block h-4 w-4 rounded-full bg-paper-dark align-middle sm:h-5 sm:w-5 2xl:h-6 2xl:w-6"
               ></span>
+              Get exclusive
+              <img
+                class="mx-4 inline-block w-8 rotate-90 sm:mx-8 sm:w-11 2xl:w-20"
+                src="../../assets/images/external-link-lightblue.svg"
+                alt="Arrow icon"
+              />
+              content
             </span>
           </div>
         </div>
         <div class="sr-only">
           <p>Get exclusive content</p>
         </div>
-      </section>
+      </div>
     </main>
     <footer
       class="bg-primary bg-[url('../../assets/images/footer-bg.png')] bg-cover bg-center bg-no-repeat pb-0 text-white"
     >
-      <div class="mx-auto px-6 xl:container sm:px-12">
-        <div class="justify-between pb-6 sm:flex sm:pb-14">
-          <div class="sm:w-[31.0625rem]">
+      <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
+        <div
+          class="pb-6 sm:grid sm:pb-12 md:grid-cols-6 lg:flex lg:justify-between lg:pb-14"
+        >
+          <div class="sm:col-span-3 lg:w-[31.0625rem]">
             <a href="/">
               <img
                 src="../../assets/images/footer-logo.svg"
@@ -1297,11 +1473,11 @@
               our dedicated team. Our units, our trucks, our crews, our promise.
             </p>
           </div>
-          <nav class="mt-8 flex gap-20 sm:mt-0 sm:gap-20">
+          <nav
+            class="mt-8 flex gap-20 self-center sm:col-span-3 sm:gap-12 md:ml-auto md:mt-0 lg:ml-0 lg:gap-20"
+          >
             <div class="pr-3">
-              <h6
-                class="mb-4 text-base uppercase leading-5 tracking-wider text-white"
-              >
+              <h6 class="mb-4 text-base uppercase leading-5 text-white">
                 Services
               </h6>
               <ul class="space-y-1">
@@ -1329,9 +1505,7 @@
               </ul>
             </div>
             <div>
-              <h6
-                class="mb-4 text-base uppercase leading-5 tracking-wider text-white"
-              >
+              <h6 class="mb-4 text-base uppercase leading-5 text-white">
                 Info
               </h6>
               <ul class="space-y-1">
@@ -1370,13 +1544,24 @@
     <script src="../js/index.js"></script>
     <script>
       const clientReviewSwiper = new Swiper(".client-review-swiper", {
-        slidesPerView: 2.32,
+        slidesPerView: 1,
         spaceBetween: 32,
         // centeredSlides: true,
         loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.37,
+          },
+          1024: {
+            slidesPerView: 1.3,
+          },
+          1280: {
+            slidesPerView: 2.29,
+          },
         },
       });
     </script>
@@ -1397,8 +1582,22 @@
     </script>
     <script>
       var swiper = new Swiper(".popular-categories-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 32,
+        slidesPerView: 1.13,
+        spaceBetween: 16,
+        loop: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 1.48,
+            spaceBetween: 32,
+          },
+          1024: {
+            slidesPerView: 2.5,
+          },
+          1280: {
+            slidesPerView: 3,
+            loop: false,
+          },
+        },
       });
     </script>
   </body>

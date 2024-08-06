@@ -16,7 +16,7 @@
     @apply mx-auto max-w-[1920px];
   }
   h1 {
-    @apply font-clash-display text-5xl font-medium text-primary-dark 2xl:text-6xl;
+    @apply font-clash-display text-5xl font-medium text-primary-dark md:text-6xl;
   }
   h2 {
     @apply font-clash-display text-3xl font-medium text-primary-dark sm:text-4xl md:text-5xl;
@@ -154,12 +154,15 @@
   .swiper-pagination-bullet {
     @apply h-4 w-4 bg-white;
   }
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  /* .swiper-pagination-bullets.swiper-pagination-horizontal {
     @apply bottom-10;
-  }
+  } */
   @media (min-width: 1536px) and (max-width: 1678px) {
     header .c-search {
       @apply w-48;
+    }
+    .c-event-banner-section {
+      @apply !col-span-9;
     }
   }
 }
