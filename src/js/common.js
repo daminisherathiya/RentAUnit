@@ -37,3 +37,38 @@ document.addEventListener("DOMContentLoaded", () => {
     e.stopPropagation();
   });
 });
+
+function viewMoreAndViewLessFunctionality(
+  parentSelector,
+  targetClass,
+  toggleTextClass,
+  rotateClass,
+) {
+  const parentElement = document.querySelector(parentSelector);
+  if (!parentElement) return;
+
+  const hiddenTexts = parentElement.querySelectorAll(`.${targetClass}`);
+  const toggleTextElement = parentElement.querySelector(`.${toggleTextClass}`);
+  const rotateElement = parentElement.querySelector(`.${rotateClass}`);
+
+  if (toggleTextElement && rotateElement) {
+    hiddenTexts.forEach((hiddenText) => {
+      hiddenText.classList.toggle("hidden");
+    });
+
+    // Change the toggle text
+    if (
+      Array.from(hiddenTexts).some(
+        (hiddenText) => !hiddenText.classList.contains("hidden"),
+      )
+    ) {
+      toggleTextElement.textContent = "View Less";
+    } else {
+      toggleTextElement.textContent = "View More";
+    }
+
+    // Toggle the rotation classes
+    rotateElement.classList.toggle("rotate-90");
+    rotateElement.classList.toggle("-rotate-90");
+  }
+}

@@ -229,7 +229,7 @@
                     <input
                       id="search-mobile"
                       name="search"
-                      class="block w-full rounded-3xl border-0 bg-white py-3 pl-10 pr-3 text-xs ring-1 ring-inset ring-light placeholder:text-sm placeholder:text-disabled focus-within:outline-primary-light focus:ring-inset focus:ring-light 2xl:py-4 2xl:pl-11 2xl:pr-4 2xl:text-sm"
+                      class="block w-full rounded-3xl border-0 bg-white py-3 pl-10 pr-3 text-sm ring-1 ring-inset ring-light placeholder:text-sm placeholder:text-disabled focus-within:outline-primary-light focus:ring-inset focus:ring-light 2xl:py-4 2xl:pl-11 2xl:pr-4"
                       placeholder="SEARCH"
                       type="search"
                     />
@@ -247,7 +247,7 @@
                     >
                   </div>
                   <button
-                    class="mt-1 block w-full shrink-0 rounded-lg bg-secondary px-4 py-2 font-clash-display text-sm font-semibold uppercase !leading-5 text-white hover:bg-opacity-95 lg:mx-3 lg:mt-0 lg:inline-block lg:w-auto lg:rounded-4xl xl:ml-4 xl:mr-6 2xl:px-6 2xl:py-4 2xl:text-base"
+                    class="hover:ring-secondary mt-1 block w-full shrink-0 rounded-lg bg-secondary px-4 py-2 font-clash-display text-sm font-semibold uppercase !leading-5 text-white transition-all duration-300 hover:bg-white hover:text-secondary hover:ring-[0.09375rem] lg:mx-3 lg:mt-0 lg:inline-block lg:w-auto lg:rounded-4xl xl:ml-4 xl:mr-6 2xl:px-6 2xl:py-4 2xl:text-base"
                   >
                     GET STARTED
                   </button>
@@ -523,7 +523,7 @@
                   ><img
                     class="group-hover:c-filter-white w-3"
                     src="../../assets/images/external-link.svg"
-                    alt="Get Started button with arrow icon"
+                    alt="External link"
                 /></span>
               </button>
             </div>
@@ -708,7 +708,7 @@
       <section>
         <div class="mx-auto px-6 xl:container sm:px-[3.75rem] xl:px-12">
           <div class="grid gap-6 md:gap-12 lg:gap-10 xl:grid-cols-12">
-            <div class="xl:col-span-6 2xl:col-span-5">
+            <div class="about-us xl:col-span-6 2xl:col-span-5">
               <span
                 class="mb-6 inline-block rounded-xl border-[1.4px] border-secondary bg-red-gradient px-4 py-2 font-clash-display font-medium uppercase leading-5 tracking-wider text-secondary"
               >
@@ -725,7 +725,7 @@
                 blame belongs to those who fail in their duty through weakness
                 of will, which is the same as saying through shrinking from toil
                 and pain.<br />
-                <span class="hidden md:inline-block">
+                <span class="hide-text hidden md:inline-block">
                   <br />
                   These cases are perfectly simple and easy to distinguish. In a
                   free hour, when our power of choice is untrammelled and when
@@ -739,12 +739,15 @@
               </p>
               <div
                 class="flex cursor-pointer items-center gap-3 pt-3 md:hidden"
+                onclick="viewMoreAndViewLessFunctionality('.about-us', 'hide-text', 'toggle-text', 'rotate-icon')"
               >
-                <p class="font-clash-display font-medium text-primary-dark">
+                <p
+                  class="toggle-text font-clash-display font-medium text-primary-dark"
+                >
                   View More
                 </p>
                 <img
-                  class="w-2 rotate-90"
+                  class="rotate-icon w-2 rotate-90"
                   src="../../assets/images/right-angle.svg"
                   alt="View More"
                 />
@@ -771,7 +774,7 @@
           <div class="space-y-6 sm:space-y-12 lg:space-y-16">
             <h2 class="px-6 text-center sm:px-0">Core Values</h2>
             <div
-              class="grid gap-y-6 md:grid-cols-2 md:gap-16 md:gap-x-6 xl:grid-cols-4"
+              class="core-values grid gap-y-6 md:grid-cols-2 md:gap-16 md:gap-x-6 xl:grid-cols-4"
             >
               <div class="space-y-3">
                 <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
@@ -791,7 +794,7 @@
                   rental terms
                 </p>
               </div>
-              <div class="hidden space-y-3 md:block">
+              <div class="hide-text hidden space-y-3 md:block">
                 <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
                 <h4 class="text-2xl tracking-tight">Exceptional Qaulity</h4>
                 <p>
@@ -800,7 +803,7 @@
                   functioning perfectly
                 </p>
               </div>
-              <div class="hidden space-y-3 md:block">
+              <div class="hide-text hidden space-y-3 md:block">
                 <div class="h-2 w-8 rounded-4xl bg-secondary"></div>
                 <h4 class="text-2xl tracking-tight">Exceptional Qaulity</h4>
                 <p>
@@ -809,12 +812,17 @@
                   service if needed
                 </p>
               </div>
-              <div class="flex cursor-pointer items-center gap-3 md:hidden">
-                <p class="font-clash-display font-medium text-primary-dark">
+              <div
+                class="flex cursor-pointer items-center gap-3 md:hidden"
+                onclick="viewMoreAndViewLessFunctionality('.core-values', 'hide-text', 'toggle-text', 'rotate-icon')"
+              >
+                <p
+                  class="toggle-text font-clash-display font-medium text-primary-dark"
+                >
                   View More
                 </p>
                 <img
-                  class="w-2 rotate-90"
+                  class="rotate-icon w-2 rotate-90"
                   src="../../assets/images/right-angle.svg"
                   alt="View More"
                 />
@@ -1541,7 +1549,7 @@
     </footer>
     <script src="../js/flowbite.min.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/common.js"></script>
     <script>
       const clientReviewSwiper = new Swiper(".client-review-swiper", {
         slidesPerView: 1,

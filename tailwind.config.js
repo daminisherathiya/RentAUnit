@@ -52,6 +52,7 @@ module.exports = {
     ringColor: {
       white: "#FFFFFF",
       light: "#D0E3EF",
+      secondary: "#D80043",
       primary: {
         dark: "#0A1039",
       },
