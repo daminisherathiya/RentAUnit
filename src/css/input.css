@@ -164,5 +164,8 @@
     .c-event-banner-section {
       @apply !col-span-9;
     }
+    .c-banner-break {
+      @apply !hidden;
+    }
   }
 }
