@@ -40,10 +40,13 @@ module.exports = {
         dark: "#E4F0F8",
       },
       secondary: "#D80043",
+      divider: "#D0E3EF",
       primary: {
         DEFAULT: "#00094A",
         dark: "#0A1039",
+        light: "#161548"
       },
+      transparent: "transparent"
     },
     backgroundImage: {
       "red-gradient":
@@ -72,6 +75,7 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+        "pill": "6.25rem",
       },
       animation: {
         marquee: "marquee 25s linear infinite",

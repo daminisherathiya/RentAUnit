@@ -154,9 +154,31 @@
   .swiper-pagination-bullet {
     @apply h-4 w-4 bg-white;
   }
-  /* .swiper-pagination-bullets.swiper-pagination-horizontal {
-    @apply bottom-10;
-  } */
+  .c-scrollbar::-webkit-scrollbar {
+    @apply w-2;
+  }
+  .c-scrollbar::-webkit-scrollbar-thumb {
+    @apply rounded-4xl bg-paper-dark;
+  }
+  .c-scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .c-scrollbar-hidden::-webkit-scrollbar {
+    @apply hidden;
+  }
+  .numberVal input[type="number"]::-webkit-inner-spin-button,
+  .numberVal input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+  .c-range-slider .range-min::-webkit-slider-thumb,
+  .c-range-slider .range-max::-webkit-slider-thumb {
+    @apply pointer-events-auto h-5 w-5 appearance-none rounded-full border-[0.0875rem] border-solid border-primary-dark bg-white;
+  }
+  .c-range-slider .range-min::-webkit-slider-thumb:hover,
+  .c-range-slider .range-max::-webkit-slider-thumb:hover {
+    @apply bg-paper-dark;
+  }
   @media (min-width: 1536px) and (max-width: 1678px) {
     header .c-search {
       @apply w-48;

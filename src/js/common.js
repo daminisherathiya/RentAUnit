@@ -43,6 +43,8 @@ function viewMoreAndViewLessFunctionality(
   targetClass,
   toggleTextClass,
   rotateClass,
+  toggleText1 = "View Less",
+  toggleText2 = "View More"
 ) {
   const parentElement = document.querySelector(parentSelector);
   if (!parentElement) return;
@@ -51,7 +53,8 @@ function viewMoreAndViewLessFunctionality(
   const toggleTextElement = parentElement.querySelector(`.${toggleTextClass}`);
   const rotateElement = parentElement.querySelector(`.${rotateClass}`);
 
-  if (toggleTextElement && rotateElement) {
+  console.log(hiddenTexts);
+  if (toggleTextElement) {
     hiddenTexts.forEach((hiddenText) => {
       hiddenText.classList.toggle("hidden");
     });
@@ -62,11 +65,12 @@ function viewMoreAndViewLessFunctionality(
         (hiddenText) => !hiddenText.classList.contains("hidden"),
       )
     ) {
-      toggleTextElement.textContent = "View Less";
+      toggleTextElement.textContent = toggleText1;
     } else {
-      toggleTextElement.textContent = "View More";
+      toggleTextElement.textContent = toggleText2;
     }
-
+  }
+  if (rotateElement) {
     // Toggle the rotation classes
     rotateElement.classList.toggle("rotate-90");
     rotateElement.classList.toggle("-rotate-90");
