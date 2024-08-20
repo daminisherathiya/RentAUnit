@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="x-apple-disable-message-reformatting" />
+  <meta name="color-scheme" content="light" />
+  <meta name="supported-color-schemes" content="light" />
+
+  <title>Rent a Unit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: #ffffff;
+      color: #3c4c5a;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    /* Clash Display - Medium (500) */
+    @font-face {
+      font-family: "Clash Display";
+      src: url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.eot");
+      src:
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.woff2") format("woff2"),
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.woff") format("woff"),
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Clash Display - Semibold (600) */
+    @font-face {
+      font-family: "Clash Display";
+      src: url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.eot");
+      src:
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.woff2") format("woff2"),
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.woff") format("woff"),
+        url("../../assets/fonts/clashDisplay/ClashDisplay-Semibold.ttf") format("truetype");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 37.5rem;
+      margin: auto;
+    }
+
+    .section-padding {
+      padding: 0 2.625rem;
+    }
+
+    .btn:hover {
+      border: 0.0625rem solid #0A1039 !important;
+      color: #0A1039 !important;
+      background-color: #ffffff !important;
+    }
+
+    @media (max-width: 576px) {
+      .section-padding {
+        padding: 0 1.25rem !important;
+      }
+
+      .contact-us {
+        padding: 1rem 0 0 0 !important;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .section-padding {
+        padding: 0 0.625rem !important;
+      }
+
+      .steps_row>td {
+        display: block !important;
+        width: auto !important;
+      }
+
+      .p-24px {
+        padding: 1.5rem !important;
+      }
+
+      .pt-5px {
+        padding: 0.3125rem 0 0 0 !important;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .container {
+        font-size: 0.875rem !important;
+
+      }
+    }
+
+    @media (max-width: 375px) {}
+  </style>
+</head>
+
+<body>
+  <table class="container" cellspacing="0" cellpadding="0" style="width: 100%; background-color: #ffffff !important; border: 0.0625rem solid #E4F0F8; font-family: Montserrat, sans-serif; font-size: 1rem;
+      line-height: 1.5rem;">
+    <tr>
+      <td>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td class="section-padding"
+              style="background-image: url('./header-bg.png'); background-color: #00094A; background-repeat: no-repeat; background-size: cover; border-radius: 0 0 1.5rem 1.5rem;">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td style="padding: 2rem 0.5rem;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="line-height: 0;">
+                          <a href="https://rentaunitny.com" style="display: inline-block;" target="_blank"><img
+                              style="width: 7.4375rem; max-width: 100%;" src="./logo.png" alt="Rent a unit logo"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="font-family: Clash Display, sans-serif; font-weight: 500; line-height: 1.25rem; text-transform: uppercase; color: #ffffff; padding: 1.5rem 0 0 0;">
+                          Your way, right away
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td class="section-padding">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td style="padding: 2rem 0.5rem;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="color: #0A1039; font-weight: 600; padding: 0 0 0.5rem 0;">Hello
+                          [Customer Name],</td>
+                      </tr>
+                      <tr>
+                        <td>Are you running out of space at home or in the office?</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 0 0 1.5rem 0;">
+                          Look no further! <a href="https://rentaunitny.com" style="font-weight: 600; color: #0A1039;"
+                            target="_blank">RentaUnitNY.com</a> is
+                          here to provide you with the best storage solutions in New
+                          York.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a class="btn" href="https://rentaunitny.com" style="
+                          color: #ffffff;
+                          background-color: #0A1039;
+                          border: 0.0625rem solid #0A1039;
+                          padding: 0.9375rem 1.5rem;
+                          font-weight: 600;
+                          border-radius: 6.25rem;
+                          font-size: 0.875rem;
+                          line-height: 1.0625rem;
+                          display: inline-block;
+                          text-align: center;
+                          font-family: Clash Display, sans-serif;
+                          text-transform: uppercase;
+                        " target="_blank">Visit Website</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td class="section-padding">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td style="padding: 2rem 0.5rem;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr valign="top">
+                        <td style="width: 0.25rem; padding: 0.25rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td
+                                style="width: 0.25rem; height: 1.375rem; background-color: #D71D46; border-radius: 6.25rem;">
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td
+                          style="padding: 0 0 0 0.75rem; font-family: Clash Display, sans-serif; font-size: 1.5rem; font-weight: 500; text-transform: uppercase; color: #0A1039; line-height: 1.875rem;">
+                          Why Choose <span style="color: #D80043;">Rent a Unit?</span>
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="line-height: 0; padding: 1.5rem 0;">
+                          <img style="max-width: 100%; border-radius: 1.25rem;"
+                            src="./portable-toilets-in-public-park.jpg" alt="">
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr valign="baseline">
+                        <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt=""></td>
+                        <td style="padding: 0 0 1rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Convenient Locations:
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>We have storage units conveniently located throughout New York, making it easy for you
+                                to access your belongings whenever you need them.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr valign="baseline">
+                        <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt=""></td>
+                        <td style="padding: 0 0 1rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Secure and Safe:</td>
+                            </tr>
+                            <tr>
+                              <td>Our facilities are equipped with top-notch security systems, including 24/7
+                                surveillance and secure access codes, ensuring your items are always protected.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr valign="baseline">
+                        <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt=""></td>
+                        <td style="padding: 0 0 1rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Variety of Unit
+                                Sizes:
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Whether you need to store a few boxes or large furniture, we have a variety of unit
+                                sizes to fit your needs.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr valign="baseline">
+                        <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt=""></td>
+                        <td style="padding: 0 0 1rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Affordable Rates:
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Get the best value for your money with our competitive pricing and flexible rental
+                                terms.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr valign="baseline">
+                        <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt=""></td>
+                        <td>
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Exceptional Customer
+                                Service:
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Our friendly and knowledgeable staff are always ready to assist you with any questions
+                                or concerns.
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td class="section-padding"
+              style="border-top: 0.0625rem solid #D0E3EF; border-bottom: 0.0625rem solid #D0E3EF;">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td style="padding: 2rem 0;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 0 0.5rem;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr valign="top">
+                              <td style="width: 0.25rem; padding: 0.25rem 0;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                  <tr>
+                                    <td
+                                      style="width: 0.25rem; height: 1.375rem; background-color: #D71D46; border-radius: 6.25rem;">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td
+                                style="padding: 0 0 0 0.75rem; font-family: Clash Display, sans-serif; font-size: 1.5rem; font-weight: 500; text-transform: uppercase; color: #0A1039; line-height: 1.875rem;">
+                                What Do
+                                <span style="color: #D80043;">We Do?</span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 1rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr class="steps_row">
+                              <td style="line-height: 0; padding: 0.5rem;"><img
+                                  style="max-width: 100%; border-radius: 1.5rem;" src="./trailer-restrooms.jpg" alt="">
+                              </td>
+                              <td style="line-height: 0; padding: 0.5rem;"><img
+                                  style="max-width: 100%; border-radius: 1.5rem;" src="./restroom.jpg" alt=""></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 0 0.5rem;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr valign="baseline">
+                              <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt="">
+                              </td>
+                              <td style="padding: 0 0 1rem 0;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                  <tr>
+                                    <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Convenient
+                                      Locations:
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>We have storage units conveniently located throughout New York, making it easy
+                                      for you to access your belongings whenever you need them.
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr valign="baseline">
+                              <td style="padding: 0 0.75rem 0 0;"><img style="width: 1.5rem;" src="./arrow.png" alt="">
+                              </td>
+                              <td>
+                                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                  <tr>
+                                    <td style="font-weight: 600; color: #0A1039; padding: 0 0 0.5rem 0;">Secure and
+                                      Safe:
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Our facilities are equipped with top-notch security systems, including 24/7
+                                      surveillance and secure access codes, ensuring your items are always protected.
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 1.5rem 0.5rem 0 0.5rem;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td class="p-24px"
+                                style="border-radius: 1.5rem; background-color: #F3F8FD; background-image: url(./traingle-bg.png); background-repeat: no-repeat; padding: 1.5rem 3rem; background-size: cover; text-align: center;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                  <tr>
+                                    <td style="line-height: 0;"><img src="./logo-arrow.png"
+                                        style="width: 9rem; max-width: 100%;" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      style="padding: 0.75rem 0; font-family: Clash Display, sans-serif; font-size: 1.5rem; font-weight: 500; text-transform: uppercase; color: #0A1039; line-height: 1.875rem;">
+                                      <span style="color: #D80043;">Special offer</span>
+                                      Just For You!
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="line-height: 1.25rem; font-size: 0.875rem; padding: 0 0 1.5rem 0;">
+                                      For a limited time, enjoy <span style="font-weight: 600; color: #0A1039; font-family: Montserrat, sans-serif;">**50% off</span> your
+                                      first month** when you sign up for a storage unit with <a
+                                        href="https://rentaunitny.com"
+                                        style="display: inline-block; color: #3C4C5A;">RentaUnitNY.com</a>. Don't miss
+                                      out on this fantastic deal to declutter and organize your space.
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a class="btn" href="https://rentaunitny.com" style="
+                                      color: #ffffff;
+                                      background-color: #0A1039;
+                                      padding: 0.9375rem 1.5rem;
+                                      font-weight: 600;
+                                      border-radius: 6.25rem;
+                                      border: 0.0625rem solid #0A1039;
+                                      font-size: 0.875rem;
+                                      line-height: 1.0625rem;
+                                      display: inline-block;
+                                      text-align: center;
+                                      font-family: Clash Display, sans-serif;
+                                      text-transform: uppercase;
+                                    " target="_blank">Check Our Products</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td class="section-padding" style="border-bottom: 0.0625rem solid #D0E3EF;">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td style="padding: 2rem 0;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 0 0.5rem;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr valign="top">
+                              <td style="width: 0.25rem; padding: 0.25rem 0;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                  <tr>
+                                    <td
+                                      style="width: 0.25rem; height: 1.375rem; background-color: #D71D46; border-radius: 6.25rem;">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <td
+                                style="padding: 0 0 0 0.75rem; font-family: Clash Display, sans-serif; font-size: 1.5rem; font-weight: 500; text-transform: uppercase; color: #0A1039; line-height: 1.875rem;">
+                                Ready to
+                                <span style="color: #D80043;">get started?</span>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 1rem 0;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr class="steps_row">
+                              <td style="line-height: 0; padding: 0.5rem;"><img
+                                  style="max-width: 100%; border-radius: 1.5rem;" src="./trailer-restrooms.jpg" alt="">
+                              </td>
+                              <td style="line-height: 0; padding: 0.5rem;"><img
+                                  style="max-width: 100%; border-radius: 1.5rem;" src="./restroom.jpg" alt=""></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 0 0.5rem;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td>Visit our website at
+                                <a href="https://rentaunitny.com"
+                                  style="display: inline-block; color: #0A1039; font-weight: 600;">[RentaUnitNY.com](https://rentaunitny.com)</a>
+                                or
+                                <a href="tel:+15551234567"
+                                  style="display: inline-block; color: #0A1039; font-weight: 600;">call us at (555)
+                                  123-4567</a> to reserve your unit today.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 1rem 0 0 0;">Experience the convenience and peace of mind that comes
+                                with storing your belongings with the best in the business.</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td class="section-padding">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td style="padding: 2rem 0.5rem; color: #0A1039;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td>
+                          Thank you for choosing <a href="https://rentaunitny.com"
+                            style="display: inline-block; color: #0A1039;">RentaUnitNY.com</a>!
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 1.5rem 0 0 0;">Best regards,
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>The <a href="https://rentaunitny.com"
+                            style="display: inline-block; color: #0A1039;">RentaUnitNY.com</a> Team</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <table cellspacing="0" cellpadding="0" style="width: 100%">
+          <tr>
+            <td
+              style="background-color: #00094A; background-image: url('./traingle-bg.png'); background-repeat: no-repeat; background-size: cover;">
+              <table cellspacing="0" cellpadding="0" style="width: 100%">
+                <tr>
+                  <td class="section-padding" style="border-bottom: 0.0625rem solid #DADADA33;">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 2rem 0.5rem 1rem 0.5rem; text-align: center; color: #ffffff;">
+
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td
+                                style="text-transform: uppercase; font-weight: 500; font-family: Clash Display, sans-serif; line-height: 1.25rem;">
+                                Have a question?
+                              </td>
+                            </tr>
+                            <tr>
+                              <td
+                                style="text-transform: uppercase; font-weight: 500; font-family: Clash Display, sans-serif; line-height: 1.25rem;">
+                                Reach out to us now!</td>
+                            </tr>
+                          </table>
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td class="contact-us" style="padding: 1rem 0 0 0;">
+                                <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                  <tr class="steps_row" style="display: inline-block;">
+                                    <td class="pt-5px" style="padding: 0.3125rem 2.5rem 0 0;">
+                                      <a href="tel:+17186431313"
+                                        style="display: inline-block; color: #ffffff; line-height: 1.25rem;">
+                                        <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                          <tr>
+                                            <td style="line-height: 0; width: 1.25rem;"><img src="./phone.png"
+                                                style="max-width: 100%;" alt=""></td>
+                                            <td style="font-size: 0.875rem; padding: 0 0 0 0.5rem; text-align: left;">
+                                              718-643-1313</td>
+                                          </tr>
+                                        </table>
+                                      </a>
+                                    </td>
+                                    <td class="pt-5px" style="padding: 0.3125rem 0 0 0;">
+                                      <a href="mailto:team@rentaunitny.com"
+                                        style="display: inline-block; color: #ffffff; line-height: 1.25rem;">
+                                        <table cellspacing="0" cellpadding="0" style="width: 100%">
+                                          <tr>
+                                            <td style="line-height: 0; width: 1.25rem;"><img src="./send.png"
+                                                style="max-width: 100%;" alt=""></td>
+                                            <td style="font-size: 0.875rem; padding: 0 0 0 0.5rem; text-align: left;">
+                                              rentaunitny.com
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="section-padding">
+                    <table cellspacing="0" cellpadding="0" style="width: 100%">
+                      <tr>
+                        <td style="padding: 1rem 0.5rem 2rem 0.5rem; text-align: center; color: #ffffff;">
+                          <table cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                              <td style="line-height: 1.25rem; color: #D0E3EF; font-size: 0.875rem;">
+                                © 2024 All Rights Reserved by Rent A Unit
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
