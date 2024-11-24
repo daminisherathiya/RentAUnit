@@ -147,12 +147,19 @@
   .c-filter-white {
     @apply brightness-[104%] contrast-[106%] hue-rotate-[122deg] invert-[96%] saturate-[17%] sepia-[4%];
   }
-  .c-filter-secondary {
+  .c-filter-secondary,
+  button[aria-expanded="true"] [data-accordion-icon].icon-collapsed {
     filter: brightness(0) saturate(100%) invert(8%) sepia(97%) saturate(6896%)
       hue-rotate(334deg) brightness(99%) contrast(108%);
   }
   .swiper-pagination-bullet {
-    @apply h-4 w-4 bg-white;
+    @apply size-3 sm:size-4 bg-white;
+  }
+  .product-swiper-pagination .swiper-pagination-bullet {
+    @apply bg-paper-red;
+  }
+  .swiper-slide.swiper-slide-thumb-active {
+    @apply ring-[0.09375rem] ring-primary-dark;
   }
   .c-scrollbar::-webkit-scrollbar {
     @apply w-2;
@@ -179,6 +186,13 @@
   .c-range-slider .range-max::-webkit-slider-thumb:hover {
     @apply bg-paper-dark;
   }
+  [data-accordion-icon].icon-collapsed {
+    @apply inline-block size-8 bg-[url("../../assets/images/plus.svg")] bg-cover bg-center;
+  }
+  button[aria-expanded="true"] [data-accordion-icon].icon-collapsed {
+    @apply bg-[url("../../assets/images/minus.svg")];
+  }
+
   @media (min-width: 1536px) and (max-width: 1678px) {
     header .c-search {
       @apply w-48;

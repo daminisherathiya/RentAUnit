@@ -38,6 +38,7 @@ module.exports = {
         DEFAULT: "#F2F7FA",
         light: "#F3F8FD",
         dark: "#E4F0F8",
+        red: "#D80043",
       },
       secondary: "#D80043",
       divider: "#D0E3EF",
