@@ -248,7 +248,10 @@
     <main>
       <section class="pb-0 pt-4 md:py-[3.125rem]">
         <div class="mx-auto px-6 sm:px-[3.75rem] lg:px-12">
-          <nav class="mb-6 flex lg:px-[0.125rem] sm:mb-8" aria-label="Breadcrumb">
+          <nav
+            class="mb-6 flex sm:mb-8 lg:px-[0.125rem]"
+            aria-label="Breadcrumb"
+          >
             <ol class="inline-flex flex-wrap items-center gap-x-1 gap-y-2">
               <li class="inline-flex items-center">
                 <a href="#" class="inline-flex items-center font-medium">
@@ -433,7 +436,7 @@
                 </div>
               </div>
             </div>
-            <div class="space-y-4 lg:pr-[0.125rem] sm:space-y-6 lg:col-span-4">
+            <div class="space-y-4 sm:space-y-6 lg:col-span-4 lg:pr-[0.125rem]">
               <div>
                 <div
                   class="mb-4 flex flex-col-reverse items-baseline justify-between gap-5 md:flex-row lg:flex-col-reverse xl:flex-row"
@@ -441,30 +444,43 @@
                   <h2 class="lg:text-4xl 2xl:text-5xl">
                     The Flush Deluxe Unit
                   </h2>
-                  <div
-                    class="flex shrink-0 items-center gap-4 divide-x divide-divider md:ml-0 lg:ml-auto xl:ml-0"
-                  >
-                    <div class="flex cursor-pointer items-center space-x-1">
-                      <div>
-                        <img
-                          src="../../assets/images/prev-arrow-blur.svg"
-                          alt="Prev arrow"
-                        />
-                      </div>
-                      <p class="font-medium tracking-tight text-disabled">
-                        Previous
-                      </p>
-                    </div>
+                  <div class="flex items-center justify-between w-full md:w-auto">
                     <div
-                      class="flex cursor-pointer items-center space-x-1 pl-4"
+                      class="flex shrink-0 items-center gap-4 divide-x divide-divider md:ml-0 lg:ml-auto xl:ml-0"
                     >
-                      <p class="font-medium tracking-tight">Next</p>
-                      <div>
-                        <img
-                          src="../../assets/images/next-arrow.svg"
-                          alt="Next arrow"
-                        />
+                      <div class="flex cursor-pointer items-center space-x-1">
+                        <div>
+                          <img
+                            src="../../assets/images/prev-arrow-blur.svg"
+                            alt="Prev arrow"
+                          />
+                        </div>
+                        <p class="font-medium tracking-tight text-disabled">
+                          Previous
+                        </p>
                       </div>
+                      <div
+                        class="flex cursor-pointer items-center space-x-1 pl-4"
+                      >
+                        <p class="font-medium tracking-tight">Next</p>
+                        <div>
+                          <img
+                            src="../../assets/images/next-arrow.svg"
+                            alt="Next arrow"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="md:hidden">
+                      <button
+                        class="group flex size-14 shrink-0 cursor-pointer items-center justify-center rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary sm:p-3.5"
+                      >
+                        <img
+                          class="group-hover:c-filter-secondary w-5 sm:w-6"
+                          src="../../assets/images/export.svg"
+                          alt="Export"
+                        />
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -476,74 +492,87 @@
                 </h6>
               </div>
               <div class="py-4">
-                <div
-                  class="grid grid-cols-1 gap-x-6 gap-y-3 md:grid-cols-12 2xl:grid-cols-11 2xl:gap-x-12"
-                >
+                <div class="flex items-start justify-between gap-16">
                   <div
-                    class="flex items-start gap-2 md:col-span-6 2xl:col-span-4"
+                    class="grid grid-cols-1 gap-x-6 gap-y-3 md:grid-cols-12 2xl:grid-cols-9 2xl:gap-x-12"
                   >
-                    <div class="size-6 shrink-0">
-                      <img
-                        src="../../assets/images/tick-circle.svg"
-                        alt="Tick circle"
-                      />
+                    <div
+                      class="flex items-start gap-2 md:col-span-6 lg:col-span-12 xl:col-span-6 2xl:col-span-4"
+                    >
+                      <div class="size-6 shrink-0">
+                        <img
+                          src="../../assets/images/tick-circle.svg"
+                          alt="Tick circle"
+                        />
+                      </div>
+                      <p>Lxurious</p>
                     </div>
-                    <p>Lxurious</p>
+                    <div
+                      class="flex items-start gap-2 md:col-span-6 lg:col-span-12 xl:col-span-6 2xl:col-span-4"
+                    >
+                      <div class="size-6 shrink-0">
+                        <img
+                          src="../../assets/images/tick-circle.svg"
+                          alt="Tick circle"
+                        />
+                      </div>
+                      <p>Lxurious</p>
+                    </div>
+                    <div
+                      class="flex items-start gap-2 md:col-span-6 lg:col-span-12 xl:col-span-6 2xl:col-span-4"
+                    >
+                      <div class="size-6 shrink-0">
+                        <img
+                          src="../../assets/images/tick-circle.svg"
+                          alt="Tick circle"
+                        />
+                      </div>
+                      <p>Accommodates 25 people per hour</p>
+                    </div>
+                    <div
+                      class="flex items-start gap-2 md:col-span-6 lg:col-span-12 xl:col-span-6 2xl:col-span-4"
+                    >
+                      <div class="size-6 shrink-0">
+                        <img
+                          src="../../assets/images/tick-circle.svg"
+                          alt="Tick circle"
+                        />
+                      </div>
+                      <p>10 workers per 40-hour work week</p>
+                    </div>
+                    <div
+                      class="flex items-start gap-2 md:col-span-6 lg:col-span-12 xl:col-span-6 2xl:col-span-4"
+                    >
+                      <div class="size-6 shrink-0">
+                        <img
+                          src="../../assets/images/tick-circle.svg"
+                          alt="Tick circle"
+                        />
+                      </div>
+                      <p>Accommodates 25 people</p>
+                    </div>
+                    <div
+                      class="flex items-start gap-2 md:col-span-6 lg:col-span-12 xl:col-span-6 2xl:col-span-4"
+                    >
+                      <div class="size-6 shrink-0">
+                        <img
+                          src="../../assets/images/tick-circle.svg"
+                          alt="Tick circle"
+                        />
+                      </div>
+                      <p>Lxurious</p>
+                    </div>
                   </div>
-                  <div
-                    class="flex items-start gap-2 md:col-span-6 2xl:col-span-4"
-                  >
-                    <div class="size-6 shrink-0">
+                  <div class="hidden md:block">
+                    <button
+                      class="group flex size-14 shrink-0 cursor-pointer items-center justify-center rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary sm:p-3.5"
+                    >
                       <img
-                        src="../../assets/images/tick-circle.svg"
-                        alt="Tick circle"
+                        class="group-hover:c-filter-secondary w-5 sm:w-6"
+                        src="../../assets/images/export.svg"
+                        alt="Export"
                       />
-                    </div>
-                    <p>Lxurious</p>
-                  </div>
-                  <div
-                    class="flex items-start gap-2 md:col-span-6 2xl:col-span-4"
-                  >
-                    <div class="size-6 shrink-0">
-                      <img
-                        src="../../assets/images/tick-circle.svg"
-                        alt="Tick circle"
-                      />
-                    </div>
-                    <p>Accommodates 25 people per hour</p>
-                  </div>
-                  <div
-                    class="flex items-start gap-2 md:col-span-6 2xl:col-span-4"
-                  >
-                    <div class="size-6 shrink-0">
-                      <img
-                        src="../../assets/images/tick-circle.svg"
-                        alt="Tick circle"
-                      />
-                    </div>
-                    <p>10 workers per 40-hour work week</p>
-                  </div>
-                  <div
-                    class="flex items-start gap-2 md:col-span-6 2xl:col-span-4"
-                  >
-                    <div class="size-6 shrink-0">
-                      <img
-                        src="../../assets/images/tick-circle.svg"
-                        alt="Tick circle"
-                      />
-                    </div>
-                    <p>Accommodates 25 people</p>
-                  </div>
-                  <div
-                    class="flex items-start gap-2 md:col-span-6 2xl:col-span-4"
-                  >
-                    <div class="size-6 shrink-0">
-                      <img
-                        src="../../assets/images/tick-circle.svg"
-                        alt="Tick circle"
-                      />
-                    </div>
-                    <p>Lxurious</p>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -594,12 +623,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
                             id="hand-flush-system"
                             type="checkbox"
                             value="Hand flush system"
                           />
-                          <label for="hand-flush-system" class="ml-2"
+                          <label
+                            for="hand-flush-system"
+                            class="ml-2 cursor-pointer"
                             >Hand flush system</label
                           >
                         </div>
@@ -609,12 +640,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
                             id="female-door-sign-1"
                             type="checkbox"
                             value="Female door sign"
                           />
-                          <label for="female-door-sign-1" class="ml-2"
+                          <label
+                            for="female-door-sign-1"
+                            class="ml-2 cursor-pointer"
                             >Female door sign</label
                           >
                         </div>
@@ -624,12 +657,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
                             id="female-door-sign-2"
                             type="checkbox"
                             value="Female door sign"
                           />
-                          <label for="female-door-sign-2" class="ml-2"
+                          <label
+                            for="female-door-sign-2"
+                            class="ml-2 cursor-pointer"
                             >Female door sign</label
                           >
                         </div>
@@ -639,12 +674,12 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
                             id="corner-shelf"
                             type="checkbox"
                             value="Corner shelf"
                           />
-                          <label for="corner-shelf" class="ml-2"
+                          <label for="corner-shelf" class="ml-2 cursor-pointer"
                             >Corner shelf</label
                           >
                         </div>
@@ -654,12 +689,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
                             id="male-door-sign-1"
                             type="checkbox"
                             value="Male door sign"
                           />
-                          <label for="male-door-sign-1" class="ml-2"
+                          <label
+                            for="male-door-sign-1"
+                            class="ml-2 cursor-pointer"
                             >Male door sign</label
                           >
                         </div>
@@ -669,23 +706,23 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
                             id="male-door-sign-2"
                             type="checkbox"
                             value="Male door sign"
                           />
-                          <label for="male-door-sign-2" class="ml-2"
+                          <label
+                            for="male-door-sign-2"
+                            class="ml-2 cursor-pointer"
                             >Male door sign</label
                           >
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="mt-6 flex items-center justify-between gap-2 xs:gap-6 sm:mt-8"
-                    >
+                    <div class="mt-6 sm:mt-8">
                       <a
                         href="#contact-us"
-                        class="group flex grow items-center gap-2 text-nowrap rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark xs:gap-5 sm:inline-flex sm:grow-0 2xl:gap-6 2xl:pl-6"
+                        class="group inline-flex items-center gap-2 text-nowrap rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark xs:gap-5 sm:grow-0 2xl:gap-6 2xl:pl-6"
                       >
                         Add to Quote
                         <span
@@ -694,19 +731,10 @@
                           <img
                             class="group-hover:c-filter-white w-4 transition-all duration-300 group-hover:rotate-[360deg]"
                             src="../../assets/images/external-link.svg"
-                            alt="Get Started button with arrow icon"
+                            alt="Add to Quote button with arrow icon"
                           />
                         </span>
                       </a>
-                      <button
-                        class="group flex size-14 shrink-0 cursor-pointer items-center justify-center rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary sm:p-3.5"
-                      >
-                        <img
-                          class="group-hover:c-filter-secondary w-5 sm:w-6"
-                          src="../../assets/images/export.svg"
-                          alt="Icon of a document with a dollar sign, indicating financial terms or pricing information, with a notification badge showing the number one."
-                        />
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -727,7 +755,7 @@
                         <div class="size-8">
                           <img
                             src="../../assets/images/features.svg"
-                            alt="Options"
+                            alt="Features"
                           />
                         </div>
                         <span
@@ -753,7 +781,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Full-size flush toilet</p>
@@ -764,7 +792,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Roomy interior</p>
@@ -775,7 +803,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Interior door lock</p>
@@ -786,7 +814,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Hand operated flush available</p>
@@ -797,7 +825,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Non-slip floor</p>
@@ -808,7 +836,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Exterior occupancy indicator</p>
@@ -819,7 +847,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Splashproof urinal</p>
@@ -830,7 +858,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Two-roll toilet paper holder</p>
@@ -841,7 +869,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Translucent roof for natural light</p>
@@ -852,7 +880,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Plentiful ventilation</p>
@@ -863,7 +891,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Coat and purse hook</p>
@@ -874,7 +902,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Emergency access hatc</p>
@@ -889,7 +917,7 @@
                         <img
                           class="group-hover:c-filter-white w-6 transition-all duration-300"
                           src="../../assets/images/question-circle.svg"
-                          alt="Help me Choose button"
+                          alt="Question with circle"
                         />
                       </a>
                     </div>
@@ -911,7 +939,7 @@
                         <div class="size-8">
                           <img
                             src="../../assets/images/specification.svg"
-                            alt="Options"
+                            alt="Specification"
                           />
                         </div>
                         <span
@@ -936,12 +964,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
-                            id="hand-flush-system"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            id="hand-flush-system-2"
                             type="checkbox"
                             value="Hand flush system"
                           />
-                          <label for="hand-flush-system" class="ml-2"
+                          <label
+                            for="hand-flush-system-2"
+                            class="ml-2 cursor-pointer"
                             >Hand flush system</label
                           >
                         </div>
@@ -951,12 +981,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
-                            id="female-door-sign-1"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            id="female-door-sign-1-2"
                             type="checkbox"
                             value="Female door sign"
                           />
-                          <label for="female-door-sign-1" class="ml-2"
+                          <label
+                            for="female-door-sign-1-2"
+                            class="ml-2 cursor-pointer"
                             >Female door sign</label
                           >
                         </div>
@@ -966,12 +998,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
-                            id="female-door-sign-2"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            id="female-door-sign-2-2"
                             type="checkbox"
                             value="Female door sign"
                           />
-                          <label for="female-door-sign-2" class="ml-2"
+                          <label
+                            for="female-door-sign-2-2"
+                            class="ml-2 cursor-pointer"
                             >Female door sign</label
                           >
                         </div>
@@ -981,12 +1015,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
-                            id="corner-shelf"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            id="corner-shelf-2"
                             type="checkbox"
                             value="Corner shelf"
                           />
-                          <label for="corner-shelf" class="ml-2"
+                          <label
+                            for="corner-shelf-2"
+                            class="ml-2 cursor-pointer"
                             >Corner shelf</label
                           >
                         </div>
@@ -996,12 +1032,14 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
-                            id="male-door-sign-1"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            id="male-door-sign-1-2"
                             type="checkbox"
                             value="Male door sign"
                           />
-                          <label for="male-door-sign-1" class="ml-2"
+                          <label
+                            for="male-door-sign-1-2"
+                            class="ml-2 cursor-pointer"
                             >Male door sign</label
                           >
                         </div>
@@ -1011,23 +1049,23 @@
                       >
                         <div class="flex">
                           <input
-                            class="h-5 w-5 shrink-0 appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
-                            id="male-door-sign-2"
+                            class="h-5 w-5 shrink-0 cursor-pointer appearance-none rounded-md border border-disabled bg-[length:14px] bg-center bg-no-repeat checked:border-primary-dark checked:bg-primary-dark checked:bg-[url('../../assets/images/checkmark.png')]"
+                            id="male-door-sign-2-2"
                             type="checkbox"
                             value="Male door sign"
                           />
-                          <label for="male-door-sign-2" class="ml-2"
+                          <label
+                            for="male-door-sign-2-2"
+                            class="ml-2 cursor-pointer"
                             >Male door sign</label
                           >
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="mt-6 flex items-center justify-between gap-2 xs:gap-6 sm:mt-8"
-                    >
+                    <div class="mt-6 sm:mt-8">
                       <a
                         href="#contact-us"
-                        class="group flex grow items-center gap-2 text-nowrap rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark xs:gap-5 sm:inline-flex sm:grow-0 2xl:gap-6 2xl:pl-6"
+                        class="group inline-flex items-center gap-2 text-nowrap rounded-4xl bg-primary py-1 pl-6 pr-1 font-clash-display font-semibold uppercase leading-5 text-white transition-all duration-300 hover:bg-white hover:text-primary hover:ring-[0.09375rem] hover:ring-primary-dark xs:gap-5 sm:grow-0 2xl:gap-6 2xl:pl-6"
                       >
                         Add to Quote
                         <span
@@ -1036,19 +1074,10 @@
                           <img
                             class="group-hover:c-filter-white w-4 transition-all duration-300 group-hover:rotate-[360deg]"
                             src="../../assets/images/external-link.svg"
-                            alt="Get Started button with arrow icon"
+                            alt="Add to Quote button with arrow icon"
                           />
                         </span>
                       </a>
-                      <button
-                        class="group flex size-14 shrink-0 cursor-pointer items-center justify-center rounded-full border-[0.09375rem] border-disabled p-[0.40625rem] text-primary-dark transition-all duration-100 ease-linear hover:border-secondary sm:p-3.5"
-                      >
-                        <img
-                          class="group-hover:c-filter-secondary w-5 sm:w-6"
-                          src="../../assets/images/export.svg"
-                          alt="Icon of a document with a dollar sign, indicating financial terms or pricing information, with a notification badge showing the number one."
-                        />
-                      </button>
                     </div>
                   </div>
                 </div>
@@ -1068,7 +1097,7 @@
                         <div class="size-8">
                           <img
                             src="../../assets/images/services.svg"
-                            alt="Options"
+                            alt="Services"
                           />
                         </div>
                         <span
@@ -1094,7 +1123,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Full-size flush toilet</p>
@@ -1105,7 +1134,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Roomy interior</p>
@@ -1116,7 +1145,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Interior door lock</p>
@@ -1127,7 +1156,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Hand operated flush available</p>
@@ -1138,7 +1167,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Non-slip floor</p>
@@ -1149,7 +1178,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Exterior occupancy indicator</p>
@@ -1160,7 +1189,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Splashproof urinal</p>
@@ -1171,7 +1200,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Two-roll toilet paper holder</p>
@@ -1182,7 +1211,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Translucent roof for natural light</p>
@@ -1193,7 +1222,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Plentiful ventilation</p>
@@ -1204,7 +1233,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Coat and purse hook</p>
@@ -1215,7 +1244,7 @@
                         <div class="size-6 shrink-0">
                           <img
                             src="../../assets/images/solid-arrow.svg"
-                            alt="Tick circle"
+                            alt="Solid arrow"
                           />
                         </div>
                         <p>Emergency access hatc</p>
@@ -1230,7 +1259,7 @@
                         <img
                           class="group-hover:c-filter-white w-6 transition-all duration-300"
                           src="../../assets/images/question-circle.svg"
-                          alt="Help me Choose button"
+                          alt="Question with circle"
                         />
                       </a>
                     </div>
